@@ -1,1 +1,1 @@
-firefox vulkan_guide.pdf
+firefox vulkan_guide.pdf &

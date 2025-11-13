@@ -205,16 +205,15 @@ to the one in the khronos vulkan tutorial?
 \subsection*{Questions From Sascha's Repo:}
 \addcontentsline{toc}{subsection}{Questions From Sascha's Repo:}
 \begin{itemize}
-  \item what is a descriptor set in vulkan?
+    % \item what is a descriptor set in vulkan?
   \item what is the graphics queue?
-  \item what is a vk semaphore?
-  \item what is vk device?
-  \item what is vk null handle?
-  \item what is vk descriptor set?
-  \item what is vk null handle?
+    % \item what is a vk semaphore?
+    % \item what is vk device?
+    % \item what is vk null handle?
+    % \item what is vk descriptor set?
   \item what is vk pipeline layout?
   \item how to read/write to a glm::mat4?
-  \item what is vk descriptor set layout?
+    % \item what is vk descriptor set layout?
   \item how do we interact with vk command pool?
   \item what does this do?
   \begin{verbatim}
@@ -472,6 +471,47 @@ sub\-pixel fragment, so the result of the pixel can become an
 artifact. Sub\-pixel artifacting are called \textbf{jaggies}, which
 are a result of aliasing. To address this issue, we have multiple
 sub\-pixel samples\textemdash hence the name.
+
+\subsection*{Device vs. Physical Device}
+\par In vulkan, there are two kinds of devices:
+\begin{itemize}
+  \item The \textbf{physical device (VkPhysicalDevice)}
+  \item And the \textbf{logical device (VkDevice)}
+\end{itemize}
+\par Most always in the context of Vulkan, we are talking about the
+logical device. The logical device is the object that you use to
+interface with the hardware. You initialize VkDevice with the
+tools/features that you are going to be using from the GPU.
+
+\clearpage
+
+\section*{C++ Notes}
+\subsection*{Constructor Definition Syntax}
+\par The following is a way to declare a new constructor:
+
+\begin{verbatim}
+VulkanExample() : VulkanExampleBase() {}
+\end{verbatim}
+
+\par More generally, it is written as:
+\begin{verbatim}
+constructorFromDerivedClass?() : NewConstructor?()
+\end{verbatim}
+
+\par I am very confused\textemdash but maybe it is unimportant
+
+\subsection*{How To Make A Class}
+\par In C++, to make a class we usually do the following:
+\begin{enumerate}
+  \item Declare the class in a header (e.g. class.h)
+  \item Implement the class functionality in a source file (e.g. class.cpp)
+\end{enumerate}
+
+\subsection*{How To Make A Template Class?}
+\par A template has to do with implementing functionality across
+different primitive types? Like overloading function sum so that
+sum(int a, int b) and sum(double a, double b)? What makes templates
+different than classes? Do we use headers for them too?
 
 \clearpage
 
