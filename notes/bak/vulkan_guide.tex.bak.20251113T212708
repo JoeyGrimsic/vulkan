@@ -335,7 +335,12 @@ functionality, and data too.
 \subsection*{Reading Code Snippet And Some Resulting Questions}
 \addcontentsline{toc}{subsection}{Reading Code Snippet And Some
 Resulting Questions}
-
+\addcontentsline{toc}{subsection}{Reading Code Snippet And Some
+Resulting Questions}
+\addcontentsline{toc}{subsection}{Reading Code Snippet And Some
+Resulting Questions}
+\addcontentsline{toc}{subsection}{Reading Code Snippet And Some
+Resulting Questions}
 \par When reading through Sascha's examples I came across this segment from
 triangle.cpp:
 
@@ -419,7 +424,12 @@ what does it mean for it to be empty (0)?
 \subsection*{How is initialization abstracted with Sascha's Framework?}
 \addcontentsline{toc}{subsection}{How is initialization abstracted
 with Sascha's Framework?}
-
+\addcontentsline{toc}{subsection}{How is initialization abstracted
+with Sascha's Framework?}
+\addcontentsline{toc}{subsection}{How is initialization abstracted
+with Sascha's Framework?}
+\addcontentsline{toc}{subsection}{How is initialization abstracted
+with Sascha's Framework?}
 \par The following is a snippet from a conversation with Gemini 2.5 Pro:
 \begin{verbatim}
 Before: Raw Vulkan (What we discussed)
@@ -488,6 +498,10 @@ tools/features that you are going to be using from the GPU.
 
 % Begin large gemini latex segment
 \subsection*{High-level pseudocode: Basic indexed triangle (Vulkan 1.3)}
+\addcontentsline{toc}{subsection}{High-level pseudocode: Basic
+indexed triangle (Vulkan 1.3)}
+\addcontentsline{toc}{subsection}{High-level pseudocode: Basic
+indexed triangle (Vulkan 1.3)}
 \addcontentsline{toc}{subsection}{High-level pseudocode: Basic
 indexed triangle (Vulkan 1.3)}
 
@@ -610,7 +624,10 @@ hierarchy. How does this work?
 \section*{What Is A Valid Starting Point For My Game Engine?}
 \addcontentsline{toc}{section}{What Is A Valid Starting Point For My
 Game Engine?}
-
+\addcontentsline{toc}{section}{What Is A Valid Starting Point For My
+Game Engine?}
+\addcontentsline{toc}{section}{What Is A Valid Starting Point For My
+Game Engine?}
 \par I am currently considering the example from Sascha Willems
 called \textbf{Raytracing Reflections}.
 
