@@ -17,6 +17,9 @@
 % for links
 \usepackage[colorlinks=true, linkcolor=blue, urlcolor=magenta,
 citecolor=violet]{hyperref}
+% for glossary
+\usepackage[nonumberlist]{glossaries}
+\makeglossaries
 
 \title{Vulkan Notes}
 \author{Joseph Grimsic}
@@ -622,13 +625,15 @@ called \textbf{Raytracing Reflections}.
 terms for me to learn so it would be nice to have a spot I can
 reference in the future to remember what something is.
 
-\textbf{SPIR-V}: Is the intermediate form of slang? \\
-\textbf{Slang}: Is a cool shader language that vulkan uses instead of glsl?\\
+\textbf{SPIR-V}: GLSL, HLSL, and Slang can all be compiled to SPIR-V,
+which is passed to Vulkan program \\
+\textbf{Slang}: A shading language that benefits from having generics
+and interfaces that glsl doesn't have\\
 \textbf{Semaphore}: Object responsible for keeping different GPU cores synced\\
 \textbf{Fence}: Object responsible for keeping CPU and GPU synced\\
-\textbf{Virtual Function}: Is this related to virtual memory? What
-does keyword virtual do?\\
-\textbf{Sampling}: Query a subpixel value
+\textbf{Virtual Function}: A C++ feature relating to polymorphism and
+inheritance of classes\\
+\textbf{Sampling}: Query a subpixel value\\
 \textbf{Aliasing}: When \textbf{jaggies} misrepresent a pixel and
 cause discoloring\\
 \textbf{Anti Aliasing}: technique to combat \textbf{aliasing},
@@ -638,30 +643,320 @@ usually by some special way of sampling\\
 \textbf{Super Sampling Antialiasing (SSAA)}: An implementation of
 \textbf{anti aliasing}\\
 \textbf{Synchronization2}: idk\\
-\textbf{Dynamic Rendering}: idk\\
-\textbf{Max Concurrent Frames}: idk\\
-\textbf{Memory Barriers}: idk\\
+\textbf{Dynamic Rendering}: This is the idea of removing the 'render
+pass' and 'framebuffer' objects. In other words, we move the
+configuration from initialization to recording time\\
+\textbf{Max Concurrent Frames}: Number of frames to be 'processed'
+simultaneously\\
+\textbf{Memory Barriers}: Used to make sure that one GPU core is
+finished writing to memory before another core tries to read\\
 \textbf{Depth Image}: idk\\
 \textbf{Z Buffer/ Depth Buffer}: idk\\
 \textbf{Attachment}: idk, i think they are apart of frame buffers?\\
-\textbf{Vk Queue Present KHR}: idk\\
-\textbf{Device Idle}: idk\\
+\textbf{Vk Queue Present KHR}: The command that tells the OS to
+display the final image\\
+\textbf{Device Idle}: Command to pause the CPU until the GPU is finished\\
 \textbf{Application Object}: idk\\
-\textbf{Device-Local}: idk\\
-\textbf{Swap Chain}: The idea of rendering to a frame and then
-swapping it to be displayed\\
-\textbf{Viewport}: \\
-\textbf{In-Flight Frame}: idk\\
+\textbf{VRAM}: Stores memory for GPU\\
+\textbf{Device-Local}: Memory on the VRAM\\
+\textbf{Swap Chain}: A queue of rendered images waiting to be displayed\\
+\textbf{Viewport}: idk\\
+\textbf{In-Flight Frame}: Idea of rendering current frame on GPU, and
+recording commands for next frame to be rendered, using CPU\\
 \textbf{Rasterization}: Part in graphics pipeline when we draw?\\
 \textbf{Render}: The final output of the graphics pipeline?\\
 \textbf{Attributes}: I think attributes are when we store data in vertices\\
-\textbf{Command Pools}: idk\\
-\textbf{Ticket Number}: idk\\
-\textbf{Subresource}: idk\\
+\textbf{Command Pools}: idk, a way to allocate commands?\\
+\textbf{Ticket Number}: A timeline semaphore tracks completed tasks
+in strictly increasing number/sequence. A ticket number (a positive
+integer) is a certain complete task that we might wait for until we
+do something else\\
+\textbf{Binary Semaphore (Mutex)}: Has two states(0 or 1), used to
+lock a resource, and managed by an owner\\
+\textbf{Counting Semaphore}: Allows up to $N$ threads to access a
+resource simultanously\\
+\textbf{Timeline Semaphore}: Normal semaphore tracks complete or not
+complete\textemdash a \textbf{timeline semaphore} tracks more than 1
+complete steps in increasing order\\
+\textbf{Subresource}: A part of an image\\
 \textbf{Descriptor Set}: idk\\
 \textbf{Descriptor Pool}: idk\\
-\textbf{Device}: idk\\
+\textbf{Device}: Like the object that keeps track of the rendering
+state of the Vulkan program?\\
+\textbf{Instanced Mesh Rendering}: idk\\
+\textbf{Point Rendering}: idk\\
+\textbf{Queue Family}: idk\\
+\textbf{vkRenderingAttachmentInfoKHR}: idk\\
+\textbf{Queue Family Index}: idk\\
+\textbf{Color Attachment}: idk\\
+\textbf{Stencil Attachment}: idk\\
+\textbf{Render Target Views}: idk\\
+\textbf{Resource Barriers}: idk\\
+\textbf{Mip}: idk\\
+\textbf{Mip Map}: idk\\
 
+\clearpage
+\section*{tmp}
+\glsaddall
+% --- Vulkan Glossary Definitions ---
+
+\newglossaryentry{spirv}
+{
+  name={SPIR-V},
+  description={GLSL, HLSL, and Slang can all be compiled to SPIR-V,
+  which is passed to Vulkan program}
+}
+\newglossaryentry{slang}
+{
+  name={Slang},
+  description={A shading language that benefits from having generics
+  and interfaces that glsl doesn't have}
+}
+\newglossaryentry{semaphore}
+{
+  name={Semaphore},
+  description={Object responsible for keeping different GPU cores synced}
+}
+\newglossaryentry{fence}
+{
+  name={Fence},
+  description={Object responsible for keeping CPU and GPU synced}
+}
+\newglossaryentry{virtualfunction}
+{
+  name={Virtual Function},
+  description={A C++ feature relating to polymorphism and inheritance
+  of classes}
+}
+\newglossaryentry{sampling}
+{
+  name={Sampling},
+  description={Query a subpixel value}
+}
+\newglossaryentry{aliasing}
+{
+  name={Aliasing},
+  description={When \textbf{jaggies} misrepresent a pixel and cause discoloring}
+}
+\newglossaryentry{antialiasing}
+{
+  name={Anti Aliasing},
+  description={Technique to combat \textbf{aliasing}, usually by some
+  special way of sampling}
+}
+\newglossaryentry{msaa}
+{
+  name={Multisampling Antialiasing (MSAA)},
+  description={An implementation of \textbf{anti aliasing}}
+}
+\newglossaryentry{ssaa}
+{
+  name={Super Sampling Antialiasing (SSAA)},
+  description={An implementation of \textbf{anti aliasing}}
+}
+\newglossaryentry{sync2}
+{
+  name={Synchronization2},
+  description={idk}
+}
+\newglossaryentry{dynamicrendering}
+{
+  name={Dynamic Rendering},
+  description={This is the idea of removing the 'render pass' and
+    'framebuffer' objects. In other words, we move the configuration
+  from initialization to recording time}
+}
+\newglossaryentry{maxconcurrentframes}
+{
+  name={Max Concurrent Frames},
+  description={Number of frames to be 'processed' simultaneously}
+}
+\newglossaryentry{memorybarriers}
+{
+  name={Memory Barriers},
+  description={Used to make sure that one GPU core is finished
+  writing to memory before another core tries to read}
+}
+\newglossaryentry{depthimage}
+{
+  name={Depth Image},
+  description={idk}
+}
+\newglossaryentry{zbuffer}
+{
+  name={Z Buffer/ Depth Buffer},
+  description={idk}
+}
+\newglossaryentry{attachment}
+{
+  name={Attachment},
+  description={idk, i think they are apart of frame buffers?}
+}
+\newglossaryentry{vkqueuepresent}
+{
+  name={Vk Queue Present KHR},
+  description={The command that tells the OS to display the final image}
+}
+\newglossaryentry{deviceidle}
+{
+  name={Device Idle},
+  description={Command to pause the CPU until the GPU is finished}
+}
+\newglossaryentry{applicationobject}
+{
+  name={Application Object},
+  description={idk}
+}
+\newglossaryentry{vram}
+{
+  name={VRAM},
+  description={Stores memory for GPU}
+}
+\newglossaryentry{devicelocal}
+{
+  name={Device-Local},
+  description={Memory on the VRAM}
+}
+\newglossaryentry{swapchain}
+{
+  name={Swap Chain},
+  description={A queue of rendered images waiting to be displayed}
+}
+\newglossaryentry{viewport}
+{
+  name={Viewport},
+  description={idk}
+}
+\newglossaryentry{inflightframe}
+{
+  name={In-Flight Frame},
+  description={Idea of rendering current frame on GPU, and recording
+  commands for next frame to be rendered, using CPU}
+}
+\newglossaryentry{rasterization}
+{
+  name={Rasterization},
+  description={Part in graphics pipeline when we draw?}
+}
+\newglossaryentry{render}
+{
+  name={Render},
+  description={The final output of the graphics pipeline?}
+}
+\newglossaryentry{attributes}
+{
+  name={Attributes},
+  description={I think attributes are when we store data in vertices}
+}
+\newglossaryentry{commandpools}
+{
+  name={Command Pools},
+  description={idk, a way to allocate commands?}
+}
+\newglossaryentry{ticketnumber}
+{
+  name={Ticket Number},
+  description={A timeline semaphore tracks completed tasks in
+    strictly increasing number/sequence. A ticket number (a positive
+    integer) is a certain complete task that we might wait for until we
+  do something else}
+}
+\newglossaryentry{binarysemaphore}
+{
+  name={Binary Semaphore (Mutex)},
+  description={Has two states(0 or 1), used to lock a resource, and
+  managed by an owner}
+}
+\newglossaryentry{countingsemaphore}
+{
+  name={Counting Semaphore},
+  description={Allows up to $N$ threads to access a resource simultanously}
+}
+\newglossaryentry{timelinesemaphore}
+{
+  name={Timeline Semaphore},
+  description={Normal semaphore tracks complete or not
+    complete\textemdash a \textbf{timeline semaphore} tracks more than
+  1 complete steps in increasing order}
+}
+\newglossaryentry{subresource}
+{
+  name={Subresource},
+  description={A part of an image}
+}
+\newglossaryentry{descriptorset}
+{
+  name={Descriptor Set},
+  description={idk}
+}
+\newglossaryentry{descriptorpool}
+{
+  name={Descriptor Pool},
+  description={idk}
+}
+\newglossaryentry{device}
+{
+  name={Device},
+  description={Like the object that keeps track of the rendering
+  state of the Vulkan program?}
+}
+\newglossaryentry{instancedmesh}
+{
+  name={Instanced Mesh Rendering},
+  description={idk}
+}
+\newglossaryentry{pointrendering}
+{
+  name={Point Rendering},
+  description={idk}
+}
+\newglossaryentry{queuefamily}
+{
+  name={Queue Family},
+  description={idk}
+}
+\newglossaryentry{vkrenderingattachmentinfo}
+{
+  name={vkRenderingAttachmentInfoKHR},
+  description={idk}
+}
+\newglossaryentry{queuefamilyindex}
+{
+  name={Queue Family Index},
+  description={idk}
+}
+\newglossaryentry{colorattachment}
+{
+  name={Color Attachment},
+  description={idk}
+}
+\newglossaryentry{stencilattachment}
+{
+  name={Stencil Attachment},
+  description={idk}
+}
+\newglossaryentry{rendertargetviews}
+{
+  name={Render Target Views},
+  description={idk}
+}
+\newglossaryentry{resourcebarriers}
+{
+  name={Resource Barriers},
+  description={idk}
+}
+\newglossaryentry{mip}
+{
+  name={Mip},
+  description={idk}
+}
+\newglossaryentry{mipmap}
+{
+  name={Mip Map},
+  description={idk}
+}
+
+\printglossaries
 \clearpage
 
 \section*{Appendix}

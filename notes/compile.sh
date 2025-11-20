@@ -1,2 +1,4 @@
 latexmk -pdf vulkan_guide.tex
-latexmk -c
+makeglossaries vulkan_guide
+latexmk -pdf vulkan_guide.tex
+# latexmk -c

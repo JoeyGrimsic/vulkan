@@ -1,0 +1,48 @@
+\glossaryentry{SPIR-V?\glossentry{spirv}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Slang?\glossentry{slang}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Semaphore?\glossentry{semaphore}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Fence?\glossentry{fence}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Virtual Function?\glossentry{virtualfunction}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Sampling?\glossentry{sampling}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Aliasing?\glossentry{aliasing}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Anti Aliasing?\glossentry{antialiasing}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Multisampling Antialiasing (MSAA)?\glossentry{msaa}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Super Sampling Antialiasing (SSAA)?\glossentry{ssaa}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Synchronization2?\glossentry{sync2}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Dynamic Rendering?\glossentry{dynamicrendering}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Max Concurrent Frames?\glossentry{maxconcurrentframes}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Memory Barriers?\glossentry{memorybarriers}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Depth Image?\glossentry{depthimage}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Z Buffer/ Depth Buffer?\glossentry{zbuffer}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Attachment?\glossentry{attachment}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Vk Queue Present KHR?\glossentry{vkqueuepresent}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Device Idle?\glossentry{deviceidle}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Application Object?\glossentry{applicationobject}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{VRAM?\glossentry{vram}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Device-Local?\glossentry{devicelocal}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Swap Chain?\glossentry{swapchain}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Viewport?\glossentry{viewport}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{In-Flight Frame?\glossentry{inflightframe}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Rasterization?\glossentry{rasterization}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Render?\glossentry{render}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Attributes?\glossentry{attributes}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Command Pools?\glossentry{commandpools}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Ticket Number?\glossentry{ticketnumber}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Binary Semaphore (Mutex)?\glossentry{binarysemaphore}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Counting Semaphore?\glossentry{countingsemaphore}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Timeline Semaphore?\glossentry{timelinesemaphore}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Subresource?\glossentry{subresource}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Descriptor Set?\glossentry{descriptorset}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Descriptor Pool?\glossentry{descriptorpool}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Device?\glossentry{device}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Instanced Mesh Rendering?\glossentry{instancedmesh}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Point Rendering?\glossentry{pointrendering}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Queue Family?\glossentry{queuefamily}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{vkRenderingAttachmentInfoKHR?\glossentry{vkrenderingattachmentinfo}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Queue Family Index?\glossentry{queuefamilyindex}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Color Attachment?\glossentry{colorattachment}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Stencil Attachment?\glossentry{stencilattachment}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Render Target Views?\glossentry{rendertargetviews}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Resource Barriers?\glossentry{resourcebarriers}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Mip?\glossentry{mip}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Mip Map?\glossentry{mipmap}|setentrycounter[]{page}"\glsnumberformat}{17}

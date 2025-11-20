@@ -1,0 +1,1344 @@
+\glsdefs@newdocentry{spirv}%
+{%
+name={SPIR-V},%
+sort={SPIR-V},%
+type={main},%
+first={SPIR-V},%
+firstplural={SPIR-Vs},%
+text={SPIR-V},%
+plural={SPIR-Vs},%
+description={GLSL, HLSL, and Slang can all be compiled to SPIR-V, which is passed to Vulkan program},%
+descriptionplural={GLSL, HLSL, and Slang can all be compiled to SPIR-V, which is passed to Vulkan program},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{slang}%
+{%
+name={Slang},%
+sort={Slang},%
+type={main},%
+first={Slang},%
+firstplural={Slangs},%
+text={Slang},%
+plural={Slangs},%
+description={A shading language that benefits from having generics and interfaces that glsl doesn't have},%
+descriptionplural={A shading language that benefits from having generics and interfaces that glsl doesn't have},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{semaphore}%
+{%
+name={Semaphore},%
+sort={Semaphore},%
+type={main},%
+first={Semaphore},%
+firstplural={Semaphores},%
+text={Semaphore},%
+plural={Semaphores},%
+description={Object responsible for keeping different GPU cores synced},%
+descriptionplural={Object responsible for keeping different GPU cores synced},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{fence}%
+{%
+name={Fence},%
+sort={Fence},%
+type={main},%
+first={Fence},%
+firstplural={Fences},%
+text={Fence},%
+plural={Fences},%
+description={Object responsible for keeping CPU and GPU synced},%
+descriptionplural={Object responsible for keeping CPU and GPU synced},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{virtualfunction}%
+{%
+name={Virtual Function},%
+sort={Virtual Function},%
+type={main},%
+first={Virtual Function},%
+firstplural={Virtual Functions},%
+text={Virtual Function},%
+plural={Virtual Functions},%
+description={A C++ feature relating to polymorphism and inheritance of classes},%
+descriptionplural={A C++ feature relating to polymorphism and inheritance of classes},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{sampling}%
+{%
+name={Sampling},%
+sort={Sampling},%
+type={main},%
+first={Sampling},%
+firstplural={Samplings},%
+text={Sampling},%
+plural={Samplings},%
+description={Query a subpixel value},%
+descriptionplural={Query a subpixel value},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{aliasing}%
+{%
+name={Aliasing},%
+sort={Aliasing},%
+type={main},%
+first={Aliasing},%
+firstplural={Aliasings},%
+text={Aliasing},%
+plural={Aliasings},%
+description={When \textbf {jaggies} misrepresent a pixel and cause discoloring},%
+descriptionplural={When \textbf {jaggies} misrepresent a pixel and cause discoloring},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{antialiasing}%
+{%
+name={Anti Aliasing},%
+sort={Anti Aliasing},%
+type={main},%
+first={Anti Aliasing},%
+firstplural={Anti Aliasings},%
+text={Anti Aliasing},%
+plural={Anti Aliasings},%
+description={Technique to combat \textbf {aliasing}, usually by some special way of sampling},%
+descriptionplural={Technique to combat \textbf {aliasing}, usually by some special way of sampling},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{msaa}%
+{%
+name={Multisampling Antialiasing (MSAA)},%
+sort={Multisampling Antialiasing (MSAA)},%
+type={main},%
+first={Multisampling Antialiasing (MSAA)},%
+firstplural={Multisampling Antialiasing (MSAA)s},%
+text={Multisampling Antialiasing (MSAA)},%
+plural={Multisampling Antialiasing (MSAA)s},%
+description={An implementation of \textbf {anti aliasing}},%
+descriptionplural={An implementation of \textbf {anti aliasing}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ssaa}%
+{%
+name={Super Sampling Antialiasing (SSAA)},%
+sort={Super Sampling Antialiasing (SSAA)},%
+type={main},%
+first={Super Sampling Antialiasing (SSAA)},%
+firstplural={Super Sampling Antialiasing (SSAA)s},%
+text={Super Sampling Antialiasing (SSAA)},%
+plural={Super Sampling Antialiasing (SSAA)s},%
+description={An implementation of \textbf {anti aliasing}},%
+descriptionplural={An implementation of \textbf {anti aliasing}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{sync2}%
+{%
+name={Synchronization2},%
+sort={Synchronization2},%
+type={main},%
+first={Synchronization2},%
+firstplural={Synchronization2s},%
+text={Synchronization2},%
+plural={Synchronization2s},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{dynamicrendering}%
+{%
+name={Dynamic Rendering},%
+sort={Dynamic Rendering},%
+type={main},%
+first={Dynamic Rendering},%
+firstplural={Dynamic Renderings},%
+text={Dynamic Rendering},%
+plural={Dynamic Renderings},%
+description={This is the idea of removing the 'render pass' and 'framebuffer' objects. In other words, we move the configuration from initialization to recording time},%
+descriptionplural={This is the idea of removing the 'render pass' and 'framebuffer' objects. In other words, we move the configuration from initialization to recording time},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{maxconcurrentframes}%
+{%
+name={Max Concurrent Frames},%
+sort={Max Concurrent Frames},%
+type={main},%
+first={Max Concurrent Frames},%
+firstplural={Max Concurrent Framess},%
+text={Max Concurrent Frames},%
+plural={Max Concurrent Framess},%
+description={Number of frames to be 'processed' simultaneously},%
+descriptionplural={Number of frames to be 'processed' simultaneously},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{memorybarriers}%
+{%
+name={Memory Barriers},%
+sort={Memory Barriers},%
+type={main},%
+first={Memory Barriers},%
+firstplural={Memory Barrierss},%
+text={Memory Barriers},%
+plural={Memory Barrierss},%
+description={Used to make sure that one GPU core is finished writing to memory before another core tries to read},%
+descriptionplural={Used to make sure that one GPU core is finished writing to memory before another core tries to read},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{depthimage}%
+{%
+name={Depth Image},%
+sort={Depth Image},%
+type={main},%
+first={Depth Image},%
+firstplural={Depth Images},%
+text={Depth Image},%
+plural={Depth Images},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{zbuffer}%
+{%
+name={Z Buffer/ Depth Buffer},%
+sort={Z Buffer/ Depth Buffer},%
+type={main},%
+first={Z Buffer/ Depth Buffer},%
+firstplural={Z Buffer/ Depth Buffers},%
+text={Z Buffer/ Depth Buffer},%
+plural={Z Buffer/ Depth Buffers},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{attachment}%
+{%
+name={Attachment},%
+sort={Attachment},%
+type={main},%
+first={Attachment},%
+firstplural={Attachments},%
+text={Attachment},%
+plural={Attachments},%
+description={idk, i think they are apart of frame buffers?},%
+descriptionplural={idk, i think they are apart of frame buffers?},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{vkqueuepresent}%
+{%
+name={Vk Queue Present KHR},%
+sort={Vk Queue Present KHR},%
+type={main},%
+first={Vk Queue Present KHR},%
+firstplural={Vk Queue Present KHRs},%
+text={Vk Queue Present KHR},%
+plural={Vk Queue Present KHRs},%
+description={The command that tells the OS to display the final image},%
+descriptionplural={The command that tells the OS to display the final image},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{deviceidle}%
+{%
+name={Device Idle},%
+sort={Device Idle},%
+type={main},%
+first={Device Idle},%
+firstplural={Device Idles},%
+text={Device Idle},%
+plural={Device Idles},%
+description={Command to pause the CPU until the GPU is finished},%
+descriptionplural={Command to pause the CPU until the GPU is finished},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{applicationobject}%
+{%
+name={Application Object},%
+sort={Application Object},%
+type={main},%
+first={Application Object},%
+firstplural={Application Objects},%
+text={Application Object},%
+plural={Application Objects},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{vram}%
+{%
+name={VRAM},%
+sort={VRAM},%
+type={main},%
+first={VRAM},%
+firstplural={VRAMs},%
+text={VRAM},%
+plural={VRAMs},%
+description={Stores memory for GPU},%
+descriptionplural={Stores memory for GPU},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{devicelocal}%
+{%
+name={Device-Local},%
+sort={Device-Local},%
+type={main},%
+first={Device-Local},%
+firstplural={Device-Locals},%
+text={Device-Local},%
+plural={Device-Locals},%
+description={Memory on the VRAM},%
+descriptionplural={Memory on the VRAM},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{swapchain}%
+{%
+name={Swap Chain},%
+sort={Swap Chain},%
+type={main},%
+first={Swap Chain},%
+firstplural={Swap Chains},%
+text={Swap Chain},%
+plural={Swap Chains},%
+description={A queue of rendered images waiting to be displayed},%
+descriptionplural={A queue of rendered images waiting to be displayed},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{viewport}%
+{%
+name={Viewport},%
+sort={Viewport},%
+type={main},%
+first={Viewport},%
+firstplural={Viewports},%
+text={Viewport},%
+plural={Viewports},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{inflightframe}%
+{%
+name={In-Flight Frame},%
+sort={In-Flight Frame},%
+type={main},%
+first={In-Flight Frame},%
+firstplural={In-Flight Frames},%
+text={In-Flight Frame},%
+plural={In-Flight Frames},%
+description={Idea of rendering current frame on GPU, and recording commands for next frame to be rendered, using CPU},%
+descriptionplural={Idea of rendering current frame on GPU, and recording commands for next frame to be rendered, using CPU},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{rasterization}%
+{%
+name={Rasterization},%
+sort={Rasterization},%
+type={main},%
+first={Rasterization},%
+firstplural={Rasterizations},%
+text={Rasterization},%
+plural={Rasterizations},%
+description={Part in graphics pipeline when we draw?},%
+descriptionplural={Part in graphics pipeline when we draw?},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{render}%
+{%
+name={Render},%
+sort={Render},%
+type={main},%
+first={Render},%
+firstplural={Renders},%
+text={Render},%
+plural={Renders},%
+description={The final output of the graphics pipeline?},%
+descriptionplural={The final output of the graphics pipeline?},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{attributes}%
+{%
+name={Attributes},%
+sort={Attributes},%
+type={main},%
+first={Attributes},%
+firstplural={Attributess},%
+text={Attributes},%
+plural={Attributess},%
+description={I think attributes are when we store data in vertices},%
+descriptionplural={I think attributes are when we store data in vertices},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{commandpools}%
+{%
+name={Command Pools},%
+sort={Command Pools},%
+type={main},%
+first={Command Pools},%
+firstplural={Command Poolss},%
+text={Command Pools},%
+plural={Command Poolss},%
+description={idk, a way to allocate commands?},%
+descriptionplural={idk, a way to allocate commands?},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ticketnumber}%
+{%
+name={Ticket Number},%
+sort={Ticket Number},%
+type={main},%
+first={Ticket Number},%
+firstplural={Ticket Numbers},%
+text={Ticket Number},%
+plural={Ticket Numbers},%
+description={A timeline semaphore tracks completed tasks in strictly increasing number/sequence. A ticket number (a positive integer) is a certain complete task that we might wait for until we do something else},%
+descriptionplural={A timeline semaphore tracks completed tasks in strictly increasing number/sequence. A ticket number (a positive integer) is a certain complete task that we might wait for until we do something else},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{binarysemaphore}%
+{%
+name={Binary Semaphore (Mutex)},%
+sort={Binary Semaphore (Mutex)},%
+type={main},%
+first={Binary Semaphore (Mutex)},%
+firstplural={Binary Semaphore (Mutex)s},%
+text={Binary Semaphore (Mutex)},%
+plural={Binary Semaphore (Mutex)s},%
+description={Has two states(0 or 1), used to lock a resource, and managed by an owner},%
+descriptionplural={Has two states(0 or 1), used to lock a resource, and managed by an owner},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{countingsemaphore}%
+{%
+name={Counting Semaphore},%
+sort={Counting Semaphore},%
+type={main},%
+first={Counting Semaphore},%
+firstplural={Counting Semaphores},%
+text={Counting Semaphore},%
+plural={Counting Semaphores},%
+description={Allows up to $N$ threads to access a resource simultanously},%
+descriptionplural={Allows up to $N$ threads to access a resource simultanously},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{timelinesemaphore}%
+{%
+name={Timeline Semaphore},%
+sort={Timeline Semaphore},%
+type={main},%
+first={Timeline Semaphore},%
+firstplural={Timeline Semaphores},%
+text={Timeline Semaphore},%
+plural={Timeline Semaphores},%
+description={Normal semaphore tracks complete or not complete\textemdash a \textbf {timeline semaphore} tracks more than 1 complete steps in increasing order},%
+descriptionplural={Normal semaphore tracks complete or not complete\textemdash a \textbf {timeline semaphore} tracks more than 1 complete steps in increasing order},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{subresource}%
+{%
+name={Subresource},%
+sort={Subresource},%
+type={main},%
+first={Subresource},%
+firstplural={Subresources},%
+text={Subresource},%
+plural={Subresources},%
+description={A part of an image},%
+descriptionplural={A part of an image},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{descriptorset}%
+{%
+name={Descriptor Set},%
+sort={Descriptor Set},%
+type={main},%
+first={Descriptor Set},%
+firstplural={Descriptor Sets},%
+text={Descriptor Set},%
+plural={Descriptor Sets},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{descriptorpool}%
+{%
+name={Descriptor Pool},%
+sort={Descriptor Pool},%
+type={main},%
+first={Descriptor Pool},%
+firstplural={Descriptor Pools},%
+text={Descriptor Pool},%
+plural={Descriptor Pools},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{device}%
+{%
+name={Device},%
+sort={Device},%
+type={main},%
+first={Device},%
+firstplural={Devices},%
+text={Device},%
+plural={Devices},%
+description={Like the object that keeps track of the rendering state of the Vulkan program?},%
+descriptionplural={Like the object that keeps track of the rendering state of the Vulkan program?},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{instancedmesh}%
+{%
+name={Instanced Mesh Rendering},%
+sort={Instanced Mesh Rendering},%
+type={main},%
+first={Instanced Mesh Rendering},%
+firstplural={Instanced Mesh Renderings},%
+text={Instanced Mesh Rendering},%
+plural={Instanced Mesh Renderings},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{pointrendering}%
+{%
+name={Point Rendering},%
+sort={Point Rendering},%
+type={main},%
+first={Point Rendering},%
+firstplural={Point Renderings},%
+text={Point Rendering},%
+plural={Point Renderings},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{queuefamily}%
+{%
+name={Queue Family},%
+sort={Queue Family},%
+type={main},%
+first={Queue Family},%
+firstplural={Queue Familys},%
+text={Queue Family},%
+plural={Queue Familys},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{vkrenderingattachmentinfo}%
+{%
+name={vkRenderingAttachmentInfoKHR},%
+sort={vkRenderingAttachmentInfoKHR},%
+type={main},%
+first={vkRenderingAttachmentInfoKHR},%
+firstplural={vkRenderingAttachmentInfoKHRs},%
+text={vkRenderingAttachmentInfoKHR},%
+plural={vkRenderingAttachmentInfoKHRs},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{queuefamilyindex}%
+{%
+name={Queue Family Index},%
+sort={Queue Family Index},%
+type={main},%
+first={Queue Family Index},%
+firstplural={Queue Family Indexs},%
+text={Queue Family Index},%
+plural={Queue Family Indexs},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{colorattachment}%
+{%
+name={Color Attachment},%
+sort={Color Attachment},%
+type={main},%
+first={Color Attachment},%
+firstplural={Color Attachments},%
+text={Color Attachment},%
+plural={Color Attachments},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{stencilattachment}%
+{%
+name={Stencil Attachment},%
+sort={Stencil Attachment},%
+type={main},%
+first={Stencil Attachment},%
+firstplural={Stencil Attachments},%
+text={Stencil Attachment},%
+plural={Stencil Attachments},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{rendertargetviews}%
+{%
+name={Render Target Views},%
+sort={Render Target Views},%
+type={main},%
+first={Render Target Views},%
+firstplural={Render Target Viewss},%
+text={Render Target Views},%
+plural={Render Target Viewss},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{resourcebarriers}%
+{%
+name={Resource Barriers},%
+sort={Resource Barriers},%
+type={main},%
+first={Resource Barriers},%
+firstplural={Resource Barrierss},%
+text={Resource Barriers},%
+plural={Resource Barrierss},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{mip}%
+{%
+name={Mip},%
+sort={Mip},%
+type={main},%
+first={Mip},%
+firstplural={Mips},%
+text={Mip},%
+plural={Mips},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{mipmap}%
+{%
+name={Mip Map},%
+sort={Mip Map},%
+type={main},%
+first={Mip Map},%
+firstplural={Mip Maps},%
+text={Mip Map},%
+plural={Mip Maps},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+

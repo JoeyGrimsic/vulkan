@@ -1,0 +1,41 @@
+\contentsline {section}{Vulkan Questions}{3}{section*.2}%
+\contentsline {section}{What If I Use Sascha as a starting point}{3}{section*.3}%
+\contentsline {section}{Vulkan Resources}{3}{section*.4}%
+\contentsline {section}{Sascha Willems Helpers}{3}{section*.5}%
+\contentsline {subsection}{\_CreateInfo and \_Info}{3}{section*.6}%
+\contentsline {subsection}{Commands}{4}{section*.7}%
+\contentsline {section}{Sascha Repository Notes}{4}{section*.8}%
+\contentsline {section}{Reading Through The Vulkan Tutorial}{5}{section*.9}%
+\contentsline {section}{Going Through Sascha's Repository}{6}{section*.10}%
+\contentsline {subsection}{Idea}{6}{section*.11}%
+\contentsline {subsection}{Notes On Sascha}{6}{section*.12}%
+\contentsline {subsection}{Questions From Sascha's Repo:}{6}{section*.13}%
+\contentsline {section}{Theory}{6}{section*.14}%
+\contentsline {subsection}{Descriptor Set}{6}{section*.15}%
+\contentsline {subsection}{Descriptor Pools}{7}{section*.16}%
+\contentsline {subsection}{Fences}{7}{section*.17}%
+\contentsline {subsection}{Semaphore}{7}{section*.18}%
+\contentsline {subsection}{Projection Matrix}{7}{section*.19}%
+\contentsline {subsection}{View Model Matrix}{7}{section*.20}%
+\contentsline {subsection}{Depth Stencil Image}{7}{section*.21}%
+\contentsline {subsection}{Stencil Buffer}{8}{section*.22}%
+\contentsline {subsection}{Struct vs. Class}{9}{section*.23}%
+\contentsline {subsection}{Reading Code Snippet And Some Resulting Questions}{9}{section*.24}%
+\contentsline {subsection}{What Does 'CI' Suffix Mean In Variable Names?}{9}{section*.25}%
+\contentsline {subsection}{VK View}{10}{section*.26}%
+\contentsline {subsection}{How Does A View Relate To A Frame Buffer?}{10}{section*.27}%
+\contentsline {subsection}{Subresource}{10}{section*.28}%
+\contentsline {subsection}{VK\_NULL\_HANDLE}{10}{section*.29}%
+\contentsline {subsection}{Ticket Number}{10}{section*.30}%
+\contentsline {subsection}{How is initialization abstracted with Sascha's Framework?}{10}{section*.31}%
+\contentsline {subsection}{What is multisampling (MSAA?)}{12}{section*.32}%
+\contentsline {subsection}{Device vs. Physical Device}{12}{section*.33}%
+\contentsline {subsection}{High-level pseudocode: Basic indexed triangle (Vulkan 1.3)}{12}{section*.34}%
+\contentsline {section}{C++ Notes}{14}{section*.35}%
+\contentsline {subsection}{Constructor Definition Syntax}{14}{section*.36}%
+\contentsline {subsection}{How To Make A Class}{14}{section*.37}%
+\contentsline {subsection}{How To Make A Template Class?}{14}{section*.38}%
+\contentsline {subsection}{:: Operator}{14}{section*.39}%
+\contentsline {section}{What Is A Valid Starting Point For My Game Engine?}{14}{section*.40}%
+\contentsline {section}{Dictionary}{15}{section*.41}%
+\contentsline {section}{Appendix}{20}{section*.45}%

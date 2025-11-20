@@ -1,123 +1,121 @@
-/* Copyright (c) 2025, Sascha Willems
- *
- * SPDX-License-Identifier: MIT
- *
+/* * computeparticles.slang - Modified for Collision Mesh
  */
 
-[[vk::binding(0, 0)]] Sampler2D samplerColorMap;
-[[vk::binding(1, 0)]] Sampler2D samplerGradientRamp;
+// 1. Define the Unit Cube (The "Paint Brush" geometry)
+// We hardcode this in the shader for simplicity, or you can pass it as a Vertex Buffer.
+// For this step, let's assume you pass the vertices via Vertex Buffer, 
+// and this shader positions them based on the SSBO data.
 
 struct VSInput
 {
-    float2 Pos : POSITION0;
-    float4 GradientPos : POSITION1;
+    // Per-vertex data (The Unit Cube)
+    float3 Pos : POSITION0; 
+    float3 Normal : NORMAL0;
 };
 
 struct VSOutput
 {
     float4 Pos : SV_POSITION;
-    float PointSize : SV_PointSize;    
     float4 Color : COLOR0;
-    float GradientPos : POSITION0;
+    float3 WorldPos : POSITION1;
 };
 
-struct Particle
+// 2. The Physics Object Structure
+struct CollisionObject
 {
-	float2 pos;
-	float2 vel;
-	float4 gradientPos;
+    float3 pos;       // Center position
+    float3 vel;       // Velocity
+    float4 rotation;  // Quaternion (or axis-angle)
+    float3 scale;     // .xy = 2D size, .z = Extrusion amount
+    float3 color;     // Color of the object
+    int shapeType;    // 0 = Cube, 1 = TrianglePrism
 };
-// Previous particles storage buffer
-[[vk::binding(0, 0)]] RWStructuredBuffer<Particle> particlesIn;
-// Current particles storage buffer
-[[vk::binding(1, 0)]] RWStructuredBuffer<Particle> particlesOut;
+
+// Binding 0 : Previous Frame Data
+[[vk::binding(0, 0)]] RWStructuredBuffer<CollisionObject> objectsIn;
+// Binding 1 : Current Frame Data
+[[vk::binding(1, 0)]] RWStructuredBuffer<CollisionObject> objectsOut;
 
 struct UBO
 {
-	float deltaT;
-	float destX;
-	float destY;
-	int particleCount;
+    float deltaT;
+    float destX;
+    float destY;
+    int objectCount;
+    float4x4 viewProj; // Need View/Projection matrix for 3D
 };
 [[vk::binding(2, 0)]] ConstantBuffer<UBO> ubo;
 
-struct PushConsts
-{
-    float2 screendim;
-};
-
-float2 attraction(float2 pos, float2 attractPos)
-{
-    float2 delta = attractPos - pos;
-	const float damp = 0.5;
-    float dDampedDot = dot(delta, delta) + damp;
-    float invDist = 1.0f / sqrt(dDampedDot);
-    float invDistCubed = invDist*invDist*invDist;
-    return delta * invDistCubed * 0.0035;
-}
-
-float2 repulsion(float2 pos, float2 attractPos)
-{
-	float2 delta = attractPos - pos;
-	float targetDistance = sqrt(dot(delta, delta));
-	return delta * (1.0 / (targetDistance * targetDistance * targetDistance)) * -0.000035;
+// --- Helper: Rotation ---
+float3 rotateVector(float3 v, float4 q) {
+    // Simple quaternion rotation application
+    return v + 2.0 * cross(q.xyz, cross(q.xyz, v) + q.w * v);
 }
 
 [shader("vertex")]
-VSOutput vertexMain(VSInput input)
+VSOutput vertexMain(VSInput input, uint instanceID : SV_InstanceID)
 {
     VSOutput output;
-    output.PointSize = 8.0;
-    output.Color = float4(0.035, 0.035, 0.035, 0.035);
-    output.GradientPos = input.GradientPos.x;
-    output.Pos = float4(input.Pos.xy, 1.0, 1.0);
+
+    // 3. Fetch the Instance Data from SSBO using InstanceID
+    CollisionObject obj = objectsOut[instanceID]; // Read from 'Out' because Graphics runs after Compute
+
+    // 4. Apply Scale (Extrusion)
+    float3 localPos = input.Pos * obj.scale;
+
+    // 5. Apply Rotation
+    // (Assuming rotation is identity for now, 0,0,0,1)
+    // float3 rotatedPos = rotateVector(localPos, obj.rotation); 
+    
+    // 6. Apply Translation
+    float3 worldPos = localPos + obj.pos;
+
+    // 7. Project to Screen
+    output.Pos = mul(ubo.viewProj, float4(worldPos, 1.0));
+    output.WorldPos = worldPos;
+    output.Color = float4(obj.color, 1.0);
+
     return output;
 }
 
 [shader("fragment")]
-float4 fragmentMain(VSOutput input, float2 pointCoord: SV_PointCoord)
+float4 fragmentMain(VSOutput input) : SV_Target
 {
-    float3 color = samplerGradientRamp.Sample(float2(input.GradientPos, 0.0)).rgb;
-    return float4(samplerColorMap.Sample(pointCoord).rgb * color, 1.0);
+    // Simple lighting so we can see the 3D shape
+    float3 lightDir = normalize(float3(0.5, 1.0, -1.0));
+    // We need normals passed through or derived. For flat shading:
+    float3 dx = ddx(input.WorldPos);
+    float3 dy = ddy(input.WorldPos);
+    float3 normal = normalize(cross(dx, dy));
+    
+    float diff = max(dot(normal, lightDir), 0.2);
+    return float4(input.Color.rgb * diff, 1.0);
 }
 
 [shader("compute")]
 [numthreads(256, 1, 1)]
 void computeMain(uint3 GlobalInvocationID : SV_DispatchThreadID)
 {
-    // Current SSBO index
     uint index = GlobalInvocationID.x;
-    // Don't try to write beyond particle count
-    if (index >= ubo.particleCount) {
-        return;
+    if (index >= ubo.objectCount) return;
+
+    // Read Previous
+    CollisionObject obj = objectsIn[index];
+    
+    // --- PHYSICS UPDATE (Collision Placeholder) ---
+    
+    // 1. Gravity
+    obj.vel.y += 9.8 * ubo.deltaT * 0.1; 
+
+    // 2. Basic Floor Collision
+    if (obj.pos.y > 5.0) {
+        obj.pos.y = 5.0;
+        obj.vel.y *= -0.5; // Bounce
     }
 
-    // Read position and velocity from previous frame
-    float2 vVel = particlesIn[index].vel.xy;
-    float2 vPos = particlesIn[index].pos.xy;
-    float4 gPos = particlesIn[index].gradientPos;
+    // 3. Integrate
+    obj.pos += obj.vel * ubo.deltaT;
 
-    float2 destPos = float2(ubo.destX, ubo.destY);
-
-    float2 delta = destPos - vPos;
-    float targetDistance = sqrt(dot(delta, delta));
-    vVel += repulsion(vPos, destPos.xy) * 0.05;
-
-    // Move by velocity
-    vPos += vVel * ubo.deltaT;
-
-    // collide with boundary
-    if ((vPos.x < -1.0) || (vPos.x > 1.0) || (vPos.y < -1.0) || (vPos.y > 1.0)) {
-        vVel = (-vVel * 0.1) + attraction(vPos, destPos) * 12;
-    } else {
-        particlesOut[index].pos.xy = vPos;
-    }
-
-    // Write back
-    particlesOut[index].vel.xy = vVel;
-    particlesOut[index].gradientPos.x = gPos.x + 0.02 * ubo.deltaT;
-    if (particlesOut[index].gradientPos.x > 1.0) {
-        particlesOut[index].gradientPos.x -= 1.0;
-    }
+    // Write Current
+    objectsOut[index] = obj;
 }
-
