@@ -259,8 +259,8 @@ first={Super Sampling Antialiasing (SSAA)},%
 firstplural={Super Sampling Antialiasing (SSAA)s},%
 text={Super Sampling Antialiasing (SSAA)},%
 plural={Super Sampling Antialiasing (SSAA)s},%
-description={An implementation of \textbf {anti aliasing}},%
-descriptionplural={An implementation of \textbf {anti aliasing}},%
+description={An implementation of \textbf {anti aliasing}, considered to be 'brute force'},%
+descriptionplural={An implementation of \textbf {anti aliasing}, considered to be 'brute force'},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -427,8 +427,8 @@ first={Z Buffer/ Depth Buffer},%
 firstplural={Z Buffer/ Depth Buffers},%
 text={Z Buffer/ Depth Buffer},%
 plural={Z Buffer/ Depth Buffers},%
-description={idk},%
-descriptionplural={idk},%
+description={Used to determine if an object should be rendered in-front of another?},%
+descriptionplural={Used to determine if an object should be rendered in-front of another?},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -651,8 +651,8 @@ first={Viewport},%
 firstplural={Viewports},%
 text={Viewport},%
 plural={Viewports},%
-description={idk},%
-descriptionplural={idk},%
+description={The rectangular part of the window that is rendered to. For example you could have two viewports (top and bottom), for a split-screen multiplayer effect},%
+descriptionplural={The rectangular part of the window that is rendered to. For example you could have two viewports (top and bottom), for a split-screen multiplayer effect},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -791,8 +791,8 @@ first={Command Pools},%
 firstplural={Command Poolss},%
 text={Command Pools},%
 plural={Command Poolss},%
-description={idk, a way to allocate commands?},%
-descriptionplural={idk, a way to allocate commands?},%
+description={Object used to allocate command buffers},%
+descriptionplural={Object used to allocate command buffers},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -987,8 +987,8 @@ first={Descriptor Pool},%
 firstplural={Descriptor Pools},%
 text={Descriptor Pool},%
 plural={Descriptor Pools},%
-description={idk},%
-descriptionplural={idk},%
+description={Obviously some kind of object to allocate descriptors or descriptor sets?},%
+descriptionplural={Obviously some kind of object to allocate descriptors or descriptor sets?},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -1043,8 +1043,8 @@ first={Instanced Mesh Rendering},%
 firstplural={Instanced Mesh Renderings},%
 text={Instanced Mesh Rendering},%
 plural={Instanced Mesh Renderings},%
-description={idk},%
-descriptionplural={idk},%
+description={Taking an instance/object and rendering it multiple times. For example a tree with many instances of leaves that have different rotations and size (Tell the GPU: "Draw this mesh 500 times")},%
+descriptionplural={Taking an instance/object and rendering it multiple times. For example a tree with many instances of leaves that have different rotations and size (Tell the GPU: "Draw this mesh 500 times")},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -1099,8 +1099,8 @@ first={Queue Family},%
 firstplural={Queue Familys},%
 text={Queue Family},%
 plural={Queue Familys},%
-description={idk},%
-descriptionplural={idk},%
+description={Can refer to Graphics Queue, Compute Queue, or Transfer Queue. These are objects that receive and execute commands},%
+descriptionplural={Can refer to Graphics Queue, Compute Queue, or Transfer Queue. These are objects that receive and execute commands},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -1127,8 +1127,8 @@ first={vkRenderingAttachmentInfoKHR},%
 firstplural={vkRenderingAttachmentInfoKHRs},%
 text={vkRenderingAttachmentInfoKHR},%
 plural={vkRenderingAttachmentInfoKHRs},%
-description={idk},%
-descriptionplural={idk},%
+description={idk, but KHR has to do with talking to OS to display output image},%
+descriptionplural={idk, but KHR has to do with talking to OS to display output image},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -1155,8 +1155,8 @@ first={Queue Family Index},%
 firstplural={Queue Family Indexs},%
 text={Queue Family Index},%
 plural={Queue Family Indexs},%
-description={idk},%
-descriptionplural={idk},%
+description={How we access a GPU queue family},%
+descriptionplural={How we access a GPU queue family},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -1323,8 +1323,568 @@ first={Mip Map},%
 firstplural={Mip Maps},%
 text={Mip Map},%
 plural={Mip Maps},%
+description={idk, can relate to level of distance optimization? (LOD)},%
+descriptionplural={idk, can relate to level of distance optimization? (LOD)},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Graphics Queue}%
+{%
+name={Graphics Queue},%
+sort={Graphics Queue},%
+type={main},%
+first={Graphics Queue},%
+firstplural={Graphics Queues},%
+text={Graphics Queue},%
+plural={Graphics Queues},%
+description={Draws stuff},%
+descriptionplural={Draws stuff},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Compute Queue}%
+{%
+name={Compute Queue},%
+sort={Compute Queue},%
+type={main},%
+first={Compute Queue},%
+firstplural={Compute Queues},%
+text={Compute Queue},%
+plural={Compute Queues},%
+description={For example, could do math},%
+descriptionplural={For example, could do math},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Transfer Queue}%
+{%
+name={Transfer Queue},%
+sort={Transfer Queue},%
+type={main},%
+first={Transfer Queue},%
+firstplural={Transfer Queues},%
+text={Transfer Queue},%
+plural={Transfer Queues},%
+description={Good for copying data},%
+descriptionplural={Good for copying data},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{label}%
+{%
+name={label},%
+sort={label},%
+type={main},%
+first={label},%
+firstplural={labels},%
+text={label},%
+plural={labels},%
+description={Description},%
+descriptionplural={Description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{SV Position}%
+{%
+name={SV Position},%
+sort={SV Position},%
+type={main},%
+first={SV Position},%
+firstplural={SV Positions},%
+text={SV Position},%
+plural={SV Positions},%
 description={idk},%
 descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{SV Point Size}%
+{%
+name={SV Point Size},%
+sort={SV Point Size},%
+type={main},%
+first={SV Point Size},%
+firstplural={SV Point Sizes},%
+text={SV Point Size},%
+plural={SV Point Sizes},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{vk::binding}%
+{%
+name={vk::binding},%
+sort={vk::binding},%
+type={main},%
+first={vk::binding},%
+firstplural={vk::bindings},%
+text={vk::binding},%
+plural={vk::bindings},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Sampler2D}%
+{%
+name={Sampler2D},%
+sort={Sampler2D},%
+type={main},%
+first={Sampler2D},%
+firstplural={Sampler2Ds},%
+text={Sampler2D},%
+plural={Sampler2Ds},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{RW Structured Buffer}%
+{%
+name={RW Structured Buffer},%
+sort={RW Structured Buffer},%
+type={main},%
+first={RW Structured Buffer},%
+firstplural={RW Structured Buffers},%
+text={RW Structured Buffer},%
+plural={RW Structured Buffers},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Damped Dot}%
+{%
+name={Damped Dot},%
+sort={Damped Dot},%
+type={main},%
+first={Damped Dot},%
+firstplural={Damped Dots},%
+text={Damped Dot},%
+plural={Damped Dots},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Gradient Position}%
+{%
+name={Gradient Position},%
+sort={Gradient Position},%
+type={main},%
+first={Gradient Position},%
+firstplural={Gradient Positions},%
+text={Gradient Position},%
+plural={Gradient Positions},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Push Constants}%
+{%
+name={Push Constants},%
+sort={Push Constants},%
+type={main},%
+first={Push Constants},%
+firstplural={Push Constantss},%
+text={Push Constants},%
+plural={Push Constantss},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Global Invocation ID}%
+{%
+name={Global Invocation ID},%
+sort={Global Invocation ID},%
+type={main},%
+first={Global Invocation ID},%
+firstplural={Global Invocation IDs},%
+text={Global Invocation ID},%
+plural={Global Invocation IDs},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Dispatch Thread}%
+{%
+name={Dispatch Thread},%
+sort={Dispatch Thread},%
+type={main},%
+first={Dispatch Thread},%
+firstplural={Dispatch Threads},%
+text={Dispatch Thread},%
+plural={Dispatch Threads},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{SV Dispatch Thread ID}%
+{%
+name={SV Dispatch Thread ID},%
+sort={SV Dispatch Thread ID},%
+type={main},%
+first={SV Dispatch Thread ID},%
+firstplural={SV Dispatch Thread IDs},%
+text={SV Dispatch Thread ID},%
+plural={SV Dispatch Thread IDs},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Staging Buffer}%
+{%
+name={Staging Buffer},%
+sort={Staging Buffer},%
+type={main},%
+first={Staging Buffer},%
+firstplural={Staging Buffers},%
+text={Staging Buffer},%
+plural={Staging Buffers},%
+description={Memory from CPU to GPU must go to a \textbf {staging buffer} first},%
+descriptionplural={Memory from CPU to GPU must go to a \textbf {staging buffer} first},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{KHR}%
+{%
+name={KHR},%
+sort={KHR},%
+type={main},%
+first={KHR},%
+firstplural={KHRs},%
+text={KHR},%
+plural={KHRs},%
+description={Khronos or Khronos Group\textemdash can relate to offical extension (what is extension)},%
+descriptionplural={Khronos or Khronos Group\textemdash can relate to offical extension (what is extension)},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{VkQueueFamilyProperties}%
+{%
+name={VkQueueFamilyProperties},%
+sort={VkQueueFamilyProperties},%
+type={main},%
+first={VkQueueFamilyProperties},%
+firstplural={VkQueueFamilyPropertiess},%
+text={VkQueueFamilyProperties},%
+plural={VkQueueFamilyPropertiess},%
+description={What properties can a queue family have?},%
+descriptionplural={What properties can a queue family have?},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Dependancy Injection}%
+{%
+name={Dependancy Injection},%
+sort={Dependancy Injection},%
+type={main},%
+first={Dependancy Injection},%
+firstplural={Dependancy Injections},%
+text={Dependancy Injection},%
+plural={Dependancy Injections},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Const Correctness}%
+{%
+name={Const Correctness},%
+sort={Const Correctness},%
+type={main},%
+first={Const Correctness},%
+firstplural={Const Correctnesss},%
+text={Const Correctness},%
+plural={Const Correctnesss},%
+description={\textbf {const correctness} is the idea of making a variable read-only in certain program scopes, not allowing for unwanted writes. This is a key feature of C++ keyword \textbf {const}},%
+descriptionplural={\textbf {const correctness} is the idea of making a variable read-only in certain program scopes, not allowing for unwanted writes. This is a key feature of C++ keyword \textbf {const}},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%

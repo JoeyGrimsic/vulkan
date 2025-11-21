@@ -2,112 +2,155 @@
 \begin{theglossary}\glossaryheader
 \glsgroupheading{A}\relax \glsresetentrylist %
 \glossentry{aliasing}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{antialiasing}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{applicationobject}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{attachment}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{attributes}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{19}}}\glsgroupskip
 \glsgroupheading{B}\relax \glsresetentrylist %
 \glossentry{binarysemaphore}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{19}}}\glsgroupskip
 \glsgroupheading{C}\relax \glsresetentrylist %
 \glossentry{colorattachment}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{commandpools}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
+\glossentry{Compute Queue}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
+\glossentry{Const Correctness}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{countingsemaphore}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{19}}}\glsgroupskip
 \glsgroupheading{D}\relax \glsresetentrylist %
+\glossentry{Damped Dot}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
+\glossentry{Dependancy Injection}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{depthimage}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{descriptorpool}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{descriptorset}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{device}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{deviceidle}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{devicelocal}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
+\glossentry{Dispatch Thread}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{dynamicrendering}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{19}}}\glsgroupskip
 \glsgroupheading{F}\relax \glsresetentrylist %
 \glossentry{fence}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{19}}}\glsgroupskip
+\glsgroupheading{G}\relax \glsresetentrylist %
+\glossentry{Global Invocation ID}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
+\glossentry{Gradient Position}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
+\glossentry{Graphics Queue}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{19}}}\glsgroupskip
 \glsgroupheading{I}\relax \glsresetentrylist %
 \glossentry{inflightframe}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{instancedmesh}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{19}}}\glsgroupskip
+\glsgroupheading{K}\relax \glsresetentrylist %
+\glossentry{KHR}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{19}}}\glsgroupskip
+\glsgroupheading{L}\relax \glsresetentrylist %
+\glossentry{label}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{19}}}\glsgroupskip
 \glsgroupheading{M}\relax \glsresetentrylist %
 \glossentry{maxconcurrentframes}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{memorybarriers}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{mip}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{mipmap}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{msaa}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{19}}}\glsgroupskip
 \glsgroupheading{P}\relax \glsresetentrylist %
 \glossentry{pointrendering}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
+\glossentry{Push Constants}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{19}}}\glsgroupskip
 \glsgroupheading{Q}\relax \glsresetentrylist %
 \glossentry{queuefamily}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{queuefamilyindex}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{19}}}\glsgroupskip
 \glsgroupheading{R}\relax \glsresetentrylist %
 \glossentry{rasterization}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{render}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{rendertargetviews}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{resourcebarriers}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
+\glossentry{RW Structured Buffer}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{19}}}\glsgroupskip
 \glsgroupheading{S}\relax \glsresetentrylist %
+\glossentry{Sampler2D}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{sampling}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{semaphore}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{slang}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{spirv}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
+\glossentry{Staging Buffer}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{stencilattachment}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{subresource}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{ssaa}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
+\glossentry{SV Dispatch Thread ID}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
+\glossentry{SV Point Size}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
+\glossentry{SV Position}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{swapchain}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{sync2}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{19}}}\glsgroupskip
 \glsgroupheading{T}\relax \glsresetentrylist %
 \glossentry{ticketnumber}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{timelinesemaphore}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
+\glossentry{Transfer Queue}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{19}}}\glsgroupskip
 \glsgroupheading{V}\relax \glsresetentrylist %
 \glossentry{viewport}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{virtualfunction}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{vkqueuepresent}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
+\glossentry{vk::binding}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
+\glossentry{VkQueueFamilyProperties}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{vkrenderingattachmentinfo}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{vram}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{19}}}\glsgroupskip
 \glsgroupheading{Z}\relax \glsresetentrylist %
 \glossentry{zbuffer}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{17}}}%
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \end{theglossary}\glossarypostamble
