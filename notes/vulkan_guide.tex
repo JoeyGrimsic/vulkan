@@ -698,6 +698,19 @@ used to access members of a namespace\textemdash but now I am finding
 out that it can be used to call specific functions in an inheritance
 hierarchy. How does this work?
 
+\par Update: The \textbf{::} operator is called the \textbf{scope
+resolution modifier}. The scope resolution modifier is not only used
+for namespace members, but another example is an enum class. Say you
+have an enum class defined with the following:
+\begin{verbatim}
+enum class ShadowQuality{
+kNone,
+kLow,
+kMedium,
+kHigh,
+}
+\end{verbatim}
+
 \subsection*{Const Correctness}
 \par I don't fully understand the idea of \textbf{const
 correctness}\textemdash but so far it seems like the idea of a
@@ -1105,6 +1118,12 @@ called \textbf{Raytracing Reflections}.
 {
   name={sType},
   description={idk}
+}
+\newglossaryentry{Object Slicing}
+{
+  name={Object Slicing},
+  description={idk, it is an idea with inheritance in cpp and copying
+  objects by value}
 }
 
 \printglossaries
