@@ -644,6 +644,57 @@ functions are there? What are some main concepts behind writing shaders?
     }
 \end{verbatim}
 
+\subsection*{sType + pNext}\addcontentsline{toc}{subsection}{sType + pNext}
+\par sType and pNext are both core concepts in Vulkan. Vulkan is
+close to the hardware, and thus it is directly talking to your GPU's
+drivers. Your GPU drivers do not know how to get to the memory that
+you want them to.
+
+\par Enter: the Vulkan linked-list structure. Vulkan keeps an
+important linked list, which you can add to by setting pNext.
+However, your driver also needs to know what pNext is pointing to (it
+is a void* after all). \textbf{sType} (short for struct type) tells
+the drivers what the struct is.
+
+\par This Vulkan linked-list structure we are talking about is the
+\textbf{extension chain}. Why is the extension chain important?
+
+\par So the extension chain (the idea that requires pNext and sType)
+is used once at setup, and then becomes obsolete. In other words: it
+sets parameters at the beginning of the program. This is called the
+\textbf{object creation} phase.
+
+\par However, there is an \textit{exception} to this. Every time we
+record a command buffer (every frame) we require pNext and sType. Why?
+
+\subsection*{sType + pNext (as described by gemini
+3)}\addcontentsline{toc}{subsection}{sType + pNext (gemini)} \par
+sType and pNext are
+both core concepts in Vulkan. Vulkan is close to the hardware, and
+thus it is directly talking to your GPU's drivers.
+
+\par The Problem: When you pass a generic pointer to the driver, the
+driver can access that memory, but it doesn't know how to interpret
+it. It doesn't know if the data at that address is a request to
+create a buffer, an image, or a device.
+
+\par The Solution: The Vulkan extension chain. Vulkan allows you to
+build a linked list by setting \textbf{pNext}. To help the driver
+understand what it is looking at, \textbf{sType} (Structure Type)
+acts as an ID tag. It tells the driver exactly what struct type is
+sitting at that memory address.
+
+\par This structure is primarily used in the Object Creation phase.
+You build the chain to set parameters, pass it to the driver to
+create an object (like a Device), and then the chain is obsolete.
+
+\par However, we also encounter sType and pNext in the Render Loop.
+When recording command buffers each frame, we fill out temporary
+structures to describe the current frame's work. Just like in setup,
+the driver reads these structures once to translate them into GPU commands.
+
+\subsection*{vkPipelineLayout}\addcontentsline{toc}{subsection}{vkPipelineLayout}
+
 \clearpage
 
 \section*{C++ Notes}
@@ -1117,13 +1168,45 @@ called \textbf{Raytracing Reflections}.
 \newglossaryentry{sType}
 {
   name={sType},
-  description={idk}
+  description={\textbf{sType} is short for structure type, but why is
+    it important? I guess this relates to how the driver (the GPU
+    driver?) needs to understand the Vulkan program. So sType says to
+  the driver: "The next struct (pNext?) is an image, buffer, or pipeline"}
 }
 \newglossaryentry{Object Slicing}
 {
   name={Object Slicing},
   description={idk, it is an idea with inheritance in cpp and copying
   objects by value}
+}
+\newglossaryentry{Blending}
+{
+  name={Blending},
+  description={\textbf{Blending} refers to creating a transparency
+    effect. For example, you might use blending so that a UI is
+  transparent so you can see the game scene behind it}
+}
+\newglossaryentry{VkPipelineColorBlendStateCreateInfo}
+{
+  name={VkPipelineColorBlendStateCreateInfo},
+  description={Description}
+}
+\newglossaryentry{VkPipelineColorBlendStateCreateInfo}
+{
+  name={VkPipelineColorBlendStateCreateInfo},
+  description={This is used to implement transparency, but why?? What
+  is CreateInfo again?}
+}
+\newglossaryentry{pNext Chain}
+{
+  name={pNext Chain},
+  description={Vulkan has a chain of extensions that require this?
+  Also this is related to pNext?}
+}
+\newglossaryentry{extension chain}
+{
+  name={extension chain},
+  description={idk what this is + relates to stype and pnext??}
 }
 
 \printglossaries
@@ -1136,14 +1219,14 @@ called \textbf{Raytracing Reflections}.
   \begin{center}
     \includegraphics[width=0.95\textwidth]{figures/vulkanpipeline.png}
   \end{center}
-  \caption{Vulkan Pipeline (Why is it so low res :( )}\label{fig:}
-  \end{figure}
+  \caption{Vulkan Pipeline}\label{fig:}
+\end{figure}
 
-  \begin{figure}[H]
-    \begin{center}
-      \includegraphics[width=0.95\textwidth]{figures/vulkanpipeline2.png}
-    \end{center}
-    \caption{Vulkan Pipeline (Why is it so low res :())}\label{fig:}
-  \end{figure}
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=0.95\textwidth]{figures/vulkanpipeline2.png}
+  \end{center}
+  \caption{Vulkan Pipeline Again}\label{fig:}
+\end{figure}
 
-  \end{document}
+\end{document}

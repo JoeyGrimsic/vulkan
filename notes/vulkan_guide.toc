@@ -38,12 +38,15 @@
 \contentsline {paragraph}{What Are Queues For?}{15}{section*.40}%
 \contentsline {paragraph}{Why Not Submit All Tasks To One Of The Families?}{15}{section*.41}%
 \contentsline {subsection}{Slang}{15}{section*.42}%
-\contentsline {section}{C++ Notes}{17}{section*.43}%
-\contentsline {subsection}{Struct vs. Class}{17}{section*.44}%
-\contentsline {subsection}{Constructor Definition Syntax}{17}{section*.45}%
-\contentsline {subsection}{How To Make A Class}{17}{section*.46}%
-\contentsline {subsection}{How To Make A Template Class?}{17}{section*.47}%
-\contentsline {subsection}{:: Operator}{17}{section*.48}%
-\contentsline {section}{What Is A Valid Starting Point For My Game Engine?}{18}{section*.49}%
-\contentsline {section}{Glossary}{21}{section*.51}%
-\contentsline {section}{Appendix}{22}{section*.52}%
+\contentsline {subsection}{sType + pNext}{16}{section*.43}%
+\contentsline {subsection}{sType + pNext (gemini)}{16}{section*.44}%
+\contentsline {subsection}{vkPipelineLayout}{17}{section*.45}%
+\contentsline {section}{C++ Notes}{18}{section*.46}%
+\contentsline {subsection}{Struct vs. Class}{18}{section*.47}%
+\contentsline {subsection}{Constructor Definition Syntax}{18}{section*.48}%
+\contentsline {subsection}{How To Make A Class}{18}{section*.49}%
+\contentsline {subsection}{How To Make A Template Class?}{18}{section*.51}%
+\contentsline {subsection}{:: Operator}{19}{section*.52}%
+\contentsline {section}{What Is A Valid Starting Point For My Game Engine?}{19}{section*.54}%
+\contentsline {section}{Glossary}{23}{section*.56}%
+\contentsline {section}{Appendix}{24}{section*.57}%

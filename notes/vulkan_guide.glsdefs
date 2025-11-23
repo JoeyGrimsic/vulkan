@@ -1902,3 +1902,171 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{sType}%
+{%
+name={sType},%
+sort={sType},%
+type={main},%
+first={sType},%
+firstplural={sTypes},%
+text={sType},%
+plural={sTypes},%
+description={\textbf {sType} is short for structure type, but why is it important? I guess this relates to how the driver (the GPU driver?) needs to understand the Vulkan program. So sType says to the driver: "The next struct (pNext?) is an image, buffer, or pipeline"},%
+descriptionplural={\textbf {sType} is short for structure type, but why is it important? I guess this relates to how the driver (the GPU driver?) needs to understand the Vulkan program. So sType says to the driver: "The next struct (pNext?) is an image, buffer, or pipeline"},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Object Slicing}%
+{%
+name={Object Slicing},%
+sort={Object Slicing},%
+type={main},%
+first={Object Slicing},%
+firstplural={Object Slicings},%
+text={Object Slicing},%
+plural={Object Slicings},%
+description={idk, it is an idea with inheritance in cpp and copying objects by value},%
+descriptionplural={idk, it is an idea with inheritance in cpp and copying objects by value},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Blending}%
+{%
+name={Blending},%
+sort={Blending},%
+type={main},%
+first={Blending},%
+firstplural={Blendings},%
+text={Blending},%
+plural={Blendings},%
+description={\textbf {Blending} refers to creating a transparency effect. For example, you might use blending so that a UI is transparent so you can see the game scene behind it},%
+descriptionplural={\textbf {Blending} refers to creating a transparency effect. For example, you might use blending so that a UI is transparent so you can see the game scene behind it},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{VkPipelineColorBlendStateCreateInfo}%
+{%
+name={VkPipelineColorBlendStateCreateInfo},%
+sort={VkPipelineColorBlendStateCreateInfo},%
+type={main},%
+first={VkPipelineColorBlendStateCreateInfo},%
+firstplural={VkPipelineColorBlendStateCreateInfos},%
+text={VkPipelineColorBlendStateCreateInfo},%
+plural={VkPipelineColorBlendStateCreateInfos},%
+description={Description},%
+descriptionplural={Description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{pNext Chain}%
+{%
+name={pNext Chain},%
+sort={pNext Chain},%
+type={main},%
+first={pNext Chain},%
+firstplural={pNext Chains},%
+text={pNext Chain},%
+plural={pNext Chains},%
+description={Vulkan has a chain of extensions that require this? Also this is related to pNext?},%
+descriptionplural={Vulkan has a chain of extensions that require this? Also this is related to pNext?},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{extension chain}%
+{%
+name={extension chain},%
+sort={extension chain},%
+type={main},%
+first={extension chain},%
+firstplural={extension chains},%
+text={extension chain},%
+plural={extension chains},%
+description={idk what this is + relates to stype and pnext??},%
+descriptionplural={idk what this is + relates to stype and pnext??},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
