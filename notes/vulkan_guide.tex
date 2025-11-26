@@ -23,6 +23,8 @@ citecolor=violet]{hyperref}
 % for table
 \usepackage{booktabs}
 \usepackage{tabularx}
+% for fancy verbtim
+\usepackage{fancyvrb}
 
 \title{Vulkan Notes}
 \author{Joseph Grimsic}
@@ -35,7 +37,8 @@ right=1.3in, heightrounded]{geometry}
 \begin{document}
 \maketitle
 
-% --- This is the magic command ---
+% --- This is the magic command --- // idk why this is important for-
+% table of contents?
 \tableofcontents
 
 \newpage % Starts the main content on a new page
@@ -73,7 +76,12 @@ right=1.3in, heightrounded]{geometry}
     \href{https://docs.vulkan.org/tutorial/latest/00_Introduction.html}{Vulkan
     Tutorial By Khronos Group}
   \item \href{https://vkguide.dev/}{vkguide.dev}
+  \item
+    \href{https://www.youtube.com/watch?v=2NVlG9TFT1c&t=202s}{YouTube
+    Video With Great Diagrams}
 \end{itemize}
+
+% END RESOURCES
 
 \section*{Sascha Willems Helpers}
 \addcontentsline{toc}{section}{Sascha Willems Helpers}
@@ -118,18 +126,6 @@ specific object name:
 Sascha's helper functions simply automate the process of filling out
 these structs so we don't have to manually set every field (like
 \texttt{sType}) every time.
-
-\subsection*{Commands}
-\addcontentsline{toc}{subsection}{Commands}
-\par Commands are the main part of Vulkan. Commands are how we talk
-directly to the GPU.
-
-\par Commands are normally stored in a \textbf{command buffer}, so we
-can batch them together. We usually call the act of intializing a
-command buffer \textbf{recording} the command buffer. In the Vulkan
-workflow, we will have record a command buffer using a
-\textbf{command pool}. We will have one command pool for every
-\textbf{queue family}.
 
 \section*{Sascha Repository Notes}
 \addcontentsline{toc}{section}{Sascha Repository Notes}
@@ -753,6 +749,56 @@ the driver reads these structures once to translate them into GPU commands.
 \subsection*{vkPipelineLayout}\addcontentsline{toc}{subsection}{vkPipelineLayout}
 \par What is a vkPipelineLayout?
 
+\subsection*{Commands}
+\addcontentsline{toc}{subsection}{Commands}
+\par Commands are the main part of Vulkan. Commands are how we talk
+directly to the GPU.
+
+\par Commands are normally stored in a \textbf{command buffer}, so we
+can batch them together. We usually call the act of intializing a
+command buffer \textbf{recording} the command buffer. In the Vulkan
+workflow, we will have record a command buffer using a
+\textbf{command pool}. We will have one command pool for every
+\textbf{queue family}.
+
+\par Note: I wrote this a while ago but just recently move it to this
+section of the doc
+
+\subsection*{How Do We Allocate A Staging
+Buffer?}\addcontentsline{toc}{subsection}{How Do We Allocate A Staging Buffer?}
+\par So you want to send memory to the GPU yeah? Well you're going to
+need a \textbf{staging buffer}.
+
+\par To allocate a staging buffer, we will use the vk object
+\textbf{vks::vkBuffer}. Is the vks namespace special to Sascha
+Willems' helper functionality?
+
+\par Does a staging buffer go straight to
+the GPU? How is the transfer queue involved? Are there more than one
+staging buffer?
+
+\par Below is a snippet of buffer staging logic:
+\begin{Verbatim}[fontsize=\footnotesize]
+for (auto &storageBuffer : storageBuffers) {
+  // The SSBO will be used as a storage buffer for the compute pipeline and as a vertex buffer in the graphics pipeline
+  vulkanDevice->createBuffer(VK_BUFFER_USAGE_VERTEX_BUFFER_BIT | VK_BUFFER_USAGE_STORAGE_BUFFER_BIT |
+                                 VK_BUFFER_USAGE_TRANSFER_DST_BIT,
+                             VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT, &storageBuffer, storageBufferSize);
+\end{Verbatim}
+
+\subsection*{Event Queue}\addcontentsline{toc}{subsection}{Event Queue}
+\par Do I want to implement this? Would a physics-based platformer
+want an event queue? What are they used for? I feel like they would
+be used for stories or something, but that case would require some
+check before the next event can happen.
+
+\par Actually an event queue is used to \textbf{decouple} an initial
+event and a reactionary event (What is decoupling?). You can think of
+it as storing a message for something that has happened, so that we
+can use that information later.
+
+% VULKAN END
+
 \clearpage
 
 \section*{C++ Notes}
@@ -843,12 +889,62 @@ int shadow_quality
 } typedef GameConfig
 \end{verbatim}
 
+\subsection*{Ternary
+Operator}\addcontentsline{toc}{subsection}{Ternary Operator}
+\par This one is pretty simple, the idea is that if we want to make
+an if/else statement into one line, we can use the \textbf{ternary
+operator}.
+
+\par Here is an example:
+\begin{verbatim}
+std::default_random_engine rndEngine(benchmark.active ? 0 : (unsigned)time(nullptr));
+\end{verbatim}
+
+\par The above can be read as "If benchmark.active, then 0, else
+(unsigned)time(nullptr))".
+
+\par Side note: This code is initializing a random number generator
+(RNG), and setting the seed to 0 if we are benchmarking (for determinism)
+
+\subsection*{Destructors}\addcontentsline{toc}{subsection}{Destructors}
+\par This one is going to be short for now, but it's probably
+important. So obviously there are constructors, what do they do? Well
+they initialize an instance of a class (does it work for objects
+too?). Well what if the class allocated dynamic memory? Then this
+would mean that we need to call free at some point right? Do
+destructors exist so that we don't have to do this?
+
+\subsection*{Auto}\addcontentsline{toc}{subsection}{Auto}
+\par So the main idea of \textbf{auto} is that it will
+\textit{automatically} determine the type of a value?
+
+\par I'm not sure when you would want to use this, but one of the
+popular ways to use this is with a \textit{for-each loop}. It helps
+because if we change the tpye of the values we are iterating over,
+normally we would have to go find the for-each loop in question and
+change the type there too.
+
+% CPP END
+
 \section*{What Is A Valid Starting Point For My Game Engine?}
 \addcontentsline{toc}{section}{What Is A Valid Starting Point For My
 Game Engine?}
 
 \par I am currently considering the example from Sascha Willems
-called \textbf{Raytracing Reflections}.
+called \textbf{Raytracing Reflections}. I am also considering
+\textbf{Compute Particles}, beause Gemini said that was the closes
+thing to a vertex-based physics engine\textemdash but perhaps it is
+silly to try to change a code snippet that much. Some part of me
+thinks it is a good idea because I don't know how to program the
+Vulkan pipeline so it would be nice to follow some guideline/snippet.
+
+\par I suppose I could just line-by-line reference the example code
+and make changes I think should occur to get me closer to what I want.
+
+\par Aside: there has to be some sort of asynchronous functionality
+in the Compute Particles example right? If not, do I need to include
+a special library for asynchronous code? I should probably dedicate
+an entry to asynchronous code in the C++ section of this document.
 
 \clearpage
 
@@ -857,507 +953,586 @@ called \textbf{Raytracing Reflections}.
 
 \newglossaryentry{spirv}
 {
-  name={SPIR-V},
-  description={GLSL, HLSL, and Slang can all be compiled to SPIR-V,
-  which is passed to Vulkan program}
+name={SPIR-V},
+description={GLSL, HLSL, and Slang can all be compiled to SPIR-V,
+which is passed to Vulkan program}
 }
 \newglossaryentry{slang}
 {
-  name={Slang},
-  description={A shading language that benefits from having generics
-  and interfaces that glsl doesn't have}
+name={Slang},
+description={A shading language that benefits from having generics
+and interfaces that glsl doesn't have}
 }
 \newglossaryentry{semaphore}
 {
-  name={Semaphore},
-  description={Object responsible for keeping different GPU cores synced}
+name={Semaphore},
+description={Object responsible for keeping different GPU cores synced}
 }
 \newglossaryentry{fence}
 {
-  name={Fence},
-  description={Object responsible for keeping CPU and GPU synced}
+name={Fence},
+description={Object responsible for keeping CPU and GPU synced}
 }
 \newglossaryentry{virtualfunction}
 {
-  name={Virtual Function},
-  description={A C++ feature relating to polymorphism and inheritance
-  of classes}
+name={Virtual Function},
+description={A C++ feature relating to polymorphism and inheritance
+of classes}
 }
 \newglossaryentry{sampling}
 {
-  name={Sampling},
-  description={Query a subpixel value}
+name={Sampling},
+description={Query a subpixel value}
 }
 \newglossaryentry{aliasing}
 {
-  name={Aliasing},
-  description={When \textbf{jaggies} misrepresent a pixel and cause discoloring}
+name={Aliasing},
+description={When \textbf{jaggies} misrepresent a pixel and cause discoloring}
 }
 \newglossaryentry{antialiasing}
 {
-  name={Anti Aliasing},
-  description={Technique to combat \textbf{aliasing}, usually by some
-  special way of sampling}
+name={Anti Aliasing},
+description={Technique to combat \textbf{aliasing}, usually by some
+special way of sampling}
 }
 \newglossaryentry{msaa}
 {
-  name={Multisampling Antialiasing (MSAA)},
-  description={An implementation of \textbf{anti aliasing}}
+name={Multisampling Antialiasing (MSAA)},
+description={An implementation of \textbf{anti aliasing}}
 }
 \newglossaryentry{ssaa}
 {
-  name={Super Sampling Antialiasing (SSAA)},
-  description={An implementation of \textbf{anti aliasing},
-  considered to be 'brute force'}
+name={Super Sampling Antialiasing (SSAA)},
+description={An implementation of \textbf{anti aliasing},
+considered to be 'brute force'}
 }
 \newglossaryentry{sync2}
 {
-  name={Synchronization2},
-  description={idk}
+name={Synchronization2},
+description={idk, I think it's just a feature added to Vulkan that we
+can ignore}
 }
 \newglossaryentry{dynamicrendering}
 {
-  name={Dynamic Rendering},
-  description={This is the idea of removing the 'render pass' and
-    'framebuffer' objects. In other words, we move the configuration
-  from initialization to recording time}
+name={Dynamic Rendering},
+description={This is the idea of removing the 'render pass' and
+  'framebuffer' objects. In other words, we move the configuration
+from initialization to recording time}
 }
 \newglossaryentry{maxconcurrentframes}
 {
-  name={Max Concurrent Frames},
-  description={Number of frames to be 'processed' simultaneously}
+name={Max Concurrent Frames},
+description={Number of frames to be 'processed' simultaneously}
 }
 \newglossaryentry{memorybarriers}
 {
-  name={Memory Barriers},
-  description={Used to make sure that one GPU core is finished
-  writing to memory before another core tries to read}
+name={Memory Barriers},
+description={Used to make sure that one GPU core is finished
+writing to memory before another core tries to read}
 }
 \newglossaryentry{depthimage}
 {
-  name={Depth Image},
-  description={idk}
+name={Depth Image},
+description={idk, does this relate to the depth buffer?}
 }
 \newglossaryentry{zbuffer}
 {
-  name={Z Buffer/ Depth Buffer},
-  description={Used to determine if an object should be rendered
-  in-front of another?}
+name={Z Buffer/ Depth Buffer},
+description={Used to determine if an object should be rendered
+in-front of another?}
 }
 \newglossaryentry{attachment}
 {
-  name={Attachment},
-  description={idk, i think they are apart of frame buffers?}
+name={Attachment},
+description={idk, i think they are apart of frame buffers?}
 }
 \newglossaryentry{vkqueuepresent}
 {
-  name={Vk Queue Present KHR},
-  description={The command that tells the OS to display the final image}
+name={Vk Queue Present KHR},
+description={The command that tells the OS to display the final image}
 }
 \newglossaryentry{deviceidle}
 {
-  name={Device Idle},
-  description={Command to pause the CPU until the GPU is finished}
+name={Device Idle},
+description={Command to pause the CPU until the GPU is finished}
 }
 \newglossaryentry{applicationobject}
 {
-  name={Application Object},
-  description={idk}
+name={Application Object},
+description={idk}
 }
 \newglossaryentry{vram}
 {
-  name={VRAM},
-  description={Stores memory for GPU}
+name={VRAM},
+description={Stores memory for GPU}
 }
 \newglossaryentry{devicelocal}
 {
-  name={Device-Local},
-  description={Memory on the VRAM}
+name={Device-Local},
+description={Memory on the VRAM}
 }
 \newglossaryentry{swapchain}
 {
-  name={Swap Chain},
-  description={A queue of rendered images waiting to be displayed}
+name={Swap Chain},
+description={A queue of rendered images waiting to be displayed}
 }
 \newglossaryentry{viewport}
 {
-  name={Viewport},
-  description={The rectangular part of the window that is rendered
-    to. For example you could have two viewports (top and bottom), for
-  a split-screen multiplayer effect}
+name={Viewport},
+description={The rectangular part of the window that is rendered
+  to. For example you could have two viewports (top and bottom), for
+a split-screen multiplayer effect}
 }
 \newglossaryentry{inflightframe}
 {
-  name={In-Flight Frame},
-  description={Idea of rendering current frame on GPU, and recording
-  commands for next frame to be rendered, using CPU}
+name={In-Flight Frame},
+description={Idea of rendering current frame on GPU, and recording
+commands for next frame to be rendered, using CPU}
 }
 \newglossaryentry{rasterization}
 {
-  name={Rasterization},
-  description={Part in graphics pipeline when we draw?}
+name={Rasterization},
+description={Part in graphics pipeline when we draw?}
 }
 \newglossaryentry{render}
 {
-  name={Render},
-  description={The final output of the graphics pipeline?}
+name={Render},
+description={The final output of the graphics pipeline?}
 }
 \newglossaryentry{attributes}
 {
-  name={Attributes},
-  description={I think attributes are when we store data in vertices}
+name={Attributes},
+description={I think attributes are when we store data in vertices}
 }
 \newglossaryentry{commandpools}
 {
-  name={Command Pools},
-  description={Object used to allocate command buffers}
+name={Command Pools},
+description={Object used to allocate command buffers}
 }
 \newglossaryentry{ticketnumber}
 {
-  name={Ticket Number},
-  description={A timeline semaphore tracks completed tasks in
-    strictly increasing number/sequence. A ticket number (a positive
-    integer) is a certain complete task that we might wait for until we
-  do something else}
+name={Ticket Number},
+description={A timeline semaphore tracks completed tasks in
+  strictly increasing number/sequence. A ticket number (a positive
+  integer) is a certain complete task that we might wait for until we
+do something else}
 }
 \newglossaryentry{binarysemaphore}
 {
-  name={Binary Semaphore (Mutex)},
-  description={Has two states(0 or 1), used to lock a resource, and
-  managed by an owner}
+name={Binary Semaphore (Mutex)},
+description={Has two states(0 or 1), used to lock a resource, and
+managed by an owner}
 }
 \newglossaryentry{countingsemaphore}
 {
-  name={Counting Semaphore},
-  description={Allows up to $N$ threads to access a resource simultanously}
+name={Counting Semaphore},
+description={Allows up to $N$ threads to access a resource simultanously}
 }
 \newglossaryentry{timelinesemaphore}
 {
-  name={Timeline Semaphore},
-  description={Normal semaphore tracks complete or not
-    complete\textemdash a \textbf{timeline semaphore} tracks more than
-  1 complete steps in increasing order}
+name={Timeline Semaphore},
+description={Normal semaphore tracks complete or not
+  complete\textemdash a \textbf{timeline semaphore} tracks more than
+1 complete steps in increasing order}
 }
 \newglossaryentry{subresource}
 {
-  name={Subresource},
-  description={A part of an image}
+name={Subresource},
+description={A part of an image\textemdash but actually there are
+more applications of subresource (like what?)}
 }
 \newglossaryentry{descriptorset}
 {
-  name={Descriptor Set},
-  description={idk}
+name={Descriptor Set},
+description={This has to do with }
 }
 \newglossaryentry{descriptorpool}
 {
-  name={Descriptor Pool},
-  description={Obviously some kind of object to allocate descriptors
-  or descriptor sets?}
+name={Descriptor Pool},
+description={Obviously some kind of object to allocate descriptors
+or descriptor sets?}
 }
 \newglossaryentry{device}
 {
-  name={Device},
-  description={Like the object that keeps track of the rendering
-  state of the Vulkan program?}
+name={Device},
+description={Like the object that keeps track of the rendering
+state of the Vulkan program?}
 }
 \newglossaryentry{instancedmesh}
 {
-  name={Instanced Mesh Rendering},
-  description={Taking an instance/object and rendering it multiple
-    times. For example a tree with many instances of leaves that have
-  different rotations and size (Tell the GPU: "Draw this mesh 500 times")}
+name={Instanced Mesh Rendering},
+description={Taking an instance/object and rendering it multiple
+  times. For example a tree with many instances of leaves that have
+different rotations and size (Tell the GPU: "Draw this mesh 500 times")}
 }
 \newglossaryentry{pointrendering}
 {
-  name={Point Rendering},
-  description={idk}
+name={Point Rendering},
+description={idk}
 }
 \newglossaryentry{queuefamily}
 {
-  name={Queue Family},
-  description={Can refer to Graphics Queue, Compute Queue, or
-  Transfer Queue. These are objects that receive and execute commands}
+name={Queue Family},
+description={Can refer to Graphics Queue, Compute Queue, or
+Transfer Queue. These are objects that receive and execute commands}
 }
 \newglossaryentry{vkrenderingattachmentinfo}
 {
-  name={vkRenderingAttachmentInfoKHR},
-  description={idk, but KHR has to do with talking to OS to display
-  output image}
+name={vkRenderingAttachmentInfoKHR},
+description={KHR means khronos, which means we are using some kind of
+  extension. This specific extension is for dynamic rendering, so we
+won't use vkRenderPass objects directly?}
 }
 \newglossaryentry{queuefamilyindex}
 {
-  name={Queue Family Index},
-  description={How we access a GPU queue family}
+name={Queue Family Index},
+description={How we access a GPU queue family}
 }
 \newglossaryentry{colorattachment}
 {
-  name={Color Attachment},
-  description={idk}
+name={Color Attachment},
+description={idk}
 }
 \newglossaryentry{stencilattachment}
 {
-  name={Stencil Attachment},
-  description={idk}
+name={Stencil Attachment},
+description={idk}
 }
 \newglossaryentry{rendertargetviews}
 {
-  name={Render Target Views},
-  description={idk}
+name={Render Target Views},
+description={idk, maybe this is the view we are currently using to
+write to the image?}
 }
 \newglossaryentry{resourcebarriers}
 {
-  name={Resource Barriers},
-  description={idk}
-}
-\newglossaryentry{mip}
-{
-  name={Mip},
-  description={idk}
+name={Resource Barriers},
+description={idk}
 }
 \newglossaryentry{mipmap}
 {
-  name={Mip Map},
-  description={idk, can relate to level of distance optimization? (LOD)}
+name={Mip Map},
+description={A \textbf{mip map} is something that we generate and
+  give to Vulkan. A mip map is how we store a texture with different
+  sizes (factors of 2), so that when the texture is far away Vulkan
+will sample a lower-resolution texture}
 }
 \newglossaryentry{Graphics Queue}
 {
-  name={Graphics Queue},
-  description={Draws stuff}
+name={Graphics Queue},
+description={Draws stuff}
 }
 \newglossaryentry{Compute Queue}
 {
-  name={Compute Queue},
-  description={For example, could do math}
+name={Compute Queue},
+description={For example, could do math}
 }
 \newglossaryentry{Transfer Queue}
 {
-  name={Transfer Queue},
-  description={Good for copying data}
+name={Transfer Queue},
+description={Good for copying data}
 }
 \newglossaryentry{label}
 {
-  name={label},
-  description={Description}
+name={label},
+description={Description}
 }
 \newglossaryentry{SV Position}
 {
-  name={SV Position},
-  description={idk}
+name={SV Position},
+description={idk}
 }
 \newglossaryentry{SV Point Size}
 {
-  name={SV Point Size},
-  description={idk}
+name={SV Point Size},
+description={idk}
 }
 \newglossaryentry{vk::binding}
 {
-  name={vk::binding},
-  description={idk}
+name={vk::binding},
+description={idk}
 }
 \newglossaryentry{Sampler2D}
 {
-  name={Sampler2D},
-  description={idk}
+name={Sampler2D},
+description={idk}
 }
 \newglossaryentry{RW Structured Buffer}
 {
-  name={RW Structured Buffer},
-  description={idk}
+name={RW Structured Buffer},
+description={idk}
 }
 \newglossaryentry{Damped Dot}
 {
-  name={Damped Dot},
-  description={idk}
+name={Damped Dot},
+description={idk}
 }
 \newglossaryentry{Gradient Position}
 {
-  name={Gradient Position},
-  description={idk}
+name={Gradient Position},
+description={idk}
 }
 \newglossaryentry{Push Constants}
 {
-  name={Push Constants},
-  description={idk}
+name={Push Constants},
+description={idk}
 }
 \newglossaryentry{Global Invocation ID}
 {
-  name={Global Invocation ID},
-  description={idk}
+name={Global Invocation ID},
+description={idk, I think this relates to thread managment}
 }
 \newglossaryentry{Dispatch Thread}
 {
-  name={Dispatch Thread},
-  description={idk}
+name={Dispatch Thread},
+description={idk}
 }
 \newglossaryentry{SV Dispatch Thread ID}
 {
-  name={SV Dispatch Thread ID},
-  description={idk}
+name={SV Dispatch Thread ID},
+description={idk}
 }
 \newglossaryentry{Staging Buffer}
 {
-  name={Staging Buffer},
-  description={Memory from CPU to GPU must go to a \textbf{staging
-  buffer} first}
+name={Staging Buffer},
+description={Memory from CPU to GPU must go to a \textbf{staging
+buffer} first}
 }
 \newglossaryentry{KHR}
 {
-  name={KHR},
-  description={Khronos or Khronos Group\textemdash can relate to offical
-  extension (what is extension)}
+name={KHR},
+description={Khronos or Khronos Group\textemdash can relate to offical
+extension (what is extension)}
 }
 \newglossaryentry{VkQueueFamilyProperties}
 {
-  name={VkQueueFamilyProperties},
-  description={What properties can a queue family have?}
+name={VkQueueFamilyProperties},
+description={What properties can a queue family have?}
 }
 \newglossaryentry{Dependancy Injection}
 {
-  name={Dependancy Injection},
-  description={idk}
+name={Dependancy Injection},
+description={idk, is this related to dynamically linked libraries(DLL)?}
 }
 \newglossaryentry{Const Correctness}
 {
-  name={Const Correctness},
-  description={\textbf{const correctness} is the idea of making
-    a variable read-only in certain program scopes, not allowing for
-  unwanted writes. This is a key feature of C++ keyword \textbf{const}}
+name={Const Correctness},
+description={\textbf{const correctness} is the idea of making
+  a variable read-only in certain program scopes, not allowing for
+unwanted writes. This is a key feature of C++ keyword \textbf{const}}
 }
 \newglossaryentry{sType}
 {
-  name={sType},
-  description={\textbf{sType} is short for structure type, but why is
-    it important? I guess this relates to how the driver (the GPU
-    driver?) needs to understand the Vulkan program. So sType says to
-  the driver: "The next struct (pNext?) is an image, buffer, or pipeline"}
+name={sType},
+description={\textbf{sType} is short for structure type, but why is
+  it important? I guess this relates to how the driver (the GPU
+  driver?) needs to understand the Vulkan program. So sType says to
+the driver: "The next struct (pNext?) is an image, buffer, or pipeline"}
 }
 \newglossaryentry{Object Slicing}
 {
-  name={Object Slicing},
-  description={idk, it is an idea with inheritance in cpp and copying
-  objects by value}
+name={Object Slicing},
+description={idk, it is an idea with inheritance in cpp and copying
+objects by value}
 }
 \newglossaryentry{Blending}
 {
-  name={Blending},
-  description={Blending refers to creating a transparency
-    effect. For example, you might use blending so that a UI is
-  transparent so you can see the game scene behind it}
+name={Blending},
+description={Blending refers to creating a transparency
+  effect. For example, you might use blending so that a UI is
+transparent so you can see the game scene behind it}
 }
 \newglossaryentry{VkPipelineColorBlendStateCreateInfo}
 {
-  name={VkPipelineColorBlendStateCreateInfo},
-  description={Description}
+name={VkPipelineColorBlendStateCreateInfo},
+description={Description}
 }
 \newglossaryentry{VkPipelineColorBlendStateCreateInfo}
 {
-  name={VkPipelineColorBlendStateCreateInfo},
-  description={This is used to implement transparency, but why?? What
-  is CreateInfo again?}
+name={VkPipelineColorBlendStateCreateInfo},
+description={This is used to implement transparency, but why?? What
+  is CreateInfo again? CreateInfo relate to structs that store Vulkan
+state info right?}
 }
 \newglossaryentry{pNext Chain}
 {
-  name={pNext Chain},
-  description={Vulkan has a chain of extensions that require this?
-  Also this is related to pNext?}
+name={pNext Chain},
+description={Vulkan has a chain of extensions that require this?
+Also this is related to pNext?}
 }
 \newglossaryentry{extension chain}
 {
-  name={extension chain},
-  description={idk what this is + relates to stype and pnext??}
+name={extension chain},
+description={idk what this is + relates to stype and pnext??}
 }
 \newglossaryentry{vkStructure}
 {
-  name={vkStructure},
-  description={What is a \textbf{vkStructure}? How does Sascha
-  Willems save us from assignments with the \textbf{vks} namespace?}
+name={vkStructure},
+description={What is a \textbf{vkStructure}? How does Sascha
+Willems save us from assignments with the \textbf{vks} namespace?}
 }
 \newglossaryentry{Inline}
 {
-  name={inlin},
-  description={What does keyword \textbf{inline} do in C++?}
+name={inlin},
+description={What does keyword \textbf{inline} do in C++?}
 }
 \newglossaryentry{VkSurfaceKHR}
 {
-  name={VkSurfaceKHR},
-  description={idk}
+name={VkSurfaceKHR},
+description={idk, it has something to do with the image pipeline. So
+there is something called a surface? How does this relate to Vulkan pipeline?}
 }
 \newglossaryentry{vkShaderModule}
 {
-  name={vkShaderModule},
-  description={idk}
+name={vkShaderModule},
+description={idk}
 }
 \newglossaryentry{vkMemAllocInfo}
 {
-  name={vkMemAllocInfo},
-  description={idk}
+name={vkMemAllocInfo},
+description={idk}
 }
 \newglossaryentry{vkBuffer}
 {
-  name={vkBuffer},
-  description={idk}
+name={vkBuffer},
+description={idk, I mean I guess it is the primitive buffer object
+  that we allocate in Vulkan? Can we initialize a vkBuffer with the
+vks::vkBuffer type? how do we populate a buffer?}
 }
 \newglossaryentry{Extension}
 {
-  name={Extension},
-  description={Khronos uses \textbf{extensions} to officially add
-  functionality to the Vulkan specification?}
+name={Extension},
+description={Khronos uses \textbf{extensions} to officially add
+functionality to the Vulkan specification?}
 }
 \newglossaryentry{vkMapMemory}
 {
-  name={vkMapMemory},
-  description={idk}
+name={vkMapMemory},
+description={idk}
 }
 \newglossaryentry{vkUnmapMemory}
 {
-  name={vkUnmapMemory},
-  description={idk}
+name={vkUnmapMemory},
+description={This is basically a cleanup function that we should call
+after we use vkMapMemory}
 }
 \newglossaryentry{vkCmdBeginRenderPass}
 {
-  name={vkCmdBeginRenderPass},
-  description={idk}
+name={vkCmdBeginRenderPass},
+description={idk}
 }
 \newglossaryentry{vkCmdBindPipeline}
 {
-  name={vkCmdBindPipeline},
-  description={idk}
+name={vkCmdBindPipeline},
+description={idk}
 }
 \newglossaryentry{vkCmdDraw}
 {
-  name={vkCmdDraw},
-  description={Description}
+name={vkCmdDraw},
+description={Description}
 }
 \newglossaryentry{vkQueueSubmit}
 {
-  name={vkQueueSubmit},
-  description={idk, submit commands to queue? or submit queue (but
-  this doesn't make sense)}
+name={vkQueueSubmit},
+description={idk, submit commands to queue? or submit queue (but
+this doesn't make sense)}
 }
 \newglossaryentry{vkPipelineCache}
 {
-  name={vkPipelineCache},
-  description={idk, why are we caching the pipeline?}
+name={vkPipelineCache},
+description={idk, why are we caching the pipeline?}
 }
+\newglossaryentry{prepareStorageBuffers}
+{
+name={prepareStorageBuffers()},
+description={This is the step where we prepare the buffers to be
+sent from the CPU to the GPU}
+}
+\newglossaryentry{stagingBuffer}
+{
+name={stagingBuffer},
+description={where we put memory to be sent to the GPU}
+}
+\newglossaryentry{Resource}
+{
+name={Resource},
+description={A \textbf{resource} can be for example a texture (I don't know
+  what else), and it can hold many \textbf{subresources}. So it is
+  usually thought of as a collection of subresources. An example is how
+  a mesh in a game has many 'texures'. Like a roughness map, depth
+texture etc. The roughness map would be considered a subresource.}
+}
+\newglossaryentry{Decouple}
+{
+name={Decouple},
+description={When two systems can communicate without knowing the
+state of each other}
+}
+\newglossaryentry{SSBO}
+{
+name={Shader Storage Buffer Object (SSBO)},
+description={idk, this is involved with staging buffers?}
+}
+\newglossaryentry{Tessellation Shader}
+{
+name={Tessellation Shader},
+description={Can subdivide geometry output from vertex shader}
+}
+\newglossaryentry{Vertex Shader}
+{
+name={Vertex Shader},
+description={Determines where vertices should be drawn on the screen}
+}
+\newglossaryentry{Fragment Shader}
+{
+name={Fragment Shader},
+description={Determines color of pixels?}
+}
+\newglossaryentry{Geometry Shader}
+{
+name={Geometry Shader},
+description={idk}
+}
+\newglossaryentry{Rasterization}
+{
+name={Rasterization},
+description={When we draw to the screen?? idk}
+}
+\newglossaryentry{Input Assembly}
+{
+name={Input Assembly},
+description={Some part of the Vulkan pipeline, but what does it do?
+Is it at the beginning?}
+}
+
+% GLOS END
 
 \printglossaries
 \addcontentsline{toc}{section}{Glossary}
 \clearpage
 
+\section*{To-Do (For This
+Document)}\addcontentsline{toc}{section}{To-Do (For This
+Document)}
+\par I think this might be a nice place to keep my thoughts about
+this document in an organized manner.
+
+\clearpage
 \section*{Appendix}
 \addcontentsline{toc}{section}{Appendix}
 \begin{figure}[H]
-  \begin{center}
-    \includegraphics[width=0.95\textwidth]{figures/vulkanpipeline.png}
-  \end{center}
-  \caption{Vulkan Pipeline}\label{fig:}
+\begin{center}
+  \includegraphics[width=0.95\textwidth]{figures/vulkanpipeline.png}
+\end{center}
+\caption{Vulkan Pipeline}\label{fig:}
 \end{figure}
 
 \begin{figure}[H]
-  \begin{center}
-    \includegraphics[width=0.95\textwidth]{figures/vulkanpipeline2.png}
-  \end{center}
-  \caption{Vulkan Pipeline Again}\label{fig:}
+\begin{center}
+  \includegraphics[width=0.95\textwidth]{figures/vulkanpipeline2.png}
+\end{center}
+\caption{Vulkan Pipeline Again}\label{fig:}
 \end{figure}
 
+% APPENDIX END
 \end{document}

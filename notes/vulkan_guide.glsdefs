@@ -287,8 +287,8 @@ first={Synchronization2},%
 firstplural={Synchronization2s},%
 text={Synchronization2},%
 plural={Synchronization2s},%
-description={idk},%
-descriptionplural={idk},%
+description={idk, I think it's just a feature added to Vulkan that we can ignore},%
+descriptionplural={idk, I think it's just a feature added to Vulkan that we can ignore},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -399,8 +399,8 @@ first={Depth Image},%
 firstplural={Depth Images},%
 text={Depth Image},%
 plural={Depth Images},%
-description={idk},%
-descriptionplural={idk},%
+description={idk, does this relate to the depth buffer?},%
+descriptionplural={idk, does this relate to the depth buffer?},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -931,8 +931,8 @@ first={Subresource},%
 firstplural={Subresources},%
 text={Subresource},%
 plural={Subresources},%
-description={A part of an image},%
-descriptionplural={A part of an image},%
+description={A part of an image\textemdash but actually there are more applications of subresource (like what?)},%
+descriptionplural={A part of an image\textemdash but actually there are more applications of subresource (like what?)},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -959,8 +959,8 @@ first={Descriptor Set},%
 firstplural={Descriptor Sets},%
 text={Descriptor Set},%
 plural={Descriptor Sets},%
-description={idk},%
-descriptionplural={idk},%
+description={This has to do with },%
+descriptionplural={This has to do with },%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -1127,8 +1127,8 @@ first={vkRenderingAttachmentInfoKHR},%
 firstplural={vkRenderingAttachmentInfoKHRs},%
 text={vkRenderingAttachmentInfoKHR},%
 plural={vkRenderingAttachmentInfoKHRs},%
-description={idk, but KHR has to do with talking to OS to display output image},%
-descriptionplural={idk, but KHR has to do with talking to OS to display output image},%
+description={KHR means khronos, which means we are using some kind of extension. This specific extension is for dynamic rendering, so we won't use vkRenderPass objects directly?},%
+descriptionplural={KHR means khronos, which means we are using some kind of extension. This specific extension is for dynamic rendering, so we won't use vkRenderPass objects directly?},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -1239,8 +1239,8 @@ first={Render Target Views},%
 firstplural={Render Target Viewss},%
 text={Render Target Views},%
 plural={Render Target Viewss},%
-description={idk},%
-descriptionplural={idk},%
+description={idk, maybe this is the view we are currently using to write to the image?},%
+descriptionplural={idk, maybe this is the view we are currently using to write to the image?},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -1286,34 +1286,6 @@ parent={},%
 %
 }%
 
-\glsdefs@newdocentry{mip}%
-{%
-name={Mip},%
-sort={Mip},%
-type={main},%
-first={Mip},%
-firstplural={Mips},%
-text={Mip},%
-plural={Mips},%
-description={idk},%
-descriptionplural={idk},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-
 \glsdefs@newdocentry{mipmap}%
 {%
 name={Mip Map},%
@@ -1323,8 +1295,8 @@ first={Mip Map},%
 firstplural={Mip Maps},%
 text={Mip Map},%
 plural={Mip Maps},%
-description={idk, can relate to level of distance optimization? (LOD)},%
-descriptionplural={idk, can relate to level of distance optimization? (LOD)},%
+description={A \textbf {mip map} is something that we generate and give to Vulkan. A mip map is how we store a texture with different sizes (factors of 2), so that when the texture is far away Vulkan will sample a lower-resolution texture},%
+descriptionplural={A \textbf {mip map} is something that we generate and give to Vulkan. A mip map is how we store a texture with different sizes (factors of 2), so that when the texture is far away Vulkan will sample a lower-resolution texture},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -1687,8 +1659,8 @@ first={Global Invocation ID},%
 firstplural={Global Invocation IDs},%
 text={Global Invocation ID},%
 plural={Global Invocation IDs},%
-description={idk},%
-descriptionplural={idk},%
+description={idk, I think this relates to thread managment},%
+descriptionplural={idk, I think this relates to thread managment},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -1855,8 +1827,8 @@ first={Dependancy Injection},%
 firstplural={Dependancy Injections},%
 text={Dependancy Injection},%
 plural={Dependancy Injections},%
-description={idk},%
-descriptionplural={idk},%
+description={idk, is this related to dynamically linked libraries(DLL)?},%
+descriptionplural={idk, is this related to dynamically linked libraries(DLL)?},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -2135,8 +2107,8 @@ first={VkSurfaceKHR},%
 firstplural={VkSurfaceKHRs},%
 text={VkSurfaceKHR},%
 plural={VkSurfaceKHRs},%
-description={idk},%
-descriptionplural={idk},%
+description={idk, it has something to do with the image pipeline. So there is something called a surface? How does this relate to Vulkan pipeline?},%
+descriptionplural={idk, it has something to do with the image pipeline. So there is something called a surface? How does this relate to Vulkan pipeline?},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -2219,8 +2191,8 @@ first={vkBuffer},%
 firstplural={vkBuffers},%
 text={vkBuffer},%
 plural={vkBuffers},%
-description={idk},%
-descriptionplural={idk},%
+description={idk, I mean I guess it is the primitive buffer object that we allocate in Vulkan? Can we initialize a vkBuffer with the vks::vkBuffer type? how do we populate a buffer?},%
+descriptionplural={idk, I mean I guess it is the primitive buffer object that we allocate in Vulkan? Can we initialize a vkBuffer with the vks::vkBuffer type? how do we populate a buffer?},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -2303,8 +2275,8 @@ first={vkUnmapMemory},%
 firstplural={vkUnmapMemorys},%
 text={vkUnmapMemory},%
 plural={vkUnmapMemorys},%
-description={idk},%
-descriptionplural={idk},%
+description={This is basically a cleanup function that we should call after we use vkMapMemory},%
+descriptionplural={This is basically a cleanup function that we should call after we use vkMapMemory},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -2445,6 +2417,314 @@ text={vkPipelineCache},%
 plural={vkPipelineCaches},%
 description={idk, why are we caching the pipeline?},%
 descriptionplural={idk, why are we caching the pipeline?},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{prepareStorageBuffers}%
+{%
+name={prepareStorageBuffers()},%
+sort={prepareStorageBuffers()},%
+type={main},%
+first={prepareStorageBuffers()},%
+firstplural={prepareStorageBuffers()s},%
+text={prepareStorageBuffers()},%
+plural={prepareStorageBuffers()s},%
+description={This is the step where we prepare the buffers to be sent from the CPU to the GPU},%
+descriptionplural={This is the step where we prepare the buffers to be sent from the CPU to the GPU},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{stagingBuffer}%
+{%
+name={stagingBuffer},%
+sort={stagingBuffer},%
+type={main},%
+first={stagingBuffer},%
+firstplural={stagingBuffers},%
+text={stagingBuffer},%
+plural={stagingBuffers},%
+description={where we put memory to be sent to the GPU},%
+descriptionplural={where we put memory to be sent to the GPU},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Resource}%
+{%
+name={Resource},%
+sort={Resource},%
+type={main},%
+first={Resource},%
+firstplural={Resources},%
+text={Resource},%
+plural={Resources},%
+description={A \textbf {resource} can be for example a texture (I don't know what else), and it can hold many \textbf {subresources}. So it is usually thought of as a collection of subresources. An example is how a mesh in a game has many 'texures'. Like a roughness map, depth texture etc. The roughness map would be considered a subresource.},%
+descriptionplural={A \textbf {resource} can be for example a texture (I don't know what else), and it can hold many \textbf {subresources}. So it is usually thought of as a collection of subresources. An example is how a mesh in a game has many 'texures'. Like a roughness map, depth texture etc. The roughness map would be considered a subresource.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Decouple}%
+{%
+name={Decouple},%
+sort={Decouple},%
+type={main},%
+first={Decouple},%
+firstplural={Decouples},%
+text={Decouple},%
+plural={Decouples},%
+description={When two systems can communicate without knowing the state of each other},%
+descriptionplural={When two systems can communicate without knowing the state of each other},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{SSBO}%
+{%
+name={Shader Storage Buffer Object (SSBO)},%
+sort={Shader Storage Buffer Object (SSBO)},%
+type={main},%
+first={Shader Storage Buffer Object (SSBO)},%
+firstplural={Shader Storage Buffer Object (SSBO)s},%
+text={Shader Storage Buffer Object (SSBO)},%
+plural={Shader Storage Buffer Object (SSBO)s},%
+description={idk, this is involved with staging buffers?},%
+descriptionplural={idk, this is involved with staging buffers?},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Tessellation Shader}%
+{%
+name={Tessellation Shader},%
+sort={Tessellation Shader},%
+type={main},%
+first={Tessellation Shader},%
+firstplural={Tessellation Shaders},%
+text={Tessellation Shader},%
+plural={Tessellation Shaders},%
+description={Can subdivide geometry output from vertex shader},%
+descriptionplural={Can subdivide geometry output from vertex shader},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Vertex Shader}%
+{%
+name={Vertex Shader},%
+sort={Vertex Shader},%
+type={main},%
+first={Vertex Shader},%
+firstplural={Vertex Shaders},%
+text={Vertex Shader},%
+plural={Vertex Shaders},%
+description={Determines where vertices should be drawn on the screen},%
+descriptionplural={Determines where vertices should be drawn on the screen},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Fragment Shader}%
+{%
+name={Fragment Shader},%
+sort={Fragment Shader},%
+type={main},%
+first={Fragment Shader},%
+firstplural={Fragment Shaders},%
+text={Fragment Shader},%
+plural={Fragment Shaders},%
+description={Determines color of pixels?},%
+descriptionplural={Determines color of pixels?},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Geometry Shader}%
+{%
+name={Geometry Shader},%
+sort={Geometry Shader},%
+type={main},%
+first={Geometry Shader},%
+firstplural={Geometry Shaders},%
+text={Geometry Shader},%
+plural={Geometry Shaders},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Rasterization}%
+{%
+name={Rasterization},%
+sort={Rasterization},%
+type={main},%
+first={Rasterization},%
+firstplural={Rasterizations},%
+text={Rasterization},%
+plural={Rasterizations},%
+description={When we draw to the screen?? idk},%
+descriptionplural={When we draw to the screen?? idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Input Assembly}%
+{%
+name={Input Assembly},%
+sort={Input Assembly},%
+type={main},%
+first={Input Assembly},%
+firstplural={Input Assemblys},%
+text={Input Assembly},%
+plural={Input Assemblys},%
+description={Some part of the Vulkan pipeline, but what does it do? Is it at the beginning?},%
+descriptionplural={Some part of the Vulkan pipeline, but what does it do? Is it at the beginning?},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
