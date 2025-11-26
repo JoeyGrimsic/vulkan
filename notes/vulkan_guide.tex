@@ -797,8 +797,7 @@ event and a reactionary event (What is decoupling?). You can think of
 it as storing a message for something that has happened, so that we
 can use that information later.
 
-% VULKAN END
-
+% END VULKAN
 \clearpage
 
 \section*{C++ Notes}
@@ -924,7 +923,20 @@ because if we change the tpye of the values we are iterating over,
 normally we would have to go find the for-each loop in question and
 change the type there too.
 
-% CPP END
+\subsection*{Asynchronous
+Code}\addcontentsline{toc}{subsection}{Asynchronous Code}
+\par What is the main purpose of asynchronous code? Asynchronous code
+is important when you want events that happen at the same time, not
+just from top to bottom as a program is normally executed.
+
+\par Is this where callbacks are from? Does asynchronous code require callbacks?
+
+\par The old way of doing things
+
+\par The new way to implement asynchronous events is using
+\textbf{coroutines}. A coroutine is?
+
+% END CPP
 
 \section*{What Is A Valid Starting Point For My Game Engine?}
 \addcontentsline{toc}{section}{What Is A Valid Starting Point For My
@@ -1374,7 +1386,8 @@ Willems save us from assignments with the \textbf{vks} namespace?}
 \newglossaryentry{Inline}
 {
 name={inlin},
-description={What does keyword \textbf{inline} do in C++?}
+description={What does keyword \textbf{inline} do in C++? Is it
+common? Is it important for performant code?}
 }
 \newglossaryentry{VkSurfaceKHR}
 {
@@ -1505,7 +1518,7 @@ description={Some part of the Vulkan pipeline, but what does it do?
 Is it at the beginning?}
 }
 
-% GLOS END
+% END GLOS
 
 \printglossaries
 \addcontentsline{toc}{section}{Glossary}
@@ -1534,5 +1547,5 @@ this document in an organized manner.
 \caption{Vulkan Pipeline Again}\label{fig:}
 \end{figure}
 
-% APPENDIX END
+% END APPENDIX
 \end{document}

@@ -54,7 +54,8 @@
 \contentsline {subsection}{Ternary Operator}{20}{section*.58}%
 \contentsline {subsection}{Destructors}{21}{section*.59}%
 \contentsline {subsection}{Auto}{21}{section*.60}%
-\contentsline {section}{What Is A Valid Starting Point For My Game Engine?}{21}{section*.61}%
-\contentsline {section}{Glossary}{26}{section*.63}%
-\contentsline {section}{To-Do (For This Document)}{27}{section*.64}%
-\contentsline {section}{Appendix}{28}{section*.65}%
+\contentsline {subsection}{Asynchronous Code}{21}{section*.61}%
+\contentsline {section}{What Is A Valid Starting Point For My Game Engine?}{21}{section*.62}%
+\contentsline {section}{Glossary}{27}{section*.64}%
+\contentsline {section}{To-Do (For This Document)}{28}{section*.65}%
+\contentsline {section}{Appendix}{29}{section*.66}%
