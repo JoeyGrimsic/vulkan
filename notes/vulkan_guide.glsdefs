@@ -1967,8 +1967,8 @@ first={Blending},%
 firstplural={Blendings},%
 text={Blending},%
 plural={Blendings},%
-description={\textbf {Blending} refers to creating a transparency effect. For example, you might use blending so that a UI is transparent so you can see the game scene behind it},%
-descriptionplural={\textbf {Blending} refers to creating a transparency effect. For example, you might use blending so that a UI is transparent so you can see the game scene behind it},%
+description={Blending refers to creating a transparency effect. For example, you might use blending so that a UI is transparent so you can see the game scene behind it},%
+descriptionplural={Blending refers to creating a transparency effect. For example, you might use blending so that a UI is transparent so you can see the game scene behind it},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -2053,6 +2053,398 @@ text={extension chain},%
 plural={extension chains},%
 description={idk what this is + relates to stype and pnext??},%
 descriptionplural={idk what this is + relates to stype and pnext??},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{vkStructure}%
+{%
+name={vkStructure},%
+sort={vkStructure},%
+type={main},%
+first={vkStructure},%
+firstplural={vkStructures},%
+text={vkStructure},%
+plural={vkStructures},%
+description={What is a \textbf {vkStructure}? How does Sascha Willems save us from assignments with the \textbf {vks} namespace?},%
+descriptionplural={What is a \textbf {vkStructure}? How does Sascha Willems save us from assignments with the \textbf {vks} namespace?},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Inline}%
+{%
+name={inlin},%
+sort={inlin},%
+type={main},%
+first={inlin},%
+firstplural={inlins},%
+text={inlin},%
+plural={inlins},%
+description={What does keyword \textbf {inline} do in C++?},%
+descriptionplural={What does keyword \textbf {inline} do in C++?},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{VkSurfaceKHR}%
+{%
+name={VkSurfaceKHR},%
+sort={VkSurfaceKHR},%
+type={main},%
+first={VkSurfaceKHR},%
+firstplural={VkSurfaceKHRs},%
+text={VkSurfaceKHR},%
+plural={VkSurfaceKHRs},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{vkShaderModule}%
+{%
+name={vkShaderModule},%
+sort={vkShaderModule},%
+type={main},%
+first={vkShaderModule},%
+firstplural={vkShaderModules},%
+text={vkShaderModule},%
+plural={vkShaderModules},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{vkMemAllocInfo}%
+{%
+name={vkMemAllocInfo},%
+sort={vkMemAllocInfo},%
+type={main},%
+first={vkMemAllocInfo},%
+firstplural={vkMemAllocInfos},%
+text={vkMemAllocInfo},%
+plural={vkMemAllocInfos},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{vkBuffer}%
+{%
+name={vkBuffer},%
+sort={vkBuffer},%
+type={main},%
+first={vkBuffer},%
+firstplural={vkBuffers},%
+text={vkBuffer},%
+plural={vkBuffers},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Extension}%
+{%
+name={Extension},%
+sort={Extension},%
+type={main},%
+first={Extension},%
+firstplural={Extensions},%
+text={Extension},%
+plural={Extensions},%
+description={Khronos uses \textbf {extensions} to officially add functionality to the Vulkan specification?},%
+descriptionplural={Khronos uses \textbf {extensions} to officially add functionality to the Vulkan specification?},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{vkMapMemory}%
+{%
+name={vkMapMemory},%
+sort={vkMapMemory},%
+type={main},%
+first={vkMapMemory},%
+firstplural={vkMapMemorys},%
+text={vkMapMemory},%
+plural={vkMapMemorys},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{vkUnmapMemory}%
+{%
+name={vkUnmapMemory},%
+sort={vkUnmapMemory},%
+type={main},%
+first={vkUnmapMemory},%
+firstplural={vkUnmapMemorys},%
+text={vkUnmapMemory},%
+plural={vkUnmapMemorys},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{vkCmdBeginRenderPass}%
+{%
+name={vkCmdBeginRenderPass},%
+sort={vkCmdBeginRenderPass},%
+type={main},%
+first={vkCmdBeginRenderPass},%
+firstplural={vkCmdBeginRenderPasss},%
+text={vkCmdBeginRenderPass},%
+plural={vkCmdBeginRenderPasss},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{vkCmdBindPipeline}%
+{%
+name={vkCmdBindPipeline},%
+sort={vkCmdBindPipeline},%
+type={main},%
+first={vkCmdBindPipeline},%
+firstplural={vkCmdBindPipelines},%
+text={vkCmdBindPipeline},%
+plural={vkCmdBindPipelines},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{vkCmdDraw}%
+{%
+name={vkCmdDraw},%
+sort={vkCmdDraw},%
+type={main},%
+first={vkCmdDraw},%
+firstplural={vkCmdDraws},%
+text={vkCmdDraw},%
+plural={vkCmdDraws},%
+description={Description},%
+descriptionplural={Description},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{vkQueueSubmit}%
+{%
+name={vkQueueSubmit},%
+sort={vkQueueSubmit},%
+type={main},%
+first={vkQueueSubmit},%
+firstplural={vkQueueSubmits},%
+text={vkQueueSubmit},%
+plural={vkQueueSubmits},%
+description={idk, submit commands to queue? or submit queue (but this doesn't make sense)},%
+descriptionplural={idk, submit commands to queue? or submit queue (but this doesn't make sense)},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{vkPipelineCache}%
+{%
+name={vkPipelineCache},%
+sort={vkPipelineCache},%
+type={main},%
+first={vkPipelineCache},%
+firstplural={vkPipelineCaches},%
+text={vkPipelineCache},%
+plural={vkPipelineCaches},%
+description={idk, why are we caching the pipeline?},%
+descriptionplural={idk, why are we caching the pipeline?},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%

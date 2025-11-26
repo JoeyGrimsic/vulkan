@@ -20,6 +20,9 @@ citecolor=violet]{hyperref}
 % for glossary
 \usepackage[nonumberlist]{glossaries}
 \makeglossaries
+% for table
+\usepackage{booktabs}
+\usepackage{tabularx}
 
 \title{Vulkan Notes}
 \author{Joseph Grimsic}
@@ -40,12 +43,7 @@ right=1.3in, heightrounded]{geometry}
 \section*{Vulkan Questions}
 \addcontentsline{toc}{section}{Vulkan Questions}
 \begin{itemize}
-  \item what are the things that specifically separates OpenGL and Vulkan?
-  \item What is sType?
-  \item What is a command pool?
-  \item How can we abstract commands/ should we?
-  \item Do we need to work with commands regularly to parallelize our
-    game engine?
+  \item tmp
 \end{itemize}
 
 \section*{What If I Use Sascha as a starting point}
@@ -96,6 +94,30 @@ pointers point to?
 \*\_Info represent the wildcard operator, and is just to show
 the naming convention in the documentation. These names refer to
 structs that have state information for Vulkan.
+
+\subsection*{Sascha Willems Helpers: CreateInfo vs Info}
+\addcontentsline{toc}{section}{Sascha Willems Helpers (Gemini)}
+I noticed that Sascha’s helper functions—which are designed to reduce
+Vulkan boilerplate—constantly utilize two specific naming
+conventions. These are not just random names; they correspond to the
+specific Vulkan structures we use to pass data to the driver.
+
+The asterisk (*) in the names below acts as a wildcard for the
+specific object name:
+\begin{itemize}
+  \item \textbf{\_CreateInfo} (e.g., \texttt{VkDeviceCreateInfo}):
+    These structs are used during the \textbf{Object Creation} phase.
+    They are the "forms" we fill out to tell the driver how to build
+    a persistent object. They always contain \texttt{sType} and \texttt{pNext}.
+  \item \textbf{\_Info} (e.g., \texttt{VkSubmitInfo}): These structs
+    are generally used inside the \textbf{Render Loop}. They pass
+    temporary state or parameters for a specific action, like
+    submitting a draw call. These also utilize \texttt{sType} and
+    \texttt{pNext}.
+\end{itemize}
+Sascha's helper functions simply automate the process of filling out
+these structs so we don't have to manually set every field (like
+\texttt{sType}) every time.
 
 \subsection*{Commands}
 \addcontentsline{toc}{subsection}{Commands}
@@ -233,6 +255,41 @@ to the one in the Khronos Vulkan tutorial?
 want access to. In OpenGL, you might 'bind' one buffer at a time.
 Vulkan expects you to bind a descriptor set all together.
 \par Similar to \textbf{command pools} there are \textbf{descriptor pools}.
+
+\subsection*{Descriptor Set Revised}
+\addcontentsline{toc}{subsection}{Descriptor Set Revised}
+\par Coming back to the \textbf{descriptor set}, I am considering
+constraints. For example, why not just have one big descriptor set,
+to solve the problem of not understanding how to separate data into
+different descriptor sets.
+
+\par Then of course, if that doesn't work, why
+not generate a new descriptor set each frame if duplicating the
+massive single descriptor set is expensive.
+
+\par I don't know yet, but the following is a table showing how we
+typically use 4 descriptor sets simultaneously.
+
+\begin{table}[h]
+  \centering
+  \caption{Descriptor Set Layout Configuration}
+  \label{tab:descriptor_sets}
+  \begin{tabularx}{\textwidth}{@{}lllX@{}}
+    \toprule
+    \textbf{Set} & \textbf{Frequency} & \textbf{Data Name} &
+    \textbf{Description} \\
+    \midrule
+    Set 0 & Global & Frame Data & Camera View/Projection matrices,
+    Global Time, Skybox. (Bound once per frame) \\
+    Set 1 & Per-Pass & Pass Data & Shadow maps, Light lists,
+    Post-processing buffers. (Bound once per render pass) \\
+    Set 2 & Per-Material & Material Data & Albedo texture, Normal
+    map, Roughness value. (Bound when material changes) \\
+    Set 3 & Per-Object & Object Data & Model Matrix (transform),
+    skinning bones. (Bound for every draw call) \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
 
 \subsection*{Descriptor Pools}
 \addcontentsline{toc}{subsection}{Descriptor Pools}
@@ -694,6 +751,7 @@ structures to describe the current frame's work. Just like in setup,
 the driver reads these structures once to translate them into GPU commands.
 
 \subsection*{vkPipelineLayout}\addcontentsline{toc}{subsection}{vkPipelineLayout}
+\par What is a vkPipelineLayout?
 
 \clearpage
 
@@ -1182,7 +1240,7 @@ called \textbf{Raytracing Reflections}.
 \newglossaryentry{Blending}
 {
   name={Blending},
-  description={\textbf{Blending} refers to creating a transparency
+  description={Blending refers to creating a transparency
     effect. For example, you might use blending so that a UI is
   transparent so you can see the game scene behind it}
 }
@@ -1207,6 +1265,79 @@ called \textbf{Raytracing Reflections}.
 {
   name={extension chain},
   description={idk what this is + relates to stype and pnext??}
+}
+\newglossaryentry{vkStructure}
+{
+  name={vkStructure},
+  description={What is a \textbf{vkStructure}? How does Sascha
+  Willems save us from assignments with the \textbf{vks} namespace?}
+}
+\newglossaryentry{Inline}
+{
+  name={inlin},
+  description={What does keyword \textbf{inline} do in C++?}
+}
+\newglossaryentry{VkSurfaceKHR}
+{
+  name={VkSurfaceKHR},
+  description={idk}
+}
+\newglossaryentry{vkShaderModule}
+{
+  name={vkShaderModule},
+  description={idk}
+}
+\newglossaryentry{vkMemAllocInfo}
+{
+  name={vkMemAllocInfo},
+  description={idk}
+}
+\newglossaryentry{vkBuffer}
+{
+  name={vkBuffer},
+  description={idk}
+}
+\newglossaryentry{Extension}
+{
+  name={Extension},
+  description={Khronos uses \textbf{extensions} to officially add
+  functionality to the Vulkan specification?}
+}
+\newglossaryentry{vkMapMemory}
+{
+  name={vkMapMemory},
+  description={idk}
+}
+\newglossaryentry{vkUnmapMemory}
+{
+  name={vkUnmapMemory},
+  description={idk}
+}
+\newglossaryentry{vkCmdBeginRenderPass}
+{
+  name={vkCmdBeginRenderPass},
+  description={idk}
+}
+\newglossaryentry{vkCmdBindPipeline}
+{
+  name={vkCmdBindPipeline},
+  description={idk}
+}
+\newglossaryentry{vkCmdDraw}
+{
+  name={vkCmdDraw},
+  description={Description}
+}
+\newglossaryentry{vkQueueSubmit}
+{
+  name={vkQueueSubmit},
+  description={idk, submit commands to queue? or submit queue (but
+  this doesn't make sense)}
+}
+\newglossaryentry{vkPipelineCache}
+{
+  name={vkPipelineCache},
+  description={idk, why are we caching the pipeline?}
 }
 
 \printglossaries
