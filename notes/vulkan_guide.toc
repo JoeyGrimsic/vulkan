@@ -45,17 +45,21 @@
 \contentsline {subsection}{Commands}{18}{section*.47}%
 \contentsline {subsection}{How Do We Allocate A Staging Buffer?}{18}{section*.48}%
 \contentsline {subsection}{Event Queue}{18}{section*.49}%
-\contentsline {section}{C++ Notes}{19}{section*.50}%
-\contentsline {subsection}{Struct vs. Class}{19}{section*.51}%
-\contentsline {subsection}{Constructor Definition Syntax}{19}{section*.52}%
-\contentsline {subsection}{How To Make A Class}{19}{section*.53}%
-\contentsline {subsection}{How To Make A Template Class?}{19}{section*.55}%
-\contentsline {subsection}{:: Operator}{20}{section*.56}%
-\contentsline {subsection}{Ternary Operator}{20}{section*.58}%
-\contentsline {subsection}{Destructors}{21}{section*.59}%
-\contentsline {subsection}{Auto}{21}{section*.60}%
-\contentsline {subsection}{Asynchronous Code}{21}{section*.61}%
-\contentsline {section}{What Is A Valid Starting Point For My Game Engine?}{21}{section*.62}%
-\contentsline {section}{Glossary}{27}{section*.64}%
-\contentsline {section}{To-Do (For This Document)}{28}{section*.65}%
-\contentsline {section}{Appendix}{29}{section*.66}%
+\contentsline {subsection}{UBO and SSBO}{19}{section*.50}%
+\contentsline {section}{C++ Notes}{20}{section*.51}%
+\contentsline {subsection}{Struct vs. Class}{20}{section*.52}%
+\contentsline {subsection}{Constructor Definition Syntax}{20}{section*.53}%
+\contentsline {subsection}{How To Make A Class}{20}{section*.54}%
+\contentsline {subsection}{How To Make A Template Class?}{20}{section*.56}%
+\contentsline {subsection}{:: Operator}{21}{section*.57}%
+\contentsline {subsection}{Ternary Operator}{21}{section*.59}%
+\contentsline {subsection}{Destructors}{22}{section*.60}%
+\contentsline {subsection}{Auto}{22}{section*.61}%
+\contentsline {subsection}{Asynchronous Code}{22}{section*.62}%
+\contentsline {section}{What Is A Valid Starting Point For My Game Engine?}{22}{section*.63}%
+\contentsline {subsection}{High Level Pitch From Gemini}{23}{section*.64}%
+\contentsline {section}{Glossary}{33}{section*.66}%
+\contentsline {section}{To-Do (For This Document)}{34}{section*.67}%
+\contentsline {section}{Networking}{35}{section*.68}%
+\contentsline {subsection}{The Standard Approach}{35}{section*.69}%
+\contentsline {section}{Appendix}{36}{section*.71}%

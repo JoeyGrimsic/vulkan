@@ -2555,8 +2555,36 @@ first={Shader Storage Buffer Object (SSBO)},%
 firstplural={Shader Storage Buffer Object (SSBO)s},%
 text={Shader Storage Buffer Object (SSBO)},%
 plural={Shader Storage Buffer Object (SSBO)s},%
-description={idk, this is involved with staging buffers?},%
-descriptionplural={idk, this is involved with staging buffers?},%
+description={idk, this is involved with staging buffers? do we create these on the CPU and send over with the transfer queue? but actually the data goes between shaders, not from CPU to GPU??},%
+descriptionplural={idk, this is involved with staging buffers? do we create these on the CPU and send over with the transfer queue? but actually the data goes between shaders, not from CPU to GPU??},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Uniform Buffer Object}%
+{%
+name={Uniform Buffer Object(UBO)},%
+sort={Uniform Buffer Object(UBO)},%
+type={main},%
+first={Uniform Buffer Object(UBO)},%
+firstplural={Uniform Buffer Object(UBO)s},%
+text={Uniform Buffer Object(UBO)},%
+plural={Uniform Buffer Object(UBO)s},%
+description={So this is what came before we had Shader Storage Buffer Objects (SSBO). \textbf {UBO}'s can store up to 64 or 16 kilobytes depending on the GPU. Other major difference is that UBO's are read only and SSBO's are read and write (at what stage are we reading and writing to SSBO's?)},%
+descriptionplural={So this is what came before we had Shader Storage Buffer Objects (SSBO). \textbf {UBO}'s can store up to 64 or 16 kilobytes depending on the GPU. Other major difference is that UBO's are read only and SSBO's are read and write (at what stage are we reading and writing to SSBO's?)},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -2583,8 +2611,8 @@ first={Tessellation Shader},%
 firstplural={Tessellation Shaders},%
 text={Tessellation Shader},%
 plural={Tessellation Shaders},%
-description={Can subdivide geometry output from vertex shader},%
-descriptionplural={Can subdivide geometry output from vertex shader},%
+description={Can subdivide geometry output from vertex shader\textemdash why would we want to do this?},%
+descriptionplural={Can subdivide geometry output from vertex shader\textemdash why would we want to do this?},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -2725,6 +2753,62 @@ text={Input Assembly},%
 plural={Input Assemblys},%
 description={Some part of the Vulkan pipeline, but what does it do? Is it at the beginning?},%
 descriptionplural={Some part of the Vulkan pipeline, but what does it do? Is it at the beginning?},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Resource Acquisition Is Initialization}%
+{%
+name={Resource Acquisition Is Initialization},%
+sort={Resource Acquisition Is Initialization},%
+type={main},%
+first={Resource Acquisition Is Initialization},%
+firstplural={Resource Acquisition Is Initializations},%
+text={Resource Acquisition Is Initialization},%
+plural={Resource Acquisition Is Initializations},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{interrupts}%
+{%
+name={interrupts},%
+sort={interrupts},%
+type={main},%
+first={interrupts},%
+firstplural={interruptss},%
+text={interrupts},%
+plural={interruptss},%
+description={idk},%
+descriptionplural={idk},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%

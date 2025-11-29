@@ -797,7 +797,30 @@ event and a reactionary event (What is decoupling?). You can think of
 it as storing a message for something that has happened, so that we
 can use that information later.
 
+\subsection*{UBO and SSBO}\addcontentsline{toc}{subsection}{UBO and SSBO}
+\par So when do we use \textbf{UBO} vs. \textbf{SSBO}? So SSBO can
+hold large amounts of memory (gigabytes), and UBO's can hold 16/64
+kilobytes and are read only (as opposed to read and write that SSBO's have).
+
+\par So we know the techincal differences, but which situations
+suggest which tool? Gemini claims that SSBO's do not replace UBO's
+
+\par This is true, since UBO is smaller, they are stored in the
+\textbf{constant cache}, which is much faster (and smaller) than L1 and L2 cache
+hierarchy. Likewise, SSBO's go through L1 and L2 cache.
+
+\par Some examples of when to use a UBO are the following:
+
+\begin{itemize}
+  \item Camera Matrices: The View and Projection matrices are the
+    same for every single pixel on the screen.
+  \item Global Light Settings: The sun's direction or color doesn't
+    change from pixel to pixel.
+  \item Time: Frame delta time.
+\end{itemize}
+
 % END VULKAN
+
 \clearpage
 
 \section*{C++ Notes}
@@ -931,7 +954,11 @@ just from top to bottom as a program is normally executed.
 
 \par Is this where callbacks are from? Does asynchronous code require callbacks?
 
-\par The old way of doing things
+\par The old way of doing things is using \textbf{std::async} which
+gives a \textbf{std::future}, which you can call .get() on to
+retrieve the result. The Problem: It is often naive. Calling .get()
+blocks the thread until the result is ready. It doesn't easily allow
+you to chain tasks (continuation) or handle events without blocking.
 
 \par The new way to implement asynchronous events is using
 \textbf{coroutines}. A coroutine is?
@@ -957,6 +984,225 @@ and make changes I think should occur to get me closer to what I want.
 in the Compute Particles example right? If not, do I need to include
 a special library for asynchronous code? I should probably dedicate
 an entry to asynchronous code in the C++ section of this document.
+
+\subsection*{High Level Pitch From
+Gemini}\addcontentsline{toc}{subsection}{High Level Pitch From Gemini}
+\par The following is pseudo code pitch from gemini for the system architecture
+
+\par Here is the server suggestion:
+\begin{verbatim}[fontsize=\footnotesize]
+class AuthoritativeGameServer:
+    def __init__(self):
+        self.tick_rate = 60  # Server runs at 60Hz
+        self.current_tick = 0
+        self.connected_players = {} # Map of ID -> PlayerData
+        self.snapshot_history = []  # Buffer of past world states (needed for Lag Compensation)
+
+    def start_server_loop(self):
+        while True:
+            start_time = get_time()
+
+            # 1. NETWORK RECEIVE
+            # We don't process packets immediately upon arrival (interrupts).
+            # We buffer them and process them at the start of the tick.
+            incoming_packets = network.get_buffered_packets()
+
+            # 2. PROCESS INPUTS (The critical part)
+            for packet in incoming_packets:
+                player = self.connected_players[packet.player_id]
+
+                # CRITICAL: We don't just set the player's position.
+                # We apply the INPUT they sent for a specific Tick.
+                # If a player sends inputs for Ticks 100, 101, 102 in one bundle,
+                # we must apply them sequentially.
+                for input_command in packet.inputs:
+                    # Sanity Check: Speed hacks, teleport hacks, etc.
+                    if self.validate_input(player, input_command):
+                        player.pending_inputs.push(input_command)
+
+            # 3. PHYSICS SIMULATION STEP
+            self.simulate_physics_step()
+
+            # 4. BROADCAST STATE (Snapshot)
+            # We don't send every tick (bandwidth). Maybe every 2nd or 3rd tick.
+            if self.current_tick % 2 == 0:
+                self.send_world_snapshot()
+
+            self.current_tick += 1
+
+            # Sleep to maintain 60Hz
+            wait_for_next_tick(start_time)
+
+    def simulate_physics_step(self):
+        # This is where the standard physics engine runs (Box2D, PhysX)
+        for player in self.connected_players:
+            # Apply the oldest unprocessed input for this player
+            if player.pending_inputs.has_inputs():
+                input = player.pending_inputs.pop()
+
+                # Apply forces based on that input
+                player.rigidbody.add_force(input.direction * SPEED)
+                player.current_simulated_tick = input.tick_number
+
+        # Step the actual physics world
+        physics_engine.step(1 / self.tick_rate)
+
+        # Save state for Lag Compensation (Rewind) logic
+        self.save_snapshot_to_history()
+
+    # COMPLEXITY: LAG COMPENSATION
+    # This runs when a player shoots. We must see what THEY saw.
+    def handle_shooting_request(self, attacker_id, target_id, timestamp_when_shot_fired):
+        attacker = self.connected_players[attacker_id]
+
+        # 1. Rewind the world to the time the attacker fired
+        # Clients are always in the past (interpolation delay).
+        # So the server must look back in its history buffer.
+        past_state = self.find_snapshot_at_time(timestamp_when_shot_fired)
+
+        # 2. Temporarily move hitboxes to where they were back then
+        current_positions = self.cache_current_positions()
+        self.apply_snapshot_positions(past_state)
+
+        # 3. Perform the Raycast / Hitbox check
+        did_hit = physics.raycast(attacker.position, attacker.aim_dir)
+
+        # 4. Restore the world to the present
+        self.restore_positions(current_positions)
+
+        if did_hit:
+            self.apply_damage(target_id)
+            self.send_hit_confirmation(attacker_id)
+
+    def send_world_snapshot(self):
+        # Create a packet containing the position/velocity of ALL moving objects
+        # We include the 'Last Processed Input Number' for each player.
+        # This tells the client: "I have processed your inputs up to #50."
+        snapshot = {
+            "tick": self.current_tick,
+            "players": [p.get_state_data() for p in self.connected_players],
+            "acks": {p.id: p.last_processed_input_id for p in self.connected_players}
+        }
+        network.broadcast(snapshot)
+\end{verbatim}
+
+\par Here is the client/game suggestion:
+\begin{verbatim}[fontsize=\footnotesize]
+// This pseudo-code illustrates the split between "Prediction" (Local Player)
+// and "Interpolation" (Remote Players).
+
+public class MultiplayerPlatformerManager : MonoBehaviour
+{
+    // STORAGE
+    List<InputFrame> localInputHistory; // Stores inputs we've sent but server hasn't ACKed yet
+    List<StateSnapshot> localStateHistory; // Stores where we *predicted* we were at each tick
+    List<StateSnapshot> serverSnapshots;   // Buffer of states received from server (for other players)
+
+    // SETTINGS
+    float tickRate = 1f / 60f;
+    int currentTick = 0;
+
+    void Update()
+    {
+        // 1. INPUT COLLECTION
+        // We collect input every frame, but we only package it for the next Physics Tick
+        InputFrame currentInput = CaptureInput(); // (Jump, Left, Right)
+
+        // 2. RENDER INTERPOLATION (Visuals only)
+        // Physics runs at fixed timestamps. Update runs as fast as possible.
+        // We smooth the visual transform between the previous physics tick and the current one.
+        RenderSmoothLocalPlayer();
+        RenderSmoothRemotePlayers();
+    }
+
+    void FixedUpdate()
+    {
+        // This loop runs exactly 60 times per second
+
+        // 1. PROCESS SERVER DATA (Reconciliation)
+        if (network.HasNewServerSnapshot())
+        {
+            var serverState = network.GetLatestSnapshot();
+
+            // Check if our prediction was wrong
+            // We look at our history: Where did WE think we were at Tick X?
+            // And compare it to where the Server says we were at Tick X.
+            var predictedState = GetStateFromHistory(serverState.tick);
+
+            if (Vector3.Distance(predictedState.position, serverState.myPosition) > 0.05f)
+            {
+                // ERROR DETECTED!
+                // The server is the boss. We must snap to the server's truth.
+                Debug.Log("Reconciling: Prediction Error");
+
+                // A. Snap Physics Body to Server Position
+                rb.position = serverState.myPosition;
+                rb.velocity = serverState.myVelocity;
+
+                // B. Re-Simulate (The expensive part)
+                // We have to replay all inputs that happened AFTER this snapshot
+                // up to the present moment.
+                int ticksToReplay = currentTick - serverState.tick;
+
+                foreach(var pastInput in localInputHistory)
+                {
+                    if (pastInput.tick > serverState.tick)
+                    {
+                        ApplyPhysics(pastInput);
+                        Physics.Simulate(tickRate); // Manually step physics engine
+                    }
+                }
+            }
+
+            // Clear inputs that the server has definitely processed
+            RemoveOldInputs(serverState.lastAckedInput);
+        }
+
+        // 2. CLIENT SIDE PREDICTION (The standard loop)
+        // Even if we haven't heard from the server, we assume we are moving.
+
+        InputFrame input = CaptureInput();
+        input.tick = currentTick;
+
+        // Apply to local physics immediately (Responsive!)
+        ApplyPhysics(input);
+
+        // Save to history so we can check it later against server
+        localInputHistory.Add(input);
+        localStateHistory.Add(new StateSnapshot(currentTick, rb.position, rb.velocity));
+
+        // Send to server
+        network.SendInputPacket(input);
+
+        currentTick++;
+    }
+
+    // -- HELPER LOGIC --
+
+    void RenderSmoothRemotePlayers()
+    {
+        // Remote players are NOT predicted. We see them in the past.
+        // We take the two most recent snapshots from the server.
+        // Snapshot A (Time: 1000ms), Snapshot B (Time: 1100ms)
+        // If current time is 1050ms, we show the player 50% between A and B.
+
+        foreach(var player in remotePlayers)
+        {
+            float interpolationFactor = CalculateRenderTime(player);
+            player.visualMesh.position = Vector3.Lerp(player.prevPos, player.currPos, interpolationFactor);
+        }
+    }
+
+    void ApplyPhysics(InputFrame input)
+    {
+        // Standard platformer logic
+        if (input.jumpPressed && isGrounded)
+            rb.AddForce(Vector3.up * jumpForce);
+
+        rb.velocity = new Vector3(input.horizontal * moveSpeed, rb.velocity.y, 0);
+    }
+}
+\end{verbatim}
 
 \clearpage
 
@@ -1484,12 +1730,24 @@ state of each other}
 \newglossaryentry{SSBO}
 {
 name={Shader Storage Buffer Object (SSBO)},
-description={idk, this is involved with staging buffers?}
+description={idk, this is involved with staging buffers? do we create
+  these on the CPU and send over with the transfer queue? but actually
+the data goes between shaders, not from CPU to GPU??}
+}
+\newglossaryentry{Uniform Buffer Object}
+{
+name={Uniform Buffer Object(UBO)},
+description={So this is what came before we had Shader Storage Buffer
+  Objects (SSBO). \textbf{UBO}'s can store up to 64 or 16 kilobytes
+  depending on the GPU. Other major difference is that UBO's are read
+  only and SSBO's are read and write (at what stage are we reading and
+writing to SSBO's?)}
 }
 \newglossaryentry{Tessellation Shader}
 {
 name={Tessellation Shader},
-description={Can subdivide geometry output from vertex shader}
+description={Can subdivide geometry output from vertex
+shader\textemdash why would we want to do this?}
 }
 \newglossaryentry{Vertex Shader}
 {
@@ -1517,6 +1775,16 @@ name={Input Assembly},
 description={Some part of the Vulkan pipeline, but what does it do?
 Is it at the beginning?}
 }
+\newglossaryentry{Resource Acquisition Is Initialization}
+{
+name={Resource Acquisition Is Initialization},
+description={idk}
+}
+\newglossaryentry{interrupts}
+{
+name={interrupts},
+description={idk}
+}
 
 % END GLOS
 
@@ -1529,6 +1797,69 @@ Document)}\addcontentsline{toc}{section}{To-Do (For This
 Document)}
 \par I think this might be a nice place to keep my thoughts about
 this document in an organized manner.
+
+\clearpage
+
+\section*{Networking}\addcontentsline{toc}{section}{Networking}
+\par So there are many networking solutions\textemdash which is the
+best for me? Here are some of the \textit{libraries} I have come across:
+\begin{itemize}
+\item ENet
+\item RakNet
+\end{itemize}
+
+\par But wait. What are you doing? I mean seriously, you aren't just
+learning Vulkan now\textemdash you are approaching a decision that
+would significantly impact the prototyping of your game. Clearly,
+there is a lot of planning required to make this kind of decisiion in
+a good way.
+
+\par So what do you want this game to be? Well of course it would be
+great if your game could ship on \textit{all} devices, but is that
+realistic? I mean how much interfacing do you have to do with
+PlayStation and XBox to get them working? Should you be concerned with
+platform stuff right now? Well the whole reason I am considering
+platforms is because I believe that choosing a networking solution
+will wall me into a corner as soon as it happens. So the question is:
+how many times do I want to rewrite? And after a rewrite, am I
+getting too far off into the weeds? Of course I would love a game
+that works on everything, but why bother? There's no reason to sit
+around playing with platform-independant code when I could just pick
+a platform and make 10X progress.
+
+\par Okay, so the solution is Windows? But you're not even building
+it on a Windows machine, you are building it on Arch Linux. Maybe
+these two platforms can be kept in mind? Well that is a huge relief
+because how big of a pain would it be to have all platforms in-mind.
+
+\par So we know that different CPU architectures have different
+representation of floats, which is a problem for a multiplayer
+physics engine. How do you plan to reconcile? Well there has to be
+some networking idea that lets us get away with this.
+
+\par What do we already know (other than we are going to use UDP)?
+
+\subsection*{The Standard
+Approach}\addcontentsline{toc}{subsection}{The Standard Approach}
+\paragraph*{Client Side Prediction}
+This is the idea that the client's inputs happen on screen without
+verification from server (so they are immediate/responsive). Then the
+action is sent to the server which will have a list of checks so that
+we know that the client's inputs are valid (no funny business). If
+all the checks pass, then the client's inputs reach the server and
+become real for all players. Then perhaps there is some memory passed
+back to client of the real state of everything, including their own actions?
+
+\par But this is only a small example of the idea that is client-side
+prediction. What if we have a networked physics object, say a
+bouncing ball. If the authoritative server just sends the position of
+the ball, we can only create a new frame when we receive a packet
+from the server with a position update. Instead, if we sent some
+extra information like the velocity and accelaration, we could
+interpolate on the client to generate frames that we would have
+otherwise had to wait for.
+
+% END NETWORKING
 
 \clearpage
 \section*{Appendix}
