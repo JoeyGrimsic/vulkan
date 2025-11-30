@@ -1792,52 +1792,74 @@ description={idk}
 \addcontentsline{toc}{section}{Glossary}
 \clearpage
 
-\section*{To-Do (For This
-Document)}\addcontentsline{toc}{section}{To-Do (For This
-Document)}
-\par I think this might be a nice place to keep my thoughts about
-this document in an organized manner.
-
-\clearpage
-
 \section*{Networking}\addcontentsline{toc}{section}{Networking}
 \par So there are many networking solutions\textemdash which is the
-best for me? Here are some of the \textit{libraries} I have come across:
+best for me? Here are some of the libraries I have come across:
 \begin{itemize}
-\item ENet
-\item RakNet
+\item \href{http://enet.bespin.org/}{ENet}
+\item \href{http://www.jenkinssoftware.com/platforms.html}{RakNet}
+\item
+  \href{https://www.boost.org/doc/libs/latest/doc/html/boost_asio.html}{BoostASIO}
 \end{itemize}
 
-\par But wait. What are you doing? I mean seriously, you aren't just
-learning Vulkan now\textemdash you are approaching a decision that
-would significantly impact the prototyping of your game. Clearly,
-there is a lot of planning required to make this kind of decisiion in
-a good way.
-
-\par So what do you want this game to be? Well of course it would be
-great if your game could ship on \textit{all} devices, but is that
-realistic? I mean how much interfacing do you have to do with
-PlayStation and XBox to get them working? Should you be concerned with
-platform stuff right now? Well the whole reason I am considering
-platforms is because I believe that choosing a networking solution
-will wall me into a corner as soon as it happens. So the question is:
-how many times do I want to rewrite? And after a rewrite, am I
-getting too far off into the weeds? Of course I would love a game
-that works on everything, but why bother? There's no reason to sit
-around playing with platform-independant code when I could just pick
-a platform and make 10X progress.
-
-\par Okay, so the solution is Windows? But you're not even building
-it on a Windows machine, you are building it on Arch Linux. Maybe
-these two platforms can be kept in mind? Well that is a huge relief
-because how big of a pain would it be to have all platforms in-mind.
+\par Are any of these options specific to Windows? If so maybe we
+should avoid it. And if they aren't operating system specific do we
+need to interface with the OS ourselves?
 
 \par So we know that different CPU architectures have different
 representation of floats, which is a problem for a multiplayer
 physics engine. How do you plan to reconcile? Well there has to be
 some networking idea that lets us get away with this.
 
-\par What do we already know (other than we are going to use UDP)?
+\subsection*{Server Authority (State
+Sync)}\addcontentsline{toc}{subsection}{Server Authority (State Sync)}
+\par So what's the idea here? We do the physics on the client in
+between server ticks?
+
+\par The first thing to realize is that a normal server tick might be
+20hz. A good refresh rate nowadays might be 240hz. So there's more
+than 10 frames to be \textbf{interpolated} between server ticks.
+
+\par Recall that our biggest issue is that floats across hardware are
+represented differently. Because of this, our physics is not synced
+across systems. Handling this is called the \textbf{Authority Check}.
+
+\subsection*{The Authority Check
+(Reconciliation)}\addcontentsline{toc}{subsection}{The Authority Check
+(Reconciliation)}
+\par There are three parts of the authority check:
+\begin{enumerate}
+\item Snapshot Arrival
+\item Comparison
+\item Reconciliation
+\end{enumerate}
+
+\clearpage
+
+\par Here is a table from Gemini that might help:
+
+\begin{table}[H]
+\centering
+% The column specification 'l X X' sets the first column to auto-width
+% and the next two columns to share the remaining page width equally.
+\begin{tabularx}{\textwidth}{l X X}
+  \toprule
+  Feature & Client Role & Server Role \\
+  \midrule
+  \textbf{Input}
+  & Sends inputs (WASD, Mouse) to server immediately.
+  & Receives inputs, queues them for the next tick. \\
+  \addlinespace % Adds a little breathing room between rows
+  \textbf{Physics}
+  & \textbf{Predicts} results instantly to keep gameplay smooth.
+  & \textbf{Calculates} the ``true'' result based on game logic. \\
+  \addlinespace
+  \textbf{State Sync}
+  & Receives server state; corrects (reconciles) if prediction was wrong.
+  & Broadcasts the ``true'' state to all connected clients. \\
+  \bottomrule
+\end{tabularx}
+\end{table}
 
 \subsection*{The Standard
 Approach}\addcontentsline{toc}{subsection}{The Standard Approach}
@@ -1859,23 +1881,79 @@ extra information like the velocity and accelaration, we could
 interpolate on the client to generate frames that we would have
 otherwise had to wait for.
 
+\par Aside: I am learning some of this from
+\href{https://www.youtube.com/watch?v=KBBJqPL5-eU&t=788s}{this video}
+
+\paragraph*{But How Do We Make Other Players Smooth?}
+As we've discussed, we know our own inputs with no delay, so we can
+predict our server state (real state). But what about other players?
+If we were to just update them whenever we get a tick of packets from
+the server, then the would appear to teleport \textit{(recall that we have
+  more than 10 frames to interpolate if we are on 240hz client with
+20hz server tick)}.
+
+\par To solve this, we can buffer other players. In other words: we
+will render them \textit{slightly in the past}. This way, we will
+have a continuous stream of inputs as if they were giving inputs
+locally. \textit{One problem this might raise is: what happens when
+we interact with other players? For example if we grab the other
+player like in LittleBigPlanet, we then have to do physics that rely
+on the other player\textemdash so our client-side prediction may be
+laggy. But maybe this is acceptable.}
+
+\subsection*{Packets}\addcontentsline{toc}{subsection}{Packets}
+\par So you want to network? You're going to need to understand
+packets. Packets are the unit that we use to send data on our
+network. Normally, packets have a max size of
+
 % END NETWORKING
 
 \clearpage
+
+\section*{To-Do (For This
+Document)}\addcontentsline{toc}{section}{To-Do (For This
+Document)}
+\par I think this might be a nice place to keep my thoughts about
+this document in an organized manner.
+
+\clearpage
+
 \section*{Appendix}
 \addcontentsline{toc}{section}{Appendix}
+
 \begin{figure}[H]
 \begin{center}
-  \includegraphics[width=0.95\textwidth]{figures/vulkanpipeline.png}
+  \includegraphics[width=0.95\textwidth]{figures/pipeline1.png}
 \end{center}
 \caption{Vulkan Pipeline}\label{fig:}
 \end{figure}
 
 \begin{figure}[H]
 \begin{center}
-  \includegraphics[width=0.95\textwidth]{figures/vulkanpipeline2.png}
+  \includegraphics[width=0.95\textwidth]{figures/pipeline2.png}
 \end{center}
-\caption{Vulkan Pipeline Again}\label{fig:}
+\caption{Vulkan Pipeline}\label{fig:}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+  \includegraphics[width=0.95\textwidth]{figures/pipeline3.png}
+\end{center}
+\caption{Vulkan Pipeline}\label{fig:}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+  \includegraphics[width=0.95\textwidth]{figures/pipeline4.png}
+\end{center}
+\caption{Vulkan Pipeline}\label{fig:}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+  \includegraphics[width=0.95\textwidth]{figures/pipeline5.png}
+\end{center}
+\caption{Vulkan Pipeline}\label{fig:}
 \end{figure}
 
 % END APPENDIX

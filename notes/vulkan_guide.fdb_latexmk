@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1764360863.84082 "vulkan_guide.tex" "vulkan_guide.pdf" "vulkan_guide" 1764360864.65307 0
+["pdflatex"] 1764462773.96976 "vulkan_guide.tex" "vulkan_guide.pdf" "vulkan_guide" 1764462775.05274 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1755987285 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1755987285 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1755987285 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -213,14 +213,17 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1755987285 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1763598045 5311557 9da84c45f5b388655502706482323571 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1763597995 2008249 25f1f5930c9a4f0d6af1415e882b8520 ""
-  "figures/vulkanpipeline.png" 1763005298.14749 51964 1513daa36b8664891447b96319fc9810 ""
-  "figures/vulkanpipeline2.png" 1763005298.14798 86128 aa1e5806adca4749019896af20437c5a ""
-  "vulkan_guide.aux" 1764360864.59234 7976 3f7407a4e3b00c8c15c94775d5b3b65b "pdflatex"
-  "vulkan_guide.gls" 1764272783.76979 12096 aab8908fb802c6944e3d903d57d1a7ef ""
-  "vulkan_guide.glsdefs" 1764360864.53136 58958 65b8845de90b83883137a6920e3a40e8 "pdflatex"
-  "vulkan_guide.out" 1764360864.59234 9761 edcd29fbc33b71aba028115df2073a86 "pdflatex"
-  "vulkan_guide.tex" 1764360858.08937 67213 13df6a5f1184ec94453559d3c76155e7 ""
-  "vulkan_guide.toc" 1764360864.59334 4323 57581d1630d0429511732dce15302b4c "pdflatex"
+  "figures/pipeline1.png" 1764186322.77113 103057 f4a0663d4c13d41b7b1480ce635f1548 ""
+  "figures/pipeline2.png" 1764186322.77113 55329 5656eb8df30736304104da0ec32cad5b ""
+  "figures/pipeline3.png" 1764186322.77113 61535 38ed696bc59de0c7230fe7d3e16e9d6d ""
+  "figures/pipeline4.png" 1763005298.14749 51964 1513daa36b8664891447b96319fc9810 ""
+  "figures/pipeline5.png" 1763005298.14798 86128 aa1e5806adca4749019896af20437c5a ""
+  "vulkan_guide.aux" 1764462774.98954 8843 55d44aa9d8c575b0befdab3891cc2488 "pdflatex"
+  "vulkan_guide.gls" 1764462579.52026 12096 aab8908fb802c6944e3d903d57d1a7ef ""
+  "vulkan_guide.glsdefs" 1764462774.96953 58958 65b8845de90b83883137a6920e3a40e8 "pdflatex"
+  "vulkan_guide.out" 1764462774.98954 10322 b9eea819debfa87d5bc89365c1b71f42 "pdflatex"
+  "vulkan_guide.tex" 1764462756.49901 69726 a429cbd213faa67ecf3eeaaab3e714ca ""
+  "vulkan_guide.toc" 1764462774.99054 4536 845fd743c838c6df7869e71830a2ea02 "pdflatex"
   (generated)
   "vulkan_guide.aux"
   "vulkan_guide.glo"
