@@ -62,7 +62,7 @@
 \contentsline {section}{Networking}{34}{section*.67}%
 \contentsline {subsection}{Server Authority (State Sync)}{34}{section*.68}%
 \contentsline {subsection}{The Authority Check (Reconciliation)}{34}{section*.69}%
-\contentsline {subsection}{The Standard Approach}{35}{section*.70}%
-\contentsline {subsection}{Packets}{36}{section*.73}%
-\contentsline {section}{To-Do (For This Document)}{37}{section*.74}%
-\contentsline {section}{Appendix}{38}{section*.75}%
+\contentsline {subsection}{The Standard Approach}{35}{section*.71}%
+\contentsline {subsection}{Packets}{35}{section*.74}%
+\contentsline {section}{To-Do (For This Document)}{36}{section*.75}%
+\contentsline {section}{Appendix}{37}{section*.76}%
