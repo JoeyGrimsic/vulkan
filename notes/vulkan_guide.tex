@@ -243,7 +243,7 @@ to the one in the Khronos Vulkan tutorial?
 
 \end{itemize}
 
-\section*{Theory}
+\section*{Vulkan Theory}
 \addcontentsline{toc}{section}{Theory}
 \subsection*{Descriptor Set}
 \addcontentsline{toc}{subsection}{Descriptor Set}
@@ -323,11 +323,31 @@ to screen space coordinates.
 
 \par Note: The lack of a projection matrix is called an orthographic projection.
 
-\subsection*{View Model Matrix}
-\addcontentsline{toc}{subsection}{View Model Matrix}
+\subsection*{The View Matrix}
+\addcontentsline{toc}{subsection}{The View Matrix}
+
 \par This has something to do with the view frustum? Perhaps this is
 the matrix that we perform operations on to change the camera
-position and angle?
+position and angle? \textit{Actually, the view matrix is not to be
+  confused with the projection matrix, and the projection matrix
+relates to the view frustum?}
+
+\par Usually, this is referred to in two ways:
+\begin{itemize}
+  \item The Model-View Matrix: (Legacy OpenGL) A combination of the
+    Model matrix (object position) and View matrix (camera position).
+  \item The View Matrix: (Modern pipelines) A standalone matrix
+    strictly for the camera.
+\end{itemize}
+
+\par So \textit{really} the \textbf{View Matrix} moves all of the
+meshes in the scene to simulate the camera looking around. But we
+still don't know what the frustum relates to.
+
+\subsection*{The Projection
+Matrix}\addcontentsline{toc}{subsection}{The Projection Matrix}
+\par The \textbf{projection matrix} can be imagined by considering
+the concept of \textit{field of view (FOV)}.
 
 \subsection*{Depth Stencil Image}
 \addcontentsline{toc}{subsection}{Depth Stencil Image}
@@ -435,6 +455,9 @@ View object. Hence the two Vulkan objects:
   \item VkImage
   \item VkImageView
 \end{itemize}
+\par \textit{Okay, but how do attachments play a role in this? How
+  does a render target view (RTV) relate to this? How are attachments
+different than views? Isn't a view a render target?}
 
 \subsection*{How Does A View Relate To A Frame Buffer?}
 \addcontentsline{toc}{subsection}{How Does A View Relate To A Frame Buffer?}
@@ -818,6 +841,26 @@ hierarchy. Likewise, SSBO's go through L1 and L2 cache.
     change from pixel to pixel.
   \item Time: Frame delta time.
 \end{itemize}
+
+\subsection*{Why Do We OR Bits?}\addcontentsline{toc}{subsection}{Why
+Do We OR Bits?}
+\par Reading through some Vulkan code, you will come across code used
+to create a buffer. This usually involves ORing bits
+together\textemdash why? Why are we doing bitwise operations when we
+create a buffer?
+
+\par Also, why do we use the arrow operator (idk how to type it in
+latex) when creating a buffer?
+
+\subsection*{Compute Shaders}\addcontentsline{toc}{subsection}{Dispatch Threads}
+\par So you want to massively parallelize your compute on the GPU?
+You are going to need a \textbf{compute shader}.
+
+\paragraph*{Dispatch Threads/Command ?}
+Part of compute shaders is creating all of the smaller tasks to be
+spread across GPU cores/queues(\textit{Aside: can a queue in the
+    compute queue family do more than one thread/process/dispatch command
+at a time? Is it separated into queues or cores or processes?})? .
 
 % END VULKAN
 
@@ -1437,9 +1480,11 @@ Transfer Queue. These are objects that receive and execute commands}
 \newglossaryentry{vkrenderingattachmentinfo}
 {
 name={vkRenderingAttachmentInfoKHR},
-description={KHR means khronos, which means we are using some kind of
-  extension. This specific extension is for dynamic rendering, so we
-won't use vkRenderPass objects directly?}
+description={(Gemini) The Concept: Think of this as a "Work Order" you hand
+  the GPU right before it starts drawing. It tells the GPU: "I am about
+  to draw some geometry. Please output the resulting colors to this
+  specific image and the depth info to that specific image." It
+simplifies older Vulkan code by letting you define these targets dynamically.}
 }
 \newglossaryentry{queuefamilyindex}
 {
@@ -1465,7 +1510,8 @@ write to the image?}
 \newglossaryentry{resourcebarriers}
 {
 name={Resource Barriers},
-description={idk}
+description={We can think of \textbf{resource barriers} as traffic
+lights that tell other GPU cores when the resource is done being written to}
 }
 \newglossaryentry{mipmap}
 {
@@ -1498,7 +1544,10 @@ description={Description}
 \newglossaryentry{SV Position}
 {
 name={SV Position},
-description={idk}
+description={idk, but SV means \textbf{system values}, which the GPU
+  gives you? Gemini says that is the output of the vertex shader
+  (\textit{vertex shader's purpose is to map point in 3D space to your
+2D screen, based on the view frustum})}
 }
 \newglossaryentry{SV Point Size}
 {
@@ -1538,12 +1587,20 @@ description={idk}
 \newglossaryentry{Global Invocation ID}
 {
 name={Global Invocation ID},
-description={idk, I think this relates to thread managment}
+description={idk, I think this relates to thread managment. Yes you
+  are right, here is an example (ft Gemini). Global Invocation ID /
+  SV_DispatchThreadID: Imagine you have a grid of 1,000,000 items to
+  process. You launch 1,000,000 GPU threads. This ID is the "Nametag"
+  for the thread. Thread \#500 knows it is \#500 because this variable
+tells it so. It uses this ID to look up index \#500 in your data array.}
 }
 \newglossaryentry{Dispatch Thread}
 {
 name={Dispatch Thread},
-description={idk}
+description={idk, relates to Global Invocation ID. I guess just the
+  idea of creating a new thread to do something? But actually gemini
+  says this is too vague as a dispatch thread relates to compute
+shader, not just a generic CPU thread. You may want to make a section on this..}
 }
 \newglossaryentry{SV Dispatch Thread ID}
 {
@@ -1784,6 +1841,12 @@ description={idk}
 {
 name={interrupts},
 description={idk}
+}
+\newglossaryentry{Gradient}
+{
+name={Gradient},
+description={I know a gradient is a math idea/term but what really is it
+and why is it important? Is it common to use this in shaders?}
 }
 
 % END GLOS
