@@ -1659,8 +1659,8 @@ first={Global Invocation ID},%
 firstplural={Global Invocation IDs},%
 text={Global Invocation ID},%
 plural={Global Invocation IDs},%
-description={idk, I think this relates to thread managment. Yes you are right, here is an example (ft Gemini). Global Invocation ID / SV_DispatchThreadID: Imagine you have a grid of 1,000,000 items to process. You launch 1,000,000 GPU threads. This ID is the "Nametag" for the thread. Thread \#500 knows it is \#500 because this variable tells it so. It uses this ID to look up index \#500 in your data array.},%
-descriptionplural={idk, I think this relates to thread managment. Yes you are right, here is an example (ft Gemini). Global Invocation ID / SV_DispatchThreadID: Imagine you have a grid of 1,000,000 items to process. You launch 1,000,000 GPU threads. This ID is the "Nametag" for the thread. Thread \#500 knows it is \#500 because this variable tells it so. It uses this ID to look up index \#500 in your data array.},%
+description={idk, I think this relates to thread managment. Yes you are right, here is an example (ft Gemini). Global Invocation ID / SV\_DispatchThreadID: Imagine you have a grid of 1,000,000 items to process. You launch 1,000,000 GPU threads. This ID is the "Nametag" for the thread. Thread \#500 knows it is \#500 because this variable tells it so. It uses this ID to look up index \#500 in your data array.},%
+descriptionplural={idk, I think this relates to thread managment. Yes you are right, here is an example (ft Gemini). Global Invocation ID / SV\_DispatchThreadID: Imagine you have a grid of 1,000,000 items to process. You launch 1,000,000 GPU threads. This ID is the "Nametag" for the thread. Thread \#500 knows it is \#500 because this variable tells it so. It uses this ID to look up index \#500 in your data array.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -2835,4 +2835,22 @@ first={Gradient},%
 firstplural={Gradients},%
 text={Gradient},%
 plural={Gradients},%
-description={I know a gradient is a m
+description={I know a gradient is a math idea/term but what really is it and why is it important? Is it common to use this in shaders?},%
+descriptionplural={I know a gradient is a math idea/term but what really is it and why is it important? Is it common to use this in shaders?},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
