@@ -1,0 +1,728 @@
+[
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/base",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/base.dir/__/external/imgui/imgui.cpp.o -c /home/certioraii/documents/Vulkan/external/imgui/imgui.cpp",
+  "file": "/home/certioraii/documents/Vulkan/external/imgui/imgui.cpp",
+  "output": "base/CMakeFiles/base.dir/__/external/imgui/imgui.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/base",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/base.dir/__/external/imgui/imgui_demo.cpp.o -c /home/certioraii/documents/Vulkan/external/imgui/imgui_demo.cpp",
+  "file": "/home/certioraii/documents/Vulkan/external/imgui/imgui_demo.cpp",
+  "output": "base/CMakeFiles/base.dir/__/external/imgui/imgui_demo.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/base",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/base.dir/__/external/imgui/imgui_draw.cpp.o -c /home/certioraii/documents/Vulkan/external/imgui/imgui_draw.cpp",
+  "file": "/home/certioraii/documents/Vulkan/external/imgui/imgui_draw.cpp",
+  "output": "base/CMakeFiles/base.dir/__/external/imgui/imgui_draw.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/base",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/base.dir/__/external/imgui/imgui_widgets.cpp.o -c /home/certioraii/documents/Vulkan/external/imgui/imgui_widgets.cpp",
+  "file": "/home/certioraii/documents/Vulkan/external/imgui/imgui_widgets.cpp",
+  "output": "base/CMakeFiles/base.dir/__/external/imgui/imgui_widgets.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/base",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/base.dir/VulkanAndroid.cpp.o -c /home/certioraii/documents/Vulkan/base/VulkanAndroid.cpp",
+  "file": "/home/certioraii/documents/Vulkan/base/VulkanAndroid.cpp",
+  "output": "base/CMakeFiles/base.dir/VulkanAndroid.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/base",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/base.dir/VulkanBuffer.cpp.o -c /home/certioraii/documents/Vulkan/base/VulkanBuffer.cpp",
+  "file": "/home/certioraii/documents/Vulkan/base/VulkanBuffer.cpp",
+  "output": "base/CMakeFiles/base.dir/VulkanBuffer.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/base",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/base.dir/VulkanDebug.cpp.o -c /home/certioraii/documents/Vulkan/base/VulkanDebug.cpp",
+  "file": "/home/certioraii/documents/Vulkan/base/VulkanDebug.cpp",
+  "output": "base/CMakeFiles/base.dir/VulkanDebug.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/base",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/base.dir/VulkanDevice.cpp.o -c /home/certioraii/documents/Vulkan/base/VulkanDevice.cpp",
+  "file": "/home/certioraii/documents/Vulkan/base/VulkanDevice.cpp",
+  "output": "base/CMakeFiles/base.dir/VulkanDevice.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/base",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/base.dir/VulkanRaytracingSample.cpp.o -c /home/certioraii/documents/Vulkan/base/VulkanRaytracingSample.cpp",
+  "file": "/home/certioraii/documents/Vulkan/base/VulkanRaytracingSample.cpp",
+  "output": "base/CMakeFiles/base.dir/VulkanRaytracingSample.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/base",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/base.dir/VulkanSwapChain.cpp.o -c /home/certioraii/documents/Vulkan/base/VulkanSwapChain.cpp",
+  "file": "/home/certioraii/documents/Vulkan/base/VulkanSwapChain.cpp",
+  "output": "base/CMakeFiles/base.dir/VulkanSwapChain.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/base",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/base.dir/VulkanTexture.cpp.o -c /home/certioraii/documents/Vulkan/base/VulkanTexture.cpp",
+  "file": "/home/certioraii/documents/Vulkan/base/VulkanTexture.cpp",
+  "output": "base/CMakeFiles/base.dir/VulkanTexture.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/base",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/base.dir/VulkanTools.cpp.o -c /home/certioraii/documents/Vulkan/base/VulkanTools.cpp",
+  "file": "/home/certioraii/documents/Vulkan/base/VulkanTools.cpp",
+  "output": "base/CMakeFiles/base.dir/VulkanTools.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/base",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/base.dir/VulkanUIOverlay.cpp.o -c /home/certioraii/documents/Vulkan/base/VulkanUIOverlay.cpp",
+  "file": "/home/certioraii/documents/Vulkan/base/VulkanUIOverlay.cpp",
+  "output": "base/CMakeFiles/base.dir/VulkanUIOverlay.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/base",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/base.dir/VulkanglTFModel.cpp.o -c /home/certioraii/documents/Vulkan/base/VulkanglTFModel.cpp",
+  "file": "/home/certioraii/documents/Vulkan/base/VulkanglTFModel.cpp",
+  "output": "base/CMakeFiles/base.dir/VulkanglTFModel.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/base",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/base.dir/vulkanexamplebase.cpp.o -c /home/certioraii/documents/Vulkan/base/vulkanexamplebase.cpp",
+  "file": "/home/certioraii/documents/Vulkan/base/vulkanexamplebase.cpp",
+  "output": "base/CMakeFiles/base.dir/vulkanexamplebase.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/base",
+  "command": "/usr/sbin/cc -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base -O3 -DNDEBUG -o CMakeFiles/base.dir/__/external/ktx/lib/texture.c.o -c /home/certioraii/documents/Vulkan/external/ktx/lib/texture.c",
+  "file": "/home/certioraii/documents/Vulkan/external/ktx/lib/texture.c",
+  "output": "base/CMakeFiles/base.dir/__/external/ktx/lib/texture.c.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/base",
+  "command": "/usr/sbin/cc -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base -O3 -DNDEBUG -o CMakeFiles/base.dir/__/external/ktx/lib/hashlist.c.o -c /home/certioraii/documents/Vulkan/external/ktx/lib/hashlist.c",
+  "file": "/home/certioraii/documents/Vulkan/external/ktx/lib/hashlist.c",
+  "output": "base/CMakeFiles/base.dir/__/external/ktx/lib/hashlist.c.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/base",
+  "command": "/usr/sbin/cc -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base -O3 -DNDEBUG -o CMakeFiles/base.dir/__/external/ktx/lib/checkheader.c.o -c /home/certioraii/documents/Vulkan/external/ktx/lib/checkheader.c",
+  "file": "/home/certioraii/documents/Vulkan/external/ktx/lib/checkheader.c",
+  "output": "base/CMakeFiles/base.dir/__/external/ktx/lib/checkheader.c.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/base",
+  "command": "/usr/sbin/cc -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base -O3 -DNDEBUG -o CMakeFiles/base.dir/__/external/ktx/lib/swap.c.o -c /home/certioraii/documents/Vulkan/external/ktx/lib/swap.c",
+  "file": "/home/certioraii/documents/Vulkan/external/ktx/lib/swap.c",
+  "output": "base/CMakeFiles/base.dir/__/external/ktx/lib/swap.c.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/base",
+  "command": "/usr/sbin/cc -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base -O3 -DNDEBUG -o CMakeFiles/base.dir/__/external/ktx/lib/memstream.c.o -c /home/certioraii/documents/Vulkan/external/ktx/lib/memstream.c",
+  "file": "/home/certioraii/documents/Vulkan/external/ktx/lib/memstream.c",
+  "output": "base/CMakeFiles/base.dir/__/external/ktx/lib/memstream.c.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/base",
+  "command": "/usr/sbin/cc -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base -O3 -DNDEBUG -o CMakeFiles/base.dir/__/external/ktx/lib/filestream.c.o -c /home/certioraii/documents/Vulkan/external/ktx/lib/filestream.c",
+  "file": "/home/certioraii/documents/Vulkan/external/ktx/lib/filestream.c",
+  "output": "base/CMakeFiles/base.dir/__/external/ktx/lib/filestream.c.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/base",
+  "command": "/usr/sbin/cc -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base -O3 -DNDEBUG -o CMakeFiles/base.dir/__/external/ktx/lib/vkloader.c.o -c /home/certioraii/documents/Vulkan/external/ktx/lib/vkloader.c",
+  "file": "/home/certioraii/documents/Vulkan/external/ktx/lib/vkloader.c",
+  "output": "base/CMakeFiles/base.dir/__/external/ktx/lib/vkloader.c.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/bloom.dir/bloom/bloom.cpp.o -c /home/certioraii/documents/Vulkan/examples/bloom/bloom.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/bloom/bloom.cpp",
+  "output": "examples/CMakeFiles/bloom.dir/bloom/bloom.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/bufferdeviceaddress.dir/bufferdeviceaddress/bufferdeviceaddress.cpp.o -c /home/certioraii/documents/Vulkan/examples/bufferdeviceaddress/bufferdeviceaddress.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/bufferdeviceaddress/bufferdeviceaddress.cpp",
+  "output": "examples/CMakeFiles/bufferdeviceaddress.dir/bufferdeviceaddress/bufferdeviceaddress.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/computecloth.dir/computecloth/computecloth.cpp.o -c /home/certioraii/documents/Vulkan/examples/computecloth/computecloth.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/computecloth/computecloth.cpp",
+  "output": "examples/CMakeFiles/computecloth.dir/computecloth/computecloth.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/computecullandlod.dir/computecullandlod/computecullandlod.cpp.o -c /home/certioraii/documents/Vulkan/examples/computecullandlod/computecullandlod.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/computecullandlod/computecullandlod.cpp",
+  "output": "examples/CMakeFiles/computecullandlod.dir/computecullandlod/computecullandlod.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/computeheadless.dir/computeheadless/computeheadless.cpp.o -c /home/certioraii/documents/Vulkan/examples/computeheadless/computeheadless.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/computeheadless/computeheadless.cpp",
+  "output": "examples/CMakeFiles/computeheadless.dir/computeheadless/computeheadless.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/computenbody.dir/computenbody/computenbody.cpp.o -c /home/certioraii/documents/Vulkan/examples/computenbody/computenbody.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/computenbody/computenbody.cpp",
+  "output": "examples/CMakeFiles/computenbody.dir/computenbody/computenbody.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/computeparticles.dir/computeparticles/computeparticles.cpp.o -c /home/certioraii/documents/Vulkan/examples/computeparticles/computeparticles.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/computeparticles/computeparticles.cpp",
+  "output": "examples/CMakeFiles/computeparticles.dir/computeparticles/computeparticles.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/computeraytracing.dir/computeraytracing/computeraytracing.cpp.o -c /home/certioraii/documents/Vulkan/examples/computeraytracing/computeraytracing.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/computeraytracing/computeraytracing.cpp",
+  "output": "examples/CMakeFiles/computeraytracing.dir/computeraytracing/computeraytracing.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/computeshader.dir/computeshader/computeshader.cpp.o -c /home/certioraii/documents/Vulkan/examples/computeshader/computeshader.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/computeshader/computeshader.cpp",
+  "output": "examples/CMakeFiles/computeshader.dir/computeshader/computeshader.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/conditionalrender.dir/conditionalrender/conditionalrender.cpp.o -c /home/certioraii/documents/Vulkan/examples/conditionalrender/conditionalrender.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/conditionalrender/conditionalrender.cpp",
+  "output": "examples/CMakeFiles/conditionalrender.dir/conditionalrender/conditionalrender.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/conservativeraster.dir/conservativeraster/conservativeraster.cpp.o -c /home/certioraii/documents/Vulkan/examples/conservativeraster/conservativeraster.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/conservativeraster/conservativeraster.cpp",
+  "output": "examples/CMakeFiles/conservativeraster.dir/conservativeraster/conservativeraster.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/debugprintf.dir/debugprintf/debugprintf.cpp.o -c /home/certioraii/documents/Vulkan/examples/debugprintf/debugprintf.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/debugprintf/debugprintf.cpp",
+  "output": "examples/CMakeFiles/debugprintf.dir/debugprintf/debugprintf.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/debugutils.dir/debugutils/debugutils.cpp.o -c /home/certioraii/documents/Vulkan/examples/debugutils/debugutils.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/debugutils/debugutils.cpp",
+  "output": "examples/CMakeFiles/debugutils.dir/debugutils/debugutils.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/deferred.dir/deferred/deferred.cpp.o -c /home/certioraii/documents/Vulkan/examples/deferred/deferred.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/deferred/deferred.cpp",
+  "output": "examples/CMakeFiles/deferred.dir/deferred/deferred.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/deferredmultisampling.dir/deferredmultisampling/deferredmultisampling.cpp.o -c /home/certioraii/documents/Vulkan/examples/deferredmultisampling/deferredmultisampling.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/deferredmultisampling/deferredmultisampling.cpp",
+  "output": "examples/CMakeFiles/deferredmultisampling.dir/deferredmultisampling/deferredmultisampling.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/deferredshadows.dir/deferredshadows/deferredshadows.cpp.o -c /home/certioraii/documents/Vulkan/examples/deferredshadows/deferredshadows.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/deferredshadows/deferredshadows.cpp",
+  "output": "examples/CMakeFiles/deferredshadows.dir/deferredshadows/deferredshadows.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/descriptorbuffer.dir/descriptorbuffer/descriptorbuffer.cpp.o -c /home/certioraii/documents/Vulkan/examples/descriptorbuffer/descriptorbuffer.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/descriptorbuffer/descriptorbuffer.cpp",
+  "output": "examples/CMakeFiles/descriptorbuffer.dir/descriptorbuffer/descriptorbuffer.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/descriptorindexing.dir/descriptorindexing/descriptorindexing.cpp.o -c /home/certioraii/documents/Vulkan/examples/descriptorindexing/descriptorindexing.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/descriptorindexing/descriptorindexing.cpp",
+  "output": "examples/CMakeFiles/descriptorindexing.dir/descriptorindexing/descriptorindexing.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/descriptorsets.dir/descriptorsets/descriptorsets.cpp.o -c /home/certioraii/documents/Vulkan/examples/descriptorsets/descriptorsets.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/descriptorsets/descriptorsets.cpp",
+  "output": "examples/CMakeFiles/descriptorsets.dir/descriptorsets/descriptorsets.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/displacement.dir/displacement/displacement.cpp.o -c /home/certioraii/documents/Vulkan/examples/displacement/displacement.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/displacement/displacement.cpp",
+  "output": "examples/CMakeFiles/displacement.dir/displacement/displacement.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/distancefieldfonts.dir/distancefieldfonts/distancefieldfonts.cpp.o -c /home/certioraii/documents/Vulkan/examples/distancefieldfonts/distancefieldfonts.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/distancefieldfonts/distancefieldfonts.cpp",
+  "output": "examples/CMakeFiles/distancefieldfonts.dir/distancefieldfonts/distancefieldfonts.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/dynamicrendering.dir/dynamicrendering/dynamicrendering.cpp.o -c /home/certioraii/documents/Vulkan/examples/dynamicrendering/dynamicrendering.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/dynamicrendering/dynamicrendering.cpp",
+  "output": "examples/CMakeFiles/dynamicrendering.dir/dynamicrendering/dynamicrendering.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/dynamicrenderingmultisampling.dir/dynamicrenderingmultisampling/dynamicrenderingmultisampling.cpp.o -c /home/certioraii/documents/Vulkan/examples/dynamicrenderingmultisampling/dynamicrenderingmultisampling.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/dynamicrenderingmultisampling/dynamicrenderingmultisampling.cpp",
+  "output": "examples/CMakeFiles/dynamicrenderingmultisampling.dir/dynamicrenderingmultisampling/dynamicrenderingmultisampling.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/dynamicstate.dir/dynamicstate/dynamicstate.cpp.o -c /home/certioraii/documents/Vulkan/examples/dynamicstate/dynamicstate.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/dynamicstate/dynamicstate.cpp",
+  "output": "examples/CMakeFiles/dynamicstate.dir/dynamicstate/dynamicstate.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/dynamicuniformbuffer.dir/dynamicuniformbuffer/dynamicuniformbuffer.cpp.o -c /home/certioraii/documents/Vulkan/examples/dynamicuniformbuffer/dynamicuniformbuffer.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/dynamicuniformbuffer/dynamicuniformbuffer.cpp",
+  "output": "examples/CMakeFiles/dynamicuniformbuffer.dir/dynamicuniformbuffer/dynamicuniformbuffer.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/fragmentshaderbarycentrics.dir/fragmentshaderbarycentrics/fragmentshaderbarycentrics.cpp.o -c /home/certioraii/documents/Vulkan/examples/fragmentshaderbarycentrics/fragmentshaderbarycentrics.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/fragmentshaderbarycentrics/fragmentshaderbarycentrics.cpp",
+  "output": "examples/CMakeFiles/fragmentshaderbarycentrics.dir/fragmentshaderbarycentrics/fragmentshaderbarycentrics.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/gears.dir/gears/gears.cpp.o -c /home/certioraii/documents/Vulkan/examples/gears/gears.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/gears/gears.cpp",
+  "output": "examples/CMakeFiles/gears.dir/gears/gears.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/geometryshader.dir/geometryshader/geometryshader.cpp.o -c /home/certioraii/documents/Vulkan/examples/geometryshader/geometryshader.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/geometryshader/geometryshader.cpp",
+  "output": "examples/CMakeFiles/geometryshader.dir/geometryshader/geometryshader.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/gltfloading.dir/gltfloading/gltfloading.cpp.o -c /home/certioraii/documents/Vulkan/examples/gltfloading/gltfloading.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/gltfloading/gltfloading.cpp",
+  "output": "examples/CMakeFiles/gltfloading.dir/gltfloading/gltfloading.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/gltfscenerendering.dir/gltfscenerendering/gltfscenerendering.cpp.o -c /home/certioraii/documents/Vulkan/examples/gltfscenerendering/gltfscenerendering.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/gltfscenerendering/gltfscenerendering.cpp",
+  "output": "examples/CMakeFiles/gltfscenerendering.dir/gltfscenerendering/gltfscenerendering.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/gltfskinning.dir/gltfskinning/gltfskinning.cpp.o -c /home/certioraii/documents/Vulkan/examples/gltfskinning/gltfskinning.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/gltfskinning/gltfskinning.cpp",
+  "output": "examples/CMakeFiles/gltfskinning.dir/gltfskinning/gltfskinning.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/graphicspipelinelibrary.dir/graphicspipelinelibrary/graphicspipelinelibrary.cpp.o -c /home/certioraii/documents/Vulkan/examples/graphicspipelinelibrary/graphicspipelinelibrary.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/graphicspipelinelibrary/graphicspipelinelibrary.cpp",
+  "output": "examples/CMakeFiles/graphicspipelinelibrary.dir/graphicspipelinelibrary/graphicspipelinelibrary.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/hdr.dir/hdr/hdr.cpp.o -c /home/certioraii/documents/Vulkan/examples/hdr/hdr.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/hdr/hdr.cpp",
+  "output": "examples/CMakeFiles/hdr.dir/hdr/hdr.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/hostimagecopy.dir/hostimagecopy/hostimagecopy.cpp.o -c /home/certioraii/documents/Vulkan/examples/hostimagecopy/hostimagecopy.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/hostimagecopy/hostimagecopy.cpp",
+  "output": "examples/CMakeFiles/hostimagecopy.dir/hostimagecopy/hostimagecopy.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/imgui.dir/imgui/main.cpp.o -c /home/certioraii/documents/Vulkan/examples/imgui/main.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/imgui/main.cpp",
+  "output": "examples/CMakeFiles/imgui.dir/imgui/main.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/imgui.dir/__/external/imgui/imgui.cpp.o -c /home/certioraii/documents/Vulkan/external/imgui/imgui.cpp",
+  "file": "/home/certioraii/documents/Vulkan/external/imgui/imgui.cpp",
+  "output": "examples/CMakeFiles/imgui.dir/__/external/imgui/imgui.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/imgui.dir/__/external/imgui/imgui_demo.cpp.o -c /home/certioraii/documents/Vulkan/external/imgui/imgui_demo.cpp",
+  "file": "/home/certioraii/documents/Vulkan/external/imgui/imgui_demo.cpp",
+  "output": "examples/CMakeFiles/imgui.dir/__/external/imgui/imgui_demo.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/imgui.dir/__/external/imgui/imgui_draw.cpp.o -c /home/certioraii/documents/Vulkan/external/imgui/imgui_draw.cpp",
+  "file": "/home/certioraii/documents/Vulkan/external/imgui/imgui_draw.cpp",
+  "output": "examples/CMakeFiles/imgui.dir/__/external/imgui/imgui_draw.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/imgui.dir/__/external/imgui/imgui_widgets.cpp.o -c /home/certioraii/documents/Vulkan/external/imgui/imgui_widgets.cpp",
+  "file": "/home/certioraii/documents/Vulkan/external/imgui/imgui_widgets.cpp",
+  "output": "examples/CMakeFiles/imgui.dir/__/external/imgui/imgui_widgets.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/indirectdraw.dir/indirectdraw/indirectdraw.cpp.o -c /home/certioraii/documents/Vulkan/examples/indirectdraw/indirectdraw.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/indirectdraw/indirectdraw.cpp",
+  "output": "examples/CMakeFiles/indirectdraw.dir/indirectdraw/indirectdraw.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/inlineuniformblocks.dir/inlineuniformblocks/inlineuniformblocks.cpp.o -c /home/certioraii/documents/Vulkan/examples/inlineuniformblocks/inlineuniformblocks.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/inlineuniformblocks/inlineuniformblocks.cpp",
+  "output": "examples/CMakeFiles/inlineuniformblocks.dir/inlineuniformblocks/inlineuniformblocks.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/inputattachments.dir/inputattachments/inputattachments.cpp.o -c /home/certioraii/documents/Vulkan/examples/inputattachments/inputattachments.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/inputattachments/inputattachments.cpp",
+  "output": "examples/CMakeFiles/inputattachments.dir/inputattachments/inputattachments.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/instancing.dir/instancing/instancing.cpp.o -c /home/certioraii/documents/Vulkan/examples/instancing/instancing.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/instancing/instancing.cpp",
+  "output": "examples/CMakeFiles/instancing.dir/instancing/instancing.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/meshshader.dir/meshshader/meshshader.cpp.o -c /home/certioraii/documents/Vulkan/examples/meshshader/meshshader.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/meshshader/meshshader.cpp",
+  "output": "examples/CMakeFiles/meshshader.dir/meshshader/meshshader.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/multisampling.dir/multisampling/multisampling.cpp.o -c /home/certioraii/documents/Vulkan/examples/multisampling/multisampling.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/multisampling/multisampling.cpp",
+  "output": "examples/CMakeFiles/multisampling.dir/multisampling/multisampling.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/multithreading.dir/multithreading/multithreading.cpp.o -c /home/certioraii/documents/Vulkan/examples/multithreading/multithreading.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/multithreading/multithreading.cpp",
+  "output": "examples/CMakeFiles/multithreading.dir/multithreading/multithreading.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/multiview.dir/multiview/multiview.cpp.o -c /home/certioraii/documents/Vulkan/examples/multiview/multiview.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/multiview/multiview.cpp",
+  "output": "examples/CMakeFiles/multiview.dir/multiview/multiview.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/negativeviewportheight.dir/negativeviewportheight/negativeviewportheight.cpp.o -c /home/certioraii/documents/Vulkan/examples/negativeviewportheight/negativeviewportheight.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/negativeviewportheight/negativeviewportheight.cpp",
+  "output": "examples/CMakeFiles/negativeviewportheight.dir/negativeviewportheight/negativeviewportheight.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/occlusionquery.dir/occlusionquery/occlusionquery.cpp.o -c /home/certioraii/documents/Vulkan/examples/occlusionquery/occlusionquery.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/occlusionquery/occlusionquery.cpp",
+  "output": "examples/CMakeFiles/occlusionquery.dir/occlusionquery/occlusionquery.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/offscreen.dir/offscreen/offscreen.cpp.o -c /home/certioraii/documents/Vulkan/examples/offscreen/offscreen.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/offscreen/offscreen.cpp",
+  "output": "examples/CMakeFiles/offscreen.dir/offscreen/offscreen.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/oit.dir/oit/oit.cpp.o -c /home/certioraii/documents/Vulkan/examples/oit/oit.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/oit/oit.cpp",
+  "output": "examples/CMakeFiles/oit.dir/oit/oit.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/parallaxmapping.dir/parallaxmapping/parallaxmapping.cpp.o -c /home/certioraii/documents/Vulkan/examples/parallaxmapping/parallaxmapping.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/parallaxmapping/parallaxmapping.cpp",
+  "output": "examples/CMakeFiles/parallaxmapping.dir/parallaxmapping/parallaxmapping.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/particlesystem.dir/particlesystem/particlesystem.cpp.o -c /home/certioraii/documents/Vulkan/examples/particlesystem/particlesystem.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/particlesystem/particlesystem.cpp",
+  "output": "examples/CMakeFiles/particlesystem.dir/particlesystem/particlesystem.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/pbrbasic.dir/pbrbasic/pbrbasic.cpp.o -c /home/certioraii/documents/Vulkan/examples/pbrbasic/pbrbasic.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/pbrbasic/pbrbasic.cpp",
+  "output": "examples/CMakeFiles/pbrbasic.dir/pbrbasic/pbrbasic.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/pbribl.dir/pbribl/pbribl.cpp.o -c /home/certioraii/documents/Vulkan/examples/pbribl/pbribl.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/pbribl/pbribl.cpp",
+  "output": "examples/CMakeFiles/pbribl.dir/pbribl/pbribl.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/pbrtexture.dir/pbrtexture/pbrtexture.cpp.o -c /home/certioraii/documents/Vulkan/examples/pbrtexture/pbrtexture.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/pbrtexture/pbrtexture.cpp",
+  "output": "examples/CMakeFiles/pbrtexture.dir/pbrtexture/pbrtexture.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/pipelines.dir/pipelines/pipelines.cpp.o -c /home/certioraii/documents/Vulkan/examples/pipelines/pipelines.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/pipelines/pipelines.cpp",
+  "output": "examples/CMakeFiles/pipelines.dir/pipelines/pipelines.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/pipelinestatistics.dir/pipelinestatistics/pipelinestatistics.cpp.o -c /home/certioraii/documents/Vulkan/examples/pipelinestatistics/pipelinestatistics.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/pipelinestatistics/pipelinestatistics.cpp",
+  "output": "examples/CMakeFiles/pipelinestatistics.dir/pipelinestatistics/pipelinestatistics.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/pushconstants.dir/pushconstants/pushconstants.cpp.o -c /home/certioraii/documents/Vulkan/examples/pushconstants/pushconstants.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/pushconstants/pushconstants.cpp",
+  "output": "examples/CMakeFiles/pushconstants.dir/pushconstants/pushconstants.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/pushdescriptors.dir/pushdescriptors/pushdescriptors.cpp.o -c /home/certioraii/documents/Vulkan/examples/pushdescriptors/pushdescriptors.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/pushdescriptors/pushdescriptors.cpp",
+  "output": "examples/CMakeFiles/pushdescriptors.dir/pushdescriptors/pushdescriptors.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/radialblur.dir/radialblur/radialblur.cpp.o -c /home/certioraii/documents/Vulkan/examples/radialblur/radialblur.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/radialblur/radialblur.cpp",
+  "output": "examples/CMakeFiles/radialblur.dir/radialblur/radialblur.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/rayquery.dir/rayquery/rayquery.cpp.o -c /home/certioraii/documents/Vulkan/examples/rayquery/rayquery.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/rayquery/rayquery.cpp",
+  "output": "examples/CMakeFiles/rayquery.dir/rayquery/rayquery.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/raytracingbasic.dir/raytracingbasic/raytracingbasic.cpp.o -c /home/certioraii/documents/Vulkan/examples/raytracingbasic/raytracingbasic.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/raytracingbasic/raytracingbasic.cpp",
+  "output": "examples/CMakeFiles/raytracingbasic.dir/raytracingbasic/raytracingbasic.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/raytracingcallable.dir/raytracingcallable/raytracingcallable.cpp.o -c /home/certioraii/documents/Vulkan/examples/raytracingcallable/raytracingcallable.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/raytracingcallable/raytracingcallable.cpp",
+  "output": "examples/CMakeFiles/raytracingcallable.dir/raytracingcallable/raytracingcallable.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/raytracinggltf.dir/raytracinggltf/raytracinggltf.cpp.o -c /home/certioraii/documents/Vulkan/examples/raytracinggltf/raytracinggltf.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/raytracinggltf/raytracinggltf.cpp",
+  "output": "examples/CMakeFiles/raytracinggltf.dir/raytracinggltf/raytracinggltf.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/raytracingintersection.dir/raytracingintersection/raytracingintersection.cpp.o -c /home/certioraii/documents/Vulkan/examples/raytracingintersection/raytracingintersection.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/raytracingintersection/raytracingintersection.cpp",
+  "output": "examples/CMakeFiles/raytracingintersection.dir/raytracingintersection/raytracingintersection.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/raytracingreflections.dir/raytracingreflections/raytracingreflections.cpp.o -c /home/certioraii/documents/Vulkan/examples/raytracingreflections/raytracingreflections.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/raytracingreflections/raytracingreflections.cpp",
+  "output": "examples/CMakeFiles/raytracingreflections.dir/raytracingreflections/raytracingreflections.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/raytracingpositionfetch.dir/raytracingpositionfetch/raytracingpositionfetch.cpp.o -c /home/certioraii/documents/Vulkan/examples/raytracingpositionfetch/raytracingpositionfetch.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/raytracingpositionfetch/raytracingpositionfetch.cpp",
+  "output": "examples/CMakeFiles/raytracingpositionfetch.dir/raytracingpositionfetch/raytracingpositionfetch.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/raytracingsbtdata.dir/raytracingsbtdata/raytracingsbtdata.cpp.o -c /home/certioraii/documents/Vulkan/examples/raytracingsbtdata/raytracingsbtdata.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/raytracingsbtdata/raytracingsbtdata.cpp",
+  "output": "examples/CMakeFiles/raytracingsbtdata.dir/raytracingsbtdata/raytracingsbtdata.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/raytracingshadows.dir/raytracingshadows/raytracingshadows.cpp.o -c /home/certioraii/documents/Vulkan/examples/raytracingshadows/raytracingshadows.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/raytracingshadows/raytracingshadows.cpp",
+  "output": "examples/CMakeFiles/raytracingshadows.dir/raytracingshadows/raytracingshadows.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/raytracingtextures.dir/raytracingtextures/raytracingtextures.cpp.o -c /home/certioraii/documents/Vulkan/examples/raytracingtextures/raytracingtextures.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/raytracingtextures/raytracingtextures.cpp",
+  "output": "examples/CMakeFiles/raytracingtextures.dir/raytracingtextures/raytracingtextures.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/renderheadless.dir/renderheadless/renderheadless.cpp.o -c /home/certioraii/documents/Vulkan/examples/renderheadless/renderheadless.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/renderheadless/renderheadless.cpp",
+  "output": "examples/CMakeFiles/renderheadless.dir/renderheadless/renderheadless.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/screenshot.dir/screenshot/screenshot.cpp.o -c /home/certioraii/documents/Vulkan/examples/screenshot/screenshot.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/screenshot/screenshot.cpp",
+  "output": "examples/CMakeFiles/screenshot.dir/screenshot/screenshot.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/shaderobjects.dir/shaderobjects/shaderobjects.cpp.o -c /home/certioraii/documents/Vulkan/examples/shaderobjects/shaderobjects.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/shaderobjects/shaderobjects.cpp",
+  "output": "examples/CMakeFiles/shaderobjects.dir/shaderobjects/shaderobjects.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/shadowmapping.dir/shadowmapping/shadowmapping.cpp.o -c /home/certioraii/documents/Vulkan/examples/shadowmapping/shadowmapping.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/shadowmapping/shadowmapping.cpp",
+  "output": "examples/CMakeFiles/shadowmapping.dir/shadowmapping/shadowmapping.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/shadowmappingomni.dir/shadowmappingomni/shadowmappingomni.cpp.o -c /home/certioraii/documents/Vulkan/examples/shadowmappingomni/shadowmappingomni.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/shadowmappingomni/shadowmappingomni.cpp",
+  "output": "examples/CMakeFiles/shadowmappingomni.dir/shadowmappingomni/shadowmappingomni.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/shadowmappingcascade.dir/shadowmappingcascade/shadowmappingcascade.cpp.o -c /home/certioraii/documents/Vulkan/examples/shadowmappingcascade/shadowmappingcascade.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/shadowmappingcascade/shadowmappingcascade.cpp",
+  "output": "examples/CMakeFiles/shadowmappingcascade.dir/shadowmappingcascade/shadowmappingcascade.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/specializationconstants.dir/specializationconstants/specializationconstants.cpp.o -c /home/certioraii/documents/Vulkan/examples/specializationconstants/specializationconstants.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/specializationconstants/specializationconstants.cpp",
+  "output": "examples/CMakeFiles/specializationconstants.dir/specializationconstants/specializationconstants.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/sphericalenvmapping.dir/sphericalenvmapping/sphericalenvmapping.cpp.o -c /home/certioraii/documents/Vulkan/examples/sphericalenvmapping/sphericalenvmapping.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/sphericalenvmapping/sphericalenvmapping.cpp",
+  "output": "examples/CMakeFiles/sphericalenvmapping.dir/sphericalenvmapping/sphericalenvmapping.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/ssao.dir/ssao/ssao.cpp.o -c /home/certioraii/documents/Vulkan/examples/ssao/ssao.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/ssao/ssao.cpp",
+  "output": "examples/CMakeFiles/ssao.dir/ssao/ssao.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/stencilbuffer.dir/stencilbuffer/stencilbuffer.cpp.o -c /home/certioraii/documents/Vulkan/examples/stencilbuffer/stencilbuffer.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/stencilbuffer/stencilbuffer.cpp",
+  "output": "examples/CMakeFiles/stencilbuffer.dir/stencilbuffer/stencilbuffer.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/subpasses.dir/subpasses/subpasses.cpp.o -c /home/certioraii/documents/Vulkan/examples/subpasses/subpasses.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/subpasses/subpasses.cpp",
+  "output": "examples/CMakeFiles/subpasses.dir/subpasses/subpasses.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/terraintessellation.dir/terraintessellation/terraintessellation.cpp.o -c /home/certioraii/documents/Vulkan/examples/terraintessellation/terraintessellation.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/terraintessellation/terraintessellation.cpp",
+  "output": "examples/CMakeFiles/terraintessellation.dir/terraintessellation/terraintessellation.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/tessellation.dir/tessellation/tessellation.cpp.o -c /home/certioraii/documents/Vulkan/examples/tessellation/tessellation.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/tessellation/tessellation.cpp",
+  "output": "examples/CMakeFiles/tessellation.dir/tessellation/tessellation.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/textoverlay.dir/textoverlay/textoverlay.cpp.o -c /home/certioraii/documents/Vulkan/examples/textoverlay/textoverlay.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/textoverlay/textoverlay.cpp",
+  "output": "examples/CMakeFiles/textoverlay.dir/textoverlay/textoverlay.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/texture.dir/texture/texture.cpp.o -c /home/certioraii/documents/Vulkan/examples/texture/texture.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/texture/texture.cpp",
+  "output": "examples/CMakeFiles/texture.dir/texture/texture.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -fopenmp -o CMakeFiles/texture3d.dir/texture3d/texture3d.cpp.o -c /home/certioraii/documents/Vulkan/examples/texture3d/texture3d.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/texture3d/texture3d.cpp",
+  "output": "examples/CMakeFiles/texture3d.dir/texture3d/texture3d.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/texturearray.dir/texturearray/texturearray.cpp.o -c /home/certioraii/documents/Vulkan/examples/texturearray/texturearray.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/texturearray/texturearray.cpp",
+  "output": "examples/CMakeFiles/texturearray.dir/texturearray/texturearray.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/texturecubemap.dir/texturecubemap/texturecubemap.cpp.o -c /home/certioraii/documents/Vulkan/examples/texturecubemap/texturecubemap.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/texturecubemap/texturecubemap.cpp",
+  "output": "examples/CMakeFiles/texturecubemap.dir/texturecubemap/texturecubemap.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/texturecubemaparray.dir/texturecubemaparray/texturecubemaparray.cpp.o -c /home/certioraii/documents/Vulkan/examples/texturecubemaparray/texturecubemaparray.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/texturecubemaparray/texturecubemaparray.cpp",
+  "output": "examples/CMakeFiles/texturecubemaparray.dir/texturecubemaparray/texturecubemaparray.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/texturemipmapgen.dir/texturemipmapgen/texturemipmapgen.cpp.o -c /home/certioraii/documents/Vulkan/examples/texturemipmapgen/texturemipmapgen.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/texturemipmapgen/texturemipmapgen.cpp",
+  "output": "examples/CMakeFiles/texturemipmapgen.dir/texturemipmapgen/texturemipmapgen.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/texturesparseresidency.dir/texturesparseresidency/texturesparseresidency.cpp.o -c /home/certioraii/documents/Vulkan/examples/texturesparseresidency/texturesparseresidency.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/texturesparseresidency/texturesparseresidency.cpp",
+  "output": "examples/CMakeFiles/texturesparseresidency.dir/texturesparseresidency/texturesparseresidency.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/timelinesemaphore.dir/timelinesemaphore/timelinesemaphore.cpp.o -c /home/certioraii/documents/Vulkan/examples/timelinesemaphore/timelinesemaphore.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/timelinesemaphore/timelinesemaphore.cpp",
+  "output": "examples/CMakeFiles/timelinesemaphore.dir/timelinesemaphore/timelinesemaphore.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/triangle.dir/triangle/triangle.cpp.o -c /home/certioraii/documents/Vulkan/examples/triangle/triangle.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/triangle/triangle.cpp",
+  "output": "examples/CMakeFiles/triangle.dir/triangle/triangle.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/trianglevulkan13.dir/trianglevulkan13/trianglevulkan13.cpp.o -c /home/certioraii/documents/Vulkan/examples/trianglevulkan13/trianglevulkan13.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/trianglevulkan13/trianglevulkan13.cpp",
+  "output": "examples/CMakeFiles/trianglevulkan13.dir/trianglevulkan13/trianglevulkan13.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/variablerateshading.dir/variablerateshading/variablerateshading.cpp.o -c /home/certioraii/documents/Vulkan/examples/variablerateshading/variablerateshading.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/variablerateshading/variablerateshading.cpp",
+  "output": "examples/CMakeFiles/variablerateshading.dir/variablerateshading/variablerateshading.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/vertexattributes.dir/vertexattributes/vertexattributes.cpp.o -c /home/certioraii/documents/Vulkan/examples/vertexattributes/vertexattributes.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/vertexattributes/vertexattributes.cpp",
+  "output": "examples/CMakeFiles/vertexattributes.dir/vertexattributes/vertexattributes.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/viewportarray.dir/viewportarray/viewportarray.cpp.o -c /home/certioraii/documents/Vulkan/examples/viewportarray/viewportarray.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/viewportarray/viewportarray.cpp",
+  "output": "examples/CMakeFiles/viewportarray.dir/viewportarray/viewportarray.cpp.o"
+},
+{
+  "directory": "/home/certioraii/documents/Vulkan/build-release/examples",
+  "command": "/usr/sbin/c++ -DVK_EXAMPLE_ASSETS_DIR=\\\"/home/certioraii/documents/Vulkan/assets/\\\" -DVK_EXAMPLE_SHADERS_DIR=\\\"/home/certioraii/documents/Vulkan/shaders/\\\" -D_CRT_SECURE_NO_WARNINGS -I/home/certioraii/documents/Vulkan/external -I/home/certioraii/documents/Vulkan/external/glm -I/home/certioraii/documents/Vulkan/external/gli -I/home/certioraii/documents/Vulkan/external/imgui -I/home/certioraii/documents/Vulkan/external/tinygltf -I/home/certioraii/documents/Vulkan/external/ktx/include -I/home/certioraii/documents/Vulkan/external/ktx/other_include -I/home/certioraii/documents/Vulkan/base  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/vulkanscene.dir/vulkanscene/vulkanscene.cpp.o -c /home/certioraii/documents/Vulkan/examples/vulkanscene/vulkanscene.cpp",
+  "file": "/home/certioraii/documents/Vulkan/examples/vulkanscene/vulkanscene.cpp",
+  "output": "examples/CMakeFiles/vulkanscene.dir/vulkanscene/vulkanscene.cpp.o"
+}
+]

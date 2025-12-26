@@ -1,28 +1,40 @@
 #!/usr/bin/env bash
 set -e
 
-BUILD_DIR="build"
+# Define directories
+DEBUG_DIR="build-debug"
+RELEASE_DIR="build-release"
 
-echo ">>> Removing old build directory..."
-rm -rf "$BUILD_DIR"
+# Function to build a specific configuration
+build_target() {
+    local TYPE=$1    # Debug or Release
+    local DIR=$2     # build-debug or build-release
 
-echo ">>> Creating new build directory..."
-mkdir "$BUILD_DIR"
-cd "$BUILD_DIR"
+    echo ">>> Preparing $TYPE build in $DIR..."
+    mkdir -p "$DIR"
+    
+    # Configure
+    cmake -S . -B "$DIR" \
+      -DCMAKE_BUILD_TYPE="$TYPE" \
+      -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
+      -DUSE_WAYLAND_WSI=OFF
 
-echo ">>> Running CMake configure..."
-cmake .. \
-  -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
-  -DUSE_WAYLAND_WSI=OFF
+    # Build
+    echo ">>> Compiling $TYPE..."
+    cmake --build "$DIR" -- -j"$(nproc)"
+}
 
-echo ">>> Building..."
-cmake --build . -- -j"$(nproc)"
+# 1. Build Debug version
+build_target "Debug" "$DEBUG_DIR"
 
-# Optionally copy compile_commands.json to project root
-if [ -f compile_commands.json ]; then
-    echo ">>> Copying compile_commands.json to project root..."
-    cp compile_commands.json ..
-fi
+# 2. Build Release version
+build_target "Release" "$RELEASE_DIR"
 
-echo ">>> Done."
+# 3. Handle compile_commands.json for Neovim LSP
+# We link the Debug one by default as it's usually better for development
+echo ">>> Linking compile_commands.json to root..."
+ln -sf "$DEBUG_DIR/compile_commands.json" .
 
+echo ">>> All builds complete."
+echo ">>> Debug binary:   $DEBUG_DIR/your_binary_name"
+echo ">>> Release binary: $RELEASE_DIR/your_binary_name"
