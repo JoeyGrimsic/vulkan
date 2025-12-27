@@ -1975,7 +1975,20 @@ network. Normally, packets have a max size of
 % END NETWORKING
 
 \section*{Debugging}\addcontentsline{toc}{section}{Debugging}
-\par So it seems there are not that many easy debugging setups
+\par So it seems there are not that many easy debugging setups. For
+now though, I should just go for a prototype.
+
+\par Some setups to consider are the following:
+\begin{itemize}
+\item GDB in separate terminal
+\item :TermDebug
+\item Switching to IDE?
+\end{itemize}
+
+\par When using a debugger, you need to generate debug symbols.
+Because of this it makes sense to have two directories, one for debug
+build and one for release build.
+
 % END DEBUGGING
 
 \clearpage
