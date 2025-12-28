@@ -67,5 +67,7 @@
 \contentsline {subsection}{The Authority Check (Reconciliation)}{36}{section*.73}%
 \contentsline {subsection}{The Standard Approach}{37}{section*.75}%
 \contentsline {subsection}{Packets}{37}{section*.78}%
-\contentsline {section}{To-Do (For This Document)}{38}{section*.79}%
-\contentsline {section}{Appendix}{39}{section*.80}%
+\contentsline {section}{Debugging}{38}{section*.79}%
+\contentsline {section}{Modifying Compute Particle}{38}{section*.80}%
+\contentsline {section}{To-Do (For This Document)}{39}{section*.81}%
+\contentsline {section}{Appendix}{40}{section*.82}%

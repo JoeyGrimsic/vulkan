@@ -1536,11 +1536,6 @@ description={For example, could do math}
 name={Transfer Queue},
 description={Good for copying data}
 }
-\newglossaryentry{label}
-{
-name={label},
-description={Description}
-}
 \newglossaryentry{SV Position}
 {
 name={SV Position},
@@ -1688,7 +1683,7 @@ Willems save us from assignments with the \textbf{vks} namespace?}
 }
 \newglossaryentry{Inline}
 {
-name={inlin},
+name={inline},
 description={What does keyword \textbf{inline} do in C++? Is it
 common? Is it important for performant code?}
 }
@@ -1990,6 +1985,61 @@ Because of this it makes sense to have two directories, one for debug
 build and one for release build.
 
 % END DEBUGGING
+
+\section*{Modifying Compute
+Particle}\addcontentsline{toc}{section}{Modifying Compute Particle}
+\par So my plan to learn Vulkan is to work from this base program:
+\textit{compute particle} from the Sascha Willems Vulkan repo, and to
+turn it into a minecraft demo? That seems like a fun project. That
+would teach me the graphics pipeline after all, and some basic
+structure of making a game prototype and stuff.
+
+\par \textit{Joseph from the future here. Modifying
+computeparticles.cpp is really hard. It is a 500 line cpp file with
+many Vulkan abstractions I don't understand. There must be a better
+way to learn Vulkan. The problem is, I don't know where to start. It
+seems logical to start from a template like compute particles and try
+to change it, because that way I would still be using the 'Sascha'
+setup that I want to adopt. The reason it is so difficult is because
+I don't know where all the changes need to be made. I mean, if I
+wanted to change the program then realistically I would scrap the
+whole thing. For example, if I am going to draw a triangle to the
+screen, I don't need to use a compute shader\textemdash which I
+believe compute particles is using. Okay, so then maybe I could
+modify the program in a different way that changes the functionality
+of the compute shader? So far, I have been taking the approach of
+looking through the source code first, then finding anything I didn't
+understand (usually a variable name), and then prompting gemini some
+questions so that I could make a note about it in this document. So I
+wonder: what is the amount of working knowledge I need to start
+prototyping? If only I could successfully transform the code into
+something else, then I could build confidence}
+
+\par Okay, so my new approach will be starting with some triangles.
+
+\par Currently, we are compiling with the glsl shader, but I want to
+use slang instead. So I need to find where we are requiring the glsl shader.
+
+\par It could be worth trying to work from the \textit{vulkan scene}
+example too, it looks like a good starting point for a game engine.
+% END MODIFY
+
+\section*{Analysis Of Triangle
+Example}\addcontentsline{toc}{section}{Analysis Of Triangle Example}
+\par This section will simply be me writing what I think is happening
+in triangle.cpp from top down. Preferably I touch on every line, and
+every question I have on every line. I think I will copy each segment
+of code into this doc and then below write my thoughts.
+
+\begin{verbatim}
+class VulkanExample : public VulkanExampleBase {
+\end{verbatim}
+\par I am not entriely sure what this syntax means. I believe it is
+inheritance. Also, I don't know which direction the inheritance
+goes\textemdash maybe from right to left like '=' operator? In that
+case we are initializing a new class, VulkanExample, from the base
+class VulkanExampleBase. So all of the inherited functionality would
+probably be from functions that we can call from VulkanExample.
 
 \clearpage
 
