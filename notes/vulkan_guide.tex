@@ -2034,12 +2034,29 @@ of code into this doc and then below write my thoughts.
 \begin{verbatim}
 class VulkanExample : public VulkanExampleBase {
 \end{verbatim}
+\begin{tcolorbox}[
+  enhanced,
+  breakable,
+  colback=orange!5,
+  colframe=orange!75!black,
+  colbacktitle=orange!15,
+  coltitle=black,
+  fonttitle=\bfseries,
+  sharp corners=all,
+  boxrule=0.8pt,
+  left=5pt,
+  right=5pt,
+  top=6pt,
+  bottom=6pt
+]
+
 \par I am not entriely sure what this syntax means. I believe it is
 inheritance. Also, I don't know which direction the inheritance
 goes\textemdash maybe from right to left like '=' operator? In that
 case we are initializing a new class, VulkanExample, from the base
 class VulkanExampleBase. So all of the inherited functionality would
 probably be from functions that we can call from VulkanExample.
+\end{tcolorbox}
 
 \clearpage
 
