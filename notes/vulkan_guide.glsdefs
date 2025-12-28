@@ -1398,34 +1398,6 @@ parent={},%
 %
 }%
 
-\glsdefs@newdocentry{label}%
-{%
-name={label},%
-sort={label},%
-type={main},%
-first={label},%
-firstplural={labels},%
-text={label},%
-plural={labels},%
-description={Description},%
-descriptionplural={Description},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-
 \glsdefs@newdocentry{SV Position}%
 {%
 name={SV Position},%
@@ -2072,13 +2044,13 @@ parent={},%
 
 \glsdefs@newdocentry{Inline}%
 {%
-name={inlin},%
-sort={inlin},%
+name={inline},%
+sort={inline},%
 type={main},%
-first={inlin},%
-firstplural={inlins},%
-text={inlin},%
-plural={inlins},%
+first={inline},%
+firstplural={inlines},%
+text={inline},%
+plural={inlines},%
 description={What does keyword \textbf {inline} do in C++? Is it common? Is it important for performant code?},%
 descriptionplural={What does keyword \textbf {inline} do in C++? Is it common? Is it important for performant code?},%
 symbol={\relax },%

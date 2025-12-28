@@ -1,7 +1,7 @@
 This is makeindex, version 2.17 [TeX Live 2026/dev] (kpathsea + Thai support).
 Scanning style file ./vulkan_guide.ist...........................done (27 attributes redefined, 0 ignored).
-Scanning input file vulkan_guide.glo....done (102 entries accepted, 0 rejected).
-Sorting entries....done (692 comparisons).
-Generating output file vulkan_guide.gls....done (227 lines written, 0 warnings).
+Scanning input file vulkan_guide.glo....done (101 entries accepted, 0 rejected).
+Sorting entries....done (683 comparisons).
+Generating output file vulkan_guide.gls....done (224 lines written, 0 warnings).
 Output written in vulkan_guide.gls.
 Transcript written in vulkan_guide.glg.
