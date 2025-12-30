@@ -2049,7 +2049,6 @@ class VulkanExample : public VulkanExampleBase {
   top=6pt,
   bottom=6pt
 ]
-
 \par I am not entriely sure what this syntax means. I believe it is
 inheritance. Also, I don't know which direction the inheritance
 goes\textemdash maybe from right to left like '=' operator? In that
@@ -2058,6 +2057,113 @@ class VulkanExampleBase. So all of the inherited functionality would
 probably be from functions that we can call from VulkanExample.
 \end{tcolorbox}
 
+\begin{tcolorbox}[
+  enhanced,
+  breakable,
+  colback=green!5,
+  colframe=green!45!black,
+  sharp corners=all,
+  boxrule=0.8pt,
+  left=5pt,
+  right=5pt,
+  top=6pt,
+  bottom=6pt
+]
+\par Yes, this line is inheritance from what is called a 'base
+class', and the direction of the inheritance is the same
+as the '=' operator as you guessed. Sascha has already implemented
+the functionality for initializing the GPU and creating a window, so
+we inherit that functionality to our class: \textit{VulkanExample},
+note the pascal case for the class. Also, \textit{VulkanExampleBase}
+has functions that are meant to be overridden\textemdash one being
+render(). These functions are virtual functions.
+\end{tcolorbox}
+
+\begin{tcolorbox}[
+  enhanced,
+  breakable,
+  colback=blue!3,
+  colframe=blue!60!black,
+  sharp corners=all,
+  boxrule=0.8pt,
+  left=5pt,
+  right=5pt,
+  top=6pt,
+  bottom=6pt
+]
+\begin{itemize}
+  \item What is a virtual function?
+  \item How do I use a virtual function?
+  \item What are some other virtual functions that I will have to override?
+\end{itemize}
+\end{tcolorbox}
+
+\begin{verbatim}
+public:
+  // Vertex layout used in this example
+  struct Vertex {
+    float position[3];
+    float color[3];
+  };
+
+  struct VulkanBuffer {
+    VkDeviceMemory memory{VK_NULL_HANDLE};
+    VkBuffer handle{VK_NULL_HANDLE};
+  };
+\end{verbatim}
+\begin{tcolorbox}[
+  enhanced,
+  breakable,
+  colback=orange!5,
+  colframe=orange!75!black,
+  sharp corners=all,
+  boxrule=0.8pt,
+  left=5pt,
+  right=5pt,
+  top=6pt,
+  bottom=6pt
+]
+\par So we are defining a struct Vertex that holds position and color
+floats. Note that the struct initializations in cpp seem pretty easy:
+keyword 'struct', then its identifier, its members, and then a semi
+colon after the closing brace.
+
+\par What is confusing though, is the VulkanBuffer struct. We are
+initializing a VkDeviceMemory variable called memory to
+VK\_NULL\_HANDLE and the VkBuffer called handle, also initialized to
+VK\_NULL\_HANDLE. Do we just initialize things to VK\_NULL\_HANDLE by
+default or before we have something else initialized to pass to it?
+Where else are these structs used?
+\end{tcolorbox}
+
+\begin{tcolorbox}[
+  enhanced,
+  breakable,
+  colback=green!5,
+  colframe=green!45!black,
+  sharp corners=all,
+  boxrule=0.8pt,
+  left=5pt,
+  right=5pt,
+  top=6pt,
+  bottom=6pt
+]
+\par So there are some important concepts to take away from this code
+segment. In Vulkan, objects like VkDeviceMemory and VkMemory are
+'opaque pointers' to internal objects managed by the GPU driver.
+VK\_NULL\_HANDLE is used as a default value that we can initialize
+to. There are two good reasons for this default value. If they
+accidentally never point to an object, they can still be de-allocated
+at cleanup time. The second reason is that we can track the state of
+the object with a check like:
+\begin{verbatim}
+if (handle != VK\_NULL\_HANDLE){
+\end{verbatim}
+
+\par We want to treat an object differently if it has not been allocated yet.
+
+\par
+\end{tcolorbox}
 % END ANALYSIS
 
 \clearpage

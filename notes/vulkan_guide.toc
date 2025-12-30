@@ -70,5 +70,5 @@
 \contentsline {section}{Debugging}{39}{section*.79}%
 \contentsline {section}{Modifying Compute Particle}{39}{section*.80}%
 \contentsline {section}{Analysis Of Triangle Example}{40}{section*.81}%
-\contentsline {section}{To-Do (For This Document)}{41}{section*.82}%
-\contentsline {section}{Appendix}{42}{section*.83}%
+\contentsline {section}{To-Do (For This Document)}{42}{section*.82}%
+\contentsline {section}{Appendix}{43}{section*.83}%
