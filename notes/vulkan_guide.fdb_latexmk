@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1767066662.66792 "vulkan_guide.tex" "vulkan_guide.pdf" "vulkan_guide" 1767066663.63376 0
+["pdflatex"] 1767143261.55198 "vulkan_guide.tex" "vulkan_guide.pdf" "vulkan_guide" 1767143262.46726 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1755987285 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1755987285 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1755987285 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -218,12 +218,12 @@
   "figures/pipeline3.png" 1764630095.86052 61535 38ed696bc59de0c7230fe7d3e16e9d6d ""
   "figures/pipeline4.png" 1764630095.86052 51964 1513daa36b8664891447b96319fc9810 ""
   "figures/pipeline5.png" 1764630095.86052 86128 aa1e5806adca4749019896af20437c5a ""
-  "vulkan_guide.aux" 1767066663.58102 9483 050a370eb935bedd20d2694f03c16824 "pdflatex"
-  "vulkan_guide.gls" 1767062936.73084 12040 06ae3d6207bd5890209b44c04154f3cb ""
-  "vulkan_guide.glsdefs" 1767066663.56502 61483 b9783a84c1cc068320eff5f9056058e6 "pdflatex"
-  "vulkan_guide.out" 1767066663.58202 11247 30bec6bdfaadca8ff8a7f71fe3346af4 "pdflatex"
-  "vulkan_guide.tex" 1767066629.00924 78986 0b16f97970fd3366e47a876b28aa306e ""
-  "vulkan_guide.toc" 1767066663.58202 4930 d9e05bf92fb6640d82c199ef17c9b9ca "pdflatex"
+  "vulkan_guide.aux" 1767143262.4155 9483 050a370eb935bedd20d2694f03c16824 "pdflatex"
+  "vulkan_guide.gls" 1767142749.12929 12040 06ae3d6207bd5890209b44c04154f3cb ""
+  "vulkan_guide.glsdefs" 1767143262.3995 61483 b9783a84c1cc068320eff5f9056058e6 "pdflatex"
+  "vulkan_guide.out" 1767143262.4165 11247 30bec6bdfaadca8ff8a7f71fe3346af4 "pdflatex"
+  "vulkan_guide.tex" 1767143173.22098 80104 c1a068c65027acc1b7eefba577fb8654 ""
+  "vulkan_guide.toc" 1767143262.4165 4930 d9e05bf92fb6640d82c199ef17c9b9ca "pdflatex"
   (generated)
   "vulkan_guide.aux"
   "vulkan_guide.glo"

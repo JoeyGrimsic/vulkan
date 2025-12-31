@@ -852,7 +852,7 @@ create a buffer?
 \par Also, why do we use the arrow operator (idk how to type it in
 latex) when creating a buffer?
 
-\subsection*{Compute Shaders}\addcontentsline{toc}{subsection}{Dispatch Threads}
+\subsection*{Compute Shaders}\addcontentsline{toc}{subsection}{Compute Shaders}
 \par So you want to massively parallelize your compute on the GPU?
 You are going to need a \textbf{compute shader}.
 
@@ -862,6 +862,14 @@ spread across GPU cores/queues(\textit{Aside: can a queue in the
     compute queue family do more than one thread/process/dispatch command
 at a time? Is it separated into queues or cores or processes?})? .
 
+\subsection*{Vulkan Memory
+Allocater}\addcontentsline{toc}{subsection}{Vulkan Memory Allocater}
+\par Apparently the industry standard is in-fact, not to manually
+allocate all of your Vulkan memory. Instead, you use somethind called
+the \textit{Vulkan Memory Allocater}, a header-only library
+developedby AMD to make allocation easier.
+
+\par Currently, the triangle example does not use the Vulkan Memory Allocater.
 % END VULKAN
 
 \clearpage
@@ -2134,6 +2142,11 @@ VK\_NULL\_HANDLE and the VkBuffer called handle, also initialized to
 VK\_NULL\_HANDLE. Do we just initialize things to VK\_NULL\_HANDLE by
 default or before we have something else initialized to pass to it?
 Where else are these structs used?
+
+\par Most importantly, what are these Vulklan types used for? I know
+that VkDevice probably means something related to the GPU\textemdash
+but what is VkDeviceMemory? Is a VkBuffer just some generic block of
+memory? When do we use these types? What are their applications?
 \end{tcolorbox}
 
 \begin{tcolorbox}[
@@ -2162,7 +2175,19 @@ if (handle != VK\_NULL\_HANDLE){
 
 \par We want to treat an object differently if it has not been allocated yet.
 
-\par
+\par Both of these datatypes are fundamental to Vulkan. A VkBuffer
+object is a handle to memory. A VkDeviceMemory object is a large
+block of memory that we allocate at once. With a VkDeviceMemory
+object, the best practice is to throw a bunch of memory together and have more
+than one handle into it (many VkBuffer objects into different
+sub-blocks of memory in VkDeviceMemory).
+
+\par However, this raises another point. To allocate different
+sub-blocks of memory, there are two different approaches:
+\begin{enumerate}
+  \item Allocate manually with VkAllocateMemory()
+  \item Allocate with \textit{Vulkan Memory Allocater}
+\end{enumerate}
 \end{tcolorbox}
 % END ANALYSIS
 
