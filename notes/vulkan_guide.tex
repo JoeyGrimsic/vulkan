@@ -870,6 +870,23 @@ the \textit{Vulkan Memory Allocater}, a header-only library
 developedby AMD to make allocation easier.
 
 \par Currently, the triangle example does not use the Vulkan Memory Allocater.
+
+\subsection*{Initializing
+Buffers}\addcontentsline{toc}{subsection}{Initializing Buffers}
+\par So you want to start pushing memory to the GPU eh? This is what
+buffers are for, and it is usually a 5 step process to initialize them:
+
+\begin{enumerate}
+  \item Create the buffer with vkCreateBuffer() call
+  \item Get memory requirements vkGetBufferMemoryRequirements() to
+    determine how much memory you actually need
+  \item Allocate memory (manually) with vkAllocateMemory()
+  \item Bind memory (VkDeviceMemory) to a buffer object (vkBuffer)
+    with a vkBindBufferMemory() call
+  \item Upload data so CPU can see it with a vkMapMemory(), memcpy
+    the data into a mapped pointer, and unmap so GPU can take over.
+\end{enumerate}
+
 % END VULKAN
 
 \clearpage
@@ -2170,7 +2187,7 @@ accidentally never point to an object, they can still be de-allocated
 at cleanup time. The second reason is that we can track the state of
 the object with a check like:
 \begin{verbatim}
-if (handle != VK\_NULL\_HANDLE){
+if (handle != VK_NULL_HANDLE){
 \end{verbatim}
 
 \par We want to treat an object differently if it has not been allocated yet.
@@ -2188,6 +2205,103 @@ sub-blocks of memory, there are two different approaches:
   \item Allocate manually with VkAllocateMemory()
   \item Allocate with \textit{Vulkan Memory Allocater}
 \end{enumerate}
+\end{tcolorbox}
+
+\begin{tcolorbox}[
+  enhanced,
+  breakable,
+  colback=blue!3,
+  colframe=blue!60!black,
+  sharp corners=all,
+  boxrule=0.8pt,
+  left=5pt,
+  right=5pt,
+  top=6pt,
+  bottom=6pt
+]
+\begin{itemize}
+  \item Is VkAllocate() the only function we use to manually allocate memory?
+  \item Should I rewrite the triangle example program to use the VMA?
+  \item How will we use the VulkanBuffer struct?
+\end{itemize}
+\end{tcolorbox}
+
+\begin{verbatim}
+  VulkanBuffer vertexBuffer;
+  VulkanBuffer indexBuffer;
+  uint32_t indexCount{0};
+\end{verbatim}
+\begin{tcolorbox}[
+  enhanced,
+  breakable,
+  colback=orange!5,
+  colframe=orange!75!black,
+  sharp corners=all,
+  boxrule=0.8pt,
+  left=5pt,
+  right=5pt,
+  top=6pt,
+  bottom=6pt
+]
+\par So I guess we previously made the VulkanBuffer struct to store our
+vertex and index buffers. But I don't understand how we will
+initialize these buffers, and how the shaders will unpack the buffers
+to draw to the screen.
+
+\par Also, I don't understand why we have a variable for index count?
+\end{tcolorbox}
+
+\begin{tcolorbox}[
+  enhanced,
+  breakable,
+  colback=green!5,
+  colframe=green!45!black,
+  sharp corners=all,
+  boxrule=0.8pt,
+  left=5pt,
+  right=5pt,
+  top=6pt,
+  bottom=6pt
+]
+So we are now learning how to initialize this VulkanBuffer struct.
+Recall this struct has two parts: VkDeviceMemory and VkBuffer.
+\end{tcolorbox}
+
+\begin{tcolorbox}[
+  enhanced,
+  breakable,
+  colback=blue!3,
+  colframe=blue!60!black,
+  sharp corners=all,
+  boxrule=0.8pt,
+  left=5pt,
+  right=5pt,
+  top=6pt,
+  bottom=6pt
+]
+\begin{itemize}
+  \item What is the difference between object types that start with
+    vk and Vk? Does it relate to Sascha abstractions vs Vulkan API?
+\end{itemize}
+\end{tcolorbox}
+\begin{tcolorbox}[
+  enhanced,
+  breakable,
+  colback=green!5,
+  colframe=green!45!black,
+  sharp corners=all,
+  boxrule=0.8pt,
+  left=5pt,
+  right=5pt,
+  top=6pt,
+  bottom=6pt
+]
+Answer to blue box above:
+\begin{itemize}
+  \item vk: represents a standard vulkan function
+  \item Vk: represents a standard vulkan datatype
+  \item vks:: : represents a Sascha abstraction
+\end{itemize}
 \end{tcolorbox}
 % END ANALYSIS
 
