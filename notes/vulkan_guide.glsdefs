@@ -2826,3 +2826,31 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{Uniform}%
+{%
+name={Uniform},%
+sort={Uniform},%
+type={main},%
+first={Uniform},%
+firstplural={Uniforms},%
+text={Uniform},%
+plural={Uniforms},%
+description={A global variable (global to shaders) you pass from your CPU to your GPU shader},%
+descriptionplural={A global variable (global to shaders) you pass from your CPU to your GPU shader},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+

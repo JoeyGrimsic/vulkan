@@ -173,6 +173,8 @@
 \glossentry{Transfer Queue}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{31}}}\glsgroupskip
 \glsgroupheading{U}\relax \glsresetentrylist %
+\glossentry{Uniform}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{31}}}%
 \glossentry{Uniform Buffer Object}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{31}}}\glsgroupskip
 \glsgroupheading{V}\relax \glsresetentrylist %

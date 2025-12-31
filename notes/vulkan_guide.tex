@@ -1868,6 +1868,12 @@ name={Gradient},
 description={I know a gradient is a math idea/term but what really is it
 and why is it important? Is it common to use this in shaders?}
 }
+\newglossaryentry{Uniform}
+{
+name={Uniform},
+description={A global variable (global to shaders) you pass from your
+CPU to your GPU shader}
+}
 
 % END GLOS
 
@@ -2263,8 +2269,9 @@ to draw to the screen.
   top=6pt,
   bottom=6pt
 ]
-So we are now learning how to initialize this VulkanBuffer struct.
-Recall this struct has two parts: VkDeviceMemory and VkBuffer.
+\par So we are now learning how to initialize this VulkanBuffer struct.
+Recall this struct has two parts: VkDeviceMemory and VkBuffer. See
+the subsection on initializing buffers to learn more.
 \end{tcolorbox}
 
 \begin{tcolorbox}[
@@ -2294,7 +2301,8 @@ Recall this struct has two parts: VkDeviceMemory and VkBuffer.
   left=5pt,
   right=5pt,
   top=6pt,
-  bottom=6pt
+  bottom=6pt,
+  parbox=false
 ]
 Answer to blue box above:
 \begin{itemize}
@@ -2302,6 +2310,58 @@ Answer to blue box above:
   \item Vk: represents a standard vulkan datatype
   \item vks:: : represents a Sascha abstraction
 \end{itemize}
+\end{tcolorbox}
+
+\begin{verbatim}
+  // Uniform buffer block object
+  struct UniformBuffer : VulkanBuffer {
+    // The descriptor set stores the resources bound to the binding points in a shader
+    // It connects the binding points of the different shaders with the buffers and images used for those bindings
+    VkDescriptorSet descriptorSet{VK_NULL_HANDLE};
+    // We keep a pointer to the mapped buffer, so we can easily update it's contents via a memcpy
+    // joseph: what is the variable called map, and why is it an 8-bit unsigned int?
+    uint8_t *mapped{nullptr};
+  };
+\end{verbatim}
+\begin{tcolorbox}[
+  enhanced,
+  breakable,
+  colback=orange!5,
+  colframe=orange!75!black,
+  sharp corners=all,
+  boxrule=0.8pt,
+  left=5pt,
+  right=5pt,
+  top=6pt,
+  bottom=6pt,
+  parbox=false
+]
+\par Now we are getting into this mysterious mapped pointer, and
+we are creating another struct. But wait, we have not seen a struct
+get defined this way before. Is this struct inheriting the members
+from the Vulkan Buffer struct? I know that descriptor sets are like
+pointers that we give to shaders. Why do we need a *mapped pointer?
+What is its purpose?
+\end{tcolorbox}
+
+\begin{tcolorbox}[
+  enhanced,
+  breakable,
+  colback=green!5,
+  colframe=green!45!black,
+  sharp corners=all,
+  boxrule=0.8pt,
+  left=5pt,
+  right=5pt,
+  top=6pt,
+  bottom=6pt,
+  parbox=false
+]
+\par We are getting to the idea of how memory on the GPU (VRAM) is
+a black box from the CPU's perspective. Mapping is the process of
+asking the GPU driver to make a window for the CPU to look into its memory
+
+\par Firstly, this code segment \textit{does} show struct inheritance.
 \end{tcolorbox}
 % END ANALYSIS
 
