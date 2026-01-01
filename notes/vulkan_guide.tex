@@ -2182,7 +2182,8 @@ memory? When do we use these types? What are their applications?
   left=5pt,
   right=5pt,
   top=6pt,
-  bottom=6pt
+  bottom=6pt,
+  parbox=false
 ]
 \par So there are some important concepts to take away from this code
 segment. In Vulkan, objects like VkDeviceMemory and VkMemory are
@@ -2223,7 +2224,8 @@ sub-blocks of memory, there are two different approaches:
   left=5pt,
   right=5pt,
   top=6pt,
-  bottom=6pt
+  bottom=6pt,
+  parbox=false
 ]
 \begin{itemize}
   \item Is VkAllocate() the only function we use to manually allocate memory?
@@ -2247,7 +2249,8 @@ sub-blocks of memory, there are two different approaches:
   left=5pt,
   right=5pt,
   top=6pt,
-  bottom=6pt
+  bottom=6pt,
+  parbox=false
 ]
 \par So I guess we previously made the VulkanBuffer struct to store our
 vertex and index buffers. But I don't understand how we will
@@ -2267,7 +2270,8 @@ to draw to the screen.
   left=5pt,
   right=5pt,
   top=6pt,
-  bottom=6pt
+  bottom=6pt,
+  parbox=false
 ]
 \par So we are now learning how to initialize this VulkanBuffer struct.
 Recall this struct has two parts: VkDeviceMemory and VkBuffer. See
@@ -2284,7 +2288,8 @@ the subsection on initializing buffers to learn more.
   left=5pt,
   right=5pt,
   top=6pt,
-  bottom=6pt
+  bottom=6pt,
+  parbox=false
 ]
 \begin{itemize}
   \item What is the difference between object types that start with
