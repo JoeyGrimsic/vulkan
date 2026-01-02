@@ -2854,3 +2854,255 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{Execution Barrier}%
+{%
+name={Execution Barrier},%
+sort={Execution Barrier},%
+type={main},%
+first={Execution Barrier},%
+firstplural={Execution Barriers},%
+text={Execution Barrier},%
+plural={Execution Barriers},%
+description={Idk},%
+descriptionplural={Idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{srcStageMask}%
+{%
+name={srcStageMask},%
+sort={srcStageMask},%
+type={main},%
+first={srcStageMask},%
+firstplural={srcStageMasks},%
+text={srcStageMask},%
+plural={srcStageMasks},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{dstStageMask}%
+{%
+name={dstStageMask},%
+sort={dstStageMask},%
+type={main},%
+first={dstStageMask},%
+firstplural={dstStageMasks},%
+text={dstStageMask},%
+plural={dstStageMasks},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{oldImageLayout}%
+{%
+name={oldImageLayout},%
+sort={oldImageLayout},%
+type={main},%
+first={oldImageLayout},%
+firstplural={oldImageLayouts},%
+text={oldImageLayout},%
+plural={oldImageLayouts},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{newImageLayout}%
+{%
+name={newImageLayout},%
+sort={newImageLayout},%
+type={main},%
+first={newImageLayout},%
+firstplural={newImageLayouts},%
+text={newImageLayout},%
+plural={newImageLayouts},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{vkAccessFlags}%
+{%
+name={vkAccessFlags},%
+sort={vkAccessFlags},%
+type={main},%
+first={vkAccessFlags},%
+firstplural={vkAccessFlagss},%
+text={vkAccessFlags},%
+plural={vkAccessFlagss},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{GPU Hang}%
+{%
+name={GPU Hang},%
+sort={GPU Hang},%
+type={main},%
+first={GPU Hang},%
+firstplural={GPU Hangs},%
+text={GPU Hang},%
+plural={GPU Hangs},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Pipeline State Object PSO}%
+{%
+name={Pipeline State Object PSO},%
+sort={Pipeline State Object PSO},%
+type={main},%
+first={Pipeline State Object PSO},%
+firstplural={Pipeline State Object PSOs},%
+text={Pipeline State Object PSO},%
+plural={Pipeline State Object PSOs},%
+description={idk, but replaced with shader objects},%
+descriptionplural={idk, but replaced with shader objects},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Shader Object}%
+{%
+name={Shader Object},%
+sort={Shader Object},%
+type={main},%
+first={Shader Object},%
+firstplural={Shader Objects},%
+text={Shader Object},%
+plural={Shader Objects},%
+description={idk},%
+descriptionplural={idk},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+

@@ -72,5 +72,6 @@
 \contentsline {section}{Debugging}{39}{section*.81}%
 \contentsline {section}{Modifying Compute Particle}{39}{section*.82}%
 \contentsline {section}{Analysis Of Triangle Example}{40}{section*.83}%
-\contentsline {section}{To-Do (For This Document)}{43}{section*.84}%
-\contentsline {section}{Appendix}{44}{section*.85}%
+\contentsline {section}{Deciding If I Should Stick With Sascha}{43}{section*.84}%
+\contentsline {section}{To-Do (For This Document)}{44}{section*.85}%
+\contentsline {section}{Appendix}{45}{section*.86}%

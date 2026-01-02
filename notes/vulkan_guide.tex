@@ -1874,7 +1874,51 @@ name={Uniform},
 description={A global variable (global to shaders) you pass from your
 CPU to your GPU shader}
 }
-
+\newglossaryentry{Execution Barrier}
+{
+name={Execution Barrier},
+description={Idk}
+}
+\newglossaryentry{srcStageMask}
+{
+name={srcStageMask},
+description={idk}
+}
+\newglossaryentry{dstStageMask}
+{
+name={dstStageMask},
+description={idk}
+}
+\newglossaryentry{oldImageLayout}
+{
+name={oldImageLayout},
+description={idk}
+}
+\newglossaryentry{newImageLayout}
+{
+name={newImageLayout},
+description={idk}
+}
+\newglossaryentry{vkAccessFlags}
+{
+name={vkAccessFlags},
+description={idk}
+}
+\newglossaryentry{GPU Hang}
+{
+name={GPU Hang},
+description={idk}
+}
+\newglossaryentry{Pipeline State Object PSO}
+{
+name={Pipeline State Object PSO},
+description={idk, but replaced with shader objects}
+}
+\newglossaryentry{Shader Object}
+{
+name={Shader Object},
+description={idk}
+}
 % END GLOS
 
 \printglossaries
@@ -2007,6 +2051,8 @@ now though, I should just go for a prototype.
 \par Some setups to consider are the following:
 \begin{itemize}
 \item GDB in separate terminal
+\item RenderDoc
+\item Validation Layers
 \item :TermDebug
 \item Switching to IDE?
 \end{itemize}
@@ -2364,11 +2410,40 @@ What is its purpose?
 ]
 \par We are getting to the idea of how memory on the GPU (VRAM) is
 a black box from the CPU's perspective. Mapping is the process of
-asking the GPU driver to make a window for the CPU to look into its memory
+asking the GPU driver to make a window for the CPU to look into its memory.
 
 \par Firstly, this code segment \textit{does} show struct inheritance.
+
+\par It may be helpful to recall how we use descriptor sets.
 \end{tcolorbox}
 % END ANALYSIS
+
+\section*{Deciding If I Should Stick With
+Sascha}\addcontentsline{toc}{section}{Deciding If I Should Stick With Sascha}
+\par Apparently, there are some outdate aspects of Sascha's Vulkan
+Repo, so I think it is important to discuss whether or not I should
+stick with it.
+
+\par Here is an article about some modern Vulkan code:
+\href{https://medium.com/@allenphilip78/using-modern-vulkan-in-2025-0bac45174304}{blog
+post on modern Vulkan}
+
+\par Here is a new resource for Vulkan Samples that I am considering:
+\href{https://github.com/KhronosGroup/Vulkan-Samples}{Vulkan-Samples}
+
+\par So what is different about these two resources? Well, the
+Vulkan-Samples official repo use the newest Vulkan features, such as
+synchronization 2.
+
+\par Though, there are some trade-offs. Vulkan-Samples does not have
+a lot of the built in functionality that Sascha's repo gives. I
+wonder how hard it would be to port some of the functionality? I
+wonder if it is possible. If there are any base classes that are not
+cleanly separated from the Vulkan API, then they are probably a lost cause.
+
+\par I'm also not sure if Vulkan-Samples has a lot of the struct
+groupings that Sascha's repo has.
+% END SWITCH
 
 \clearpage
 

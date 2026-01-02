@@ -48,9 +48,13 @@
 		\setentrycounter[]{page}\glsnumberformat{31}}}%
 \glossentry{Dispatch Thread}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{31}}}%
+\glossentry{dstStageMask}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{31}}}%
 \glossentry{dynamicrendering}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{31}}}\glsgroupskip
 \glsgroupheading{E}\relax \glsresetentrylist %
+\glossentry{Execution Barrier}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{31}}}%
 \glossentry{Extension}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{31}}}%
 \glossentry{extension chain}{\glossaryentrynumbers{\relax 
@@ -64,6 +68,8 @@
 \glossentry{Geometry Shader}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{31}}}%
 \glossentry{Global Invocation ID}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{31}}}%
+\glossentry{GPU Hang}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{31}}}%
 \glossentry{Gradient}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{31}}}%
@@ -94,10 +100,17 @@
 		\setentrycounter[]{page}\glsnumberformat{31}}}%
 \glossentry{msaa}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{31}}}\glsgroupskip
+\glsgroupheading{N}\relax \glsresetentrylist %
+\glossentry{newImageLayout}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{31}}}\glsgroupskip
 \glsgroupheading{O}\relax \glsresetentrylist %
 \glossentry{Object Slicing}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{31}}}%
+\glossentry{oldImageLayout}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{31}}}\glsgroupskip
 \glsgroupheading{P}\relax \glsresetentrylist %
+\glossentry{Pipeline State Object PSO}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{31}}}%
 \glossentry{pNext Chain}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{31}}}%
 \glossentry{pointrendering}{\glossaryentrynumbers{\relax 
@@ -135,11 +148,15 @@
 		\setentrycounter[]{page}\glsnumberformat{31}}}%
 \glossentry{semaphore}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{31}}}%
+\glossentry{Shader Object}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{31}}}%
 \glossentry{SSBO}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{31}}}%
 \glossentry{slang}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{31}}}%
 \glossentry{spirv}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{31}}}%
+\glossentry{srcStageMask}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{31}}}%
 \glossentry{Staging Buffer}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{31}}}%
@@ -187,6 +204,8 @@
 \glossentry{vkqueuepresent}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{31}}}%
 \glossentry{vk::binding}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{31}}}%
+\glossentry{vkAccessFlags}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{31}}}%
 \glossentry{vkBuffer}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{31}}}%

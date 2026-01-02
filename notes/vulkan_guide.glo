@@ -100,3 +100,12 @@
 \glossaryentry{interrupts?\glossentry{interrupts}|setentrycounter[]{page}"\glsnumberformat}{31}
 \glossaryentry{Gradient?\glossentry{Gradient}|setentrycounter[]{page}"\glsnumberformat}{31}
 \glossaryentry{Uniform?\glossentry{Uniform}|setentrycounter[]{page}"\glsnumberformat}{31}
+\glossaryentry{Execution Barrier?\glossentry{Execution Barrier}|setentrycounter[]{page}"\glsnumberformat}{31}
+\glossaryentry{srcStageMask?\glossentry{srcStageMask}|setentrycounter[]{page}"\glsnumberformat}{31}
+\glossaryentry{dstStageMask?\glossentry{dstStageMask}|setentrycounter[]{page}"\glsnumberformat}{31}
+\glossaryentry{oldImageLayout?\glossentry{oldImageLayout}|setentrycounter[]{page}"\glsnumberformat}{31}
+\glossaryentry{newImageLayout?\glossentry{newImageLayout}|setentrycounter[]{page}"\glsnumberformat}{31}
+\glossaryentry{vkAccessFlags?\glossentry{vkAccessFlags}|setentrycounter[]{page}"\glsnumberformat}{31}
+\glossaryentry{GPU Hang?\glossentry{GPU Hang}|setentrycounter[]{page}"\glsnumberformat}{31}
+\glossaryentry{Pipeline State Object PSO?\glossentry{Pipeline State Object PSO}|setentrycounter[]{page}"\glsnumberformat}{31}
+\glossaryentry{Shader Object?\glossentry{Shader Object}|setentrycounter[]{page}"\glsnumberformat}{31}
