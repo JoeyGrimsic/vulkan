@@ -1064,7 +1064,7 @@ reusable across different files, then it goes in a header.
 
 \par On the contrary, if you just wanted a local helper function
 local to the file it is implemented in, then you do not need to store
-its definition in a header. \textit{The caveat to this is that if you
+its signature in a header. \textit{The caveat to this is that if you
 do not put the signature in a header (.h) file, then all of the calls
 to the function must be after its definiton.} If you don't want to
 put the function signature in a header (.h) file, and want to call it before
@@ -1075,6 +1075,25 @@ top of the cpp file that you defined it for.
 than where it was defined, you put the function signature in a header
 and include it. This is to tell the compiler that this function
 exists somewhere in the project if not here.
+
+\par This is not the only purpose of headers, though. If we want
+other functionality to extend beyond the scope of a single+isolated
+cpp file, we need to include those things in the header. Here are
+some more examples:
+
+\begin{itemize}
+\item Classes
+\item Structs
+\item Templates
+\item Enums
+\item Inline Functions
+\item Type Aliases
+\item Constants - if we wanted, we could inline a constant so that it
+  is defined in the header?
+\end{itemize}
+
+\subsection*{Module}\addcontentsline{toc}{subsection}{Module}
+\par What is a module in CPP? Should I use them?
 % END CPP
 
 \section*{What Is A Valid Starting Point For My Game Engine?}
