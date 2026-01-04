@@ -929,6 +929,30 @@ constructorFromDerivedClass?() : NewConstructor?()
 \par Weirdly, in C++ structs do not need keyword \textbf{typedef}
 when declared..
 
+\par A struct is defined like the following:
+\begin{verbatim}
+struct MyStruct{
+int a;
+int b;
+}; // <--- Semicolon is required here
+\end{verbatim}
+
+\par To use an instance of that struct, we can initialize like (requires c++20):
+\begin{verbatim}
+MyStruct myStruct{
+.a = 1;
+.b = 2;
+};
+\end{verbatim}
+
+\par Note that in this way we are initializing its members at the
+same time as the struct, but we could initialize after the fact like this:
+\begin{verbatim}
+MyStruct myStruct{};
+myStruct.a = 1;
+myStruct.b = 2;
+\end{verbatim}
+
 \subsection*{How To Make A Template Class?}
 \addcontentsline{toc}{subsection}{How To Make A Template Class?}
 \par A template has to do with implementing functionality across
@@ -1031,6 +1055,26 @@ you to chain tasks (continuation) or handle events without blocking.
 \par The new way to implement asynchronous events is using
 \textbf{coroutines}. A coroutine is?
 
+\subsection*{Understanding
+Headers}\addcontentsline{toc}{subsection}{Understanding Headers}
+\par So actually headers are pretty simple.
+
+\par If you want to have code that is global, in the sense that it is
+reusable across different files, then it goes in a header.
+
+\par On the contrary, if you just wanted a local helper function
+local to the file it is implemented in, then you do not need to store
+its definition in a header. \textit{The caveat to this is that if you
+do not put the signature in a header (.h) file, then all of the calls
+to the function must be after its definiton.} If you don't want to
+put the function signature in a header (.h) file, and want to call it before
+the function definiton, then you need the function signature at the
+top of the cpp file that you defined it for.
+
+\par In other words, if you want to call a function from another file
+than where it was defined, you put the function signature in a header
+and include it. This is to tell the compiler that this function
+exists somewhere in the project if not here.
 % END CPP
 
 \section*{What Is A Valid Starting Point For My Game Engine?}
