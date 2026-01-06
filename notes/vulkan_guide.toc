@@ -75,5 +75,7 @@
 \contentsline {section}{Modifying Compute Particle}{40}{section*.84}%
 \contentsline {section}{Analysis Of Triangle Example}{41}{section*.85}%
 \contentsline {section}{Deciding If I Should Stick With Sascha}{44}{section*.86}%
-\contentsline {section}{To-Do (For This Document)}{45}{section*.87}%
-\contentsline {section}{Appendix}{46}{section*.88}%
+\contentsline {section}{Modifying Triangle (from vulkan-samples)}{44}{section*.87}%
+\contentsline {subsection}{Loading a Model}{44}{section*.88}%
+\contentsline {section}{To-Do (For This Document)}{45}{section*.89}%
+\contentsline {section}{Appendix}{46}{section*.90}%

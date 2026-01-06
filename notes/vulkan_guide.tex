@@ -2508,6 +2508,23 @@ cleanly separated from the Vulkan API, then they are probably a lost cause.
 groupings that Sascha's repo has.
 % END SWITCH
 
+\section*{Modifying Triangle (from
+vulkan-samples)}\addcontentsline{toc}{section}{Modifying Triangle
+(from vulkan-samples)}
+\subsection*{Loading a Model}\addcontentsline{toc}{subsection}{Loading a Model}
+\par It feels logical to implement model loading first, maybe it
+isn't \textit{too} hard yet and will teach me some basics.
+
+\par First I modified two different CMakeLists.txt. This was so that
+we could reduce compile-time per Gemini Pro's suggestion.
+
+\par The second change was to make it a build target (i think) and
+that was literally adding one line (in root/framework/CMakeLists.txt)
+
+\par After making those two minor changes my build is still working
+so I think we are in the clear
+% END 2MODIFY
+
 \clearpage
 
 \section*{To-Do (For This
