@@ -2518,13 +2518,70 @@ isn't \textit{too} hard yet and will teach me some basics.
 \par First I modified two different CMakeLists.txt. This was so that
 we could reduce compile-time per Gemini Pro's suggestion.
 
-\par The second change was to make it a build target (i think) and
+\par The second change was to add it to target\_link\_libraries and
 that was literally adding one line (in root/framework/CMakeLists.txt)
 
 \par After making those two minor changes my build is still working
 so I think we are in the clear
+
+\par Oh, and then I locked assimp's version like this:
+\begin{verbatim}
+git fetch --tags
+git tag -l
+cd ../..
+git add external/assimp
+git commit -m "Locked Assimp to stable version v5.4.3" //arbitray version number
+\end{verbatim}
+
+\par So what is the syntax for importing a model using assimp? There
+are some more steps before we can do that, though.
+
+\par Funnily enough after all of that, assimp is unecessary. We
+already have tinygltf, which works with gltf\textemdash a format that
+is much better in a game engine than other formats used for editing like fbx.
+
+\par I think I will just comment it out in CMake for now, and leave
+the dependency in third\_party
 % END 2MODIFY
 
+\subsection*{Examining What We Already
+Have}\addcontentsline{toc}{subsection}{Examining What We Already Have}
+\par After that brief excursion, I am rethinking how I should
+approach this repo.
+
+\par The thing is, there is already a lot of boilerplate
+implementation out of the way. I am just unsure how much time I
+should spend looking for a starting point?
+
+\par Or maybe that is the wrong way to think of it. Instead, I can
+keep rethinking until I find something that sticks\textemdash that makes sense.
+
+\par So, what don't we have? The two big ones are:
+\begin{itemize}
+\item Sound
+\item Physics
+\end{itemize}
+
+\par For sound Gemini recommends:
+\href{https://github.com/mackron/miniaudio}{Miniaudio}
+\par For physics Gemini recommends:
+\href{https://github.com/jrouwe/JoltPhysics}{JoltPhysics}
+
+\par The other question is: which sample should I start from? I could
+just pick something I know I need, like some sample loading a model.
+
+\par Alternatively I could keep going with the triangle
+sample\textemdash this way I know all of the changes I have made.
+
+\par Once more, I could pick the sample I think has the most
+functionality already implemented. Then of course there could be some
+parts that I would want to remove.
+
+\par Ultimately, I should just look around and see what I think. The
+good part is I can probably rule out reading articles to decipher
+some fundamental setup.
+
+% END ALREADY HAVE
 \clearpage
 
 \section*{To-Do (For This

@@ -77,5 +77,6 @@
 \contentsline {section}{Deciding If I Should Stick With Sascha}{44}{section*.86}%
 \contentsline {section}{Modifying Triangle (from vulkan-samples)}{44}{section*.87}%
 \contentsline {subsection}{Loading a Model}{44}{section*.88}%
-\contentsline {section}{To-Do (For This Document)}{45}{section*.89}%
-\contentsline {section}{Appendix}{46}{section*.90}%
+\contentsline {subsection}{Examining What We Already Have}{45}{section*.89}%
+\contentsline {section}{To-Do (For This Document)}{46}{section*.90}%
+\contentsline {section}{Appendix}{47}{section*.91}%
