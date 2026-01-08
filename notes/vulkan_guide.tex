@@ -887,6 +887,18 @@ buffers are for, and it is usually a 5 step process to initialize them:
     the data into a mapped pointer, and unmap so GPU can take over.
 \end{enumerate}
 
+\subsection*{The Draw Calls}\addcontentsline{toc}{subsection}{The Draw Calls}
+\par So there are three kinds of draw calls:
+
+\begin{enumerate}
+  \item We have the light-weight, used for ui and other basic stuff
+    \textit{vkCmdDraw()}
+  \item We have the bread and butter, used for 3d models and 99\% of
+    rendering \textit{vkCmdDrawIndexed()}
+  \item The mysterious, advanced, and nuanced
+    \textit{vkCmdDrawIndexedIndirect()}
+\end{enumerate}
+
 % END VULKAN
 
 \clearpage
@@ -2581,6 +2593,11 @@ parts that I would want to remove.
 \par Ultimately, I should just look around and see what I think. The
 good part is I can probably rule out reading articles to decipher
 some fundamental setup.
+
+\subsection*{Trying To Understand Existing Camera
+Implementation}\addcontentsline{toc}{subsection}{Trying To Understand
+Existing Camera Implementation}
+\par
 
 % END ALREADY HAVE
 \clearpage
